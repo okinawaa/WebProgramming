@@ -1,0 +1,93 @@
+html {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+	margin: 0;
+}
+div, section, header, footer, p, h1, h2 {
+	box-sizing: border-box;
+}
+a {
+	color: royalblue;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.title-content{
+	text-align: center;
+}
+.global-width{
+	max-width: 620px;
+	margin: 0 auto;
+	padding : 0 15px;
+}
+
+.scroll-graphic{
+	overflow-x: hidden;
+	position: sticky;
+	top:0;
+	height: 100vh;
+}
+.text-center,
+.page-title{
+	text-align: center;
+}
+
+.graphic-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition:0.5s;
+	will-change: opacity;
+}
+.visible{
+	opacity: 1;
+}
+.scene-img{
+	max-height: 100vh;
+}
+
+.scroll-text{
+	position: relative;
+}
+.step{
+	margin-bottom: 60vh;
+	padding : 0.5rem 1rem;
+	border-radius: 30px;
+	background: rgba(255,255,255,0.7);
+	box-shadow: rgba(0,0,0,0.3) 0 0 3px;
+}
+
+.bird{
+	position: absolute;
+	left:0;
+	bottom:70%;
+	width: 100px;
+	transform: translateX(-100%);
+	transition : 2.0s 0.5s linear;
+}
+
+[data-index="5"] . bird{
+
+	left: 30%;
+	bottom:30%;
+	transition : 2.0s 0.5s linear;
+
+}
+
+.global-footer{
+	padding: 2rem 0;
+	text-align: center;
+
+}
+
+.strikethrough{
+	text-decoration: line-through;
+}
