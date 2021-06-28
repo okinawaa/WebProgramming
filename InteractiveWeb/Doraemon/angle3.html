@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>도라에몽 눈알 굴리기-박찬혁</title>
+    <meta charset="UTF-8">
+    <style>body {
+        margin: 0
+    }
+
+    .도라에몽 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 600px;
+        height: 800px;
+        background: url(doraemon.gif) no-repeat 50% 50%;
+        background-size: contain;
+        transform: translate(-50%, -50%)
+    }
+
+    .눈들 {
+        display: flex;
+        position: absolute;
+        top: 27px;
+        left: 162px
+    }
+
+    .눈 {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        border: 4px solid #000;
+        border-radius: 50%;
+        background-color: #fff;
+        transform: scaleX(.9)
+    }
+
+    .눈-1 {
+        left: 7px
+    }
+
+    .눈-2 {
+        left: -7px
+    }
+
+    .눈동자 {
+        position: absolute;
+        left: 45px;
+        bottom: 0;
+        width: 30px;
+        height: inherit
+    }
+
+    .눈동자:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: inherit;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #000
+    }
+
+    .눈동자:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #fff
+    }</style>
+</head>
+<body>
+<div class="도라에몽">
+    <div class="눈들">
+        <div class="눈 눈-1">
+            <div class="눈동자"></div>
+        </div>
+        <div class="눈 눈-2">
+            <div class="눈동자"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let 눈알 =function (selector){
+        let 눈 = document.querySelector(selector),
+            눈동자 = 눈.querySelector('.눈동자');
+        눈영역 = 눈.getBoundingClientRect();
+
+        let 눈알굴리기 = function(mouseX,mouseY){
+            let 라디안 = Math.atan2(mouseY - (눈영역.y + 눈영역.height * 0.5) , mouseX - (눈영역.x + 눈영역.width * 0.5));
+            let 각도 = ((180 * 라디안) / Math.PI) - 90;
+            눈동자.style.transform = 'rotate(' + 각도 + 'deg)';
+        }
+        return {
+            눈알굴리기 : 눈알굴리기,
+        };
+    }
+    let 눈1 = 눈알('.눈-1');
+    let 눈2 = 눈알('.눈-2');
+
+ window.addEventListener('mousemove',function(e){
+     눈1.눈알굴리기(e.pageX,e.pageY);
+     눈2.눈알굴리기(e.pageX,e.pageY)
+ });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
