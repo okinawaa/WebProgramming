@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Grid</title>
+	<link rel="stylesheet" href="default.css">
+	<style>
+	/* grid-template-areas */
+	.grid-container {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: 1fr 3fr 1fr;
+		grid-template-areas:
+			'..... header header'
+			'sidebar-a main sidebar-b'
+			'footer footer footer';
+	}
+	.header { grid-area: header; }
+	.sidebar-a { grid-area: sidebar-a; }
+	.sidebar-b { grid-area: sidebar-b; }
+	.main { grid-area: main; }
+	.footer { grid-area: footer; }
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="header grid-item">Header</div>
+		<div class="sidebar-a grid-item">Sidebar A</div>
+		<div class="sidebar-b grid-item">Sidebar B</div>
+		<div class="main grid-item">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptatibus quam rerum facilis sit fuga asperiores totam dolor qui, animi blanditiis recusandae aperiam nemo inventore unde voluptatum officia eveniet at molestiae, exercitationem repudiandae nam eum. In dignissimos ipsam alias deserunt deleniti asperiores inventore nisi consequuntur, minus fuga placeat incidunt necessitatibus voluptatum nostrum tempore, dolorem facilis temporibus recusandae eum eligendi ullam. Itaque quos fugit porro sunt velit? Cumque quod accusantium excepturi earum temporibus vitae incidunt laboriosam magnam ipsa fugiat! Ad rem consectetur, nisi et possimus hic ullam fugit quibusdam molestiae ab quas itaque? Impedit aliquid dolorem ipsa ex quod animi inventore ab, asperiores distinctio nulla ducimus exercitationem accusantium debitis, incidunt cupiditate commodi! Quis modi architecto itaque sequi mollitia cupiditate accusamus fugit explicabo dolorum repellendus consequuntur labore culpa, magnam sunt at obcaecati quisquam exercitationem libero. Architecto officia expedita cupiditate possimus eveniet nemo quibusdam dolor? Commodi tempora accusamus doloremque nisi quasi suscipit non, deleniti veniam illum consectetur libero animi voluptate modi officiis. Nobis cum in soluta provident hic, ullam consequuntur officia ab ipsa quae nihil vitae sapiente est. Aliquam aut odit, facere porro voluptatibus voluptatum dolorum eveniet eius molestias similique, voluptate consequatur provident culpa perspiciatis fuga iusto alias. Dicta soluta ducimus debitis nulla.
+		</div>
+		<div class="footer grid-item">Footer</div>
+	</div>
+</body>
+</html>
