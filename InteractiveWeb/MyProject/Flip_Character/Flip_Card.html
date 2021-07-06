@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive Web</title>
+  <style>
+    .world {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60vw;
+      height: 60vh;
+      background: tan;
+      perspective: 500px;
+    }
+    .card-side {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100px;
+      height: 150px;
+      margin: -75px 0 0 -50px;
+      border-radius: 0.5em;
+      font-size: 1.5rem;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      transition: 1s;
+    }
+    .card-side-front {
+      z-index: 1;
+      background: tan;
+    }
+    .card-side-back {
+      background: tan;
+      transform: rotateY(180deg);
+    }
+    .world:hover .card-side-front {
+      transform: rotateY(180deg);
+    }
+    .world:hover .card-side-back {
+      transform: rotateY(360deg);
+    }
+  </style>
+</head>
+<body>
+<div class="world">
+  <div class="card-side card-side-front">
+    <img src="./images/front.png" alt="front">
+  </div>
+  <div class="card-side card-side-back">
+    <img src="./images/back.png" alt="front">
+
+  </div>
+</div>
+</body>
+</html>
