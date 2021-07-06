@@ -1,0 +1,108 @@
+@keyframes sample-ani {
+    0% {
+        transform: translate(600px, 100px);
+    }
+    50% {
+        background: red;
+        transform: translate(50%,50%);
+    }
+    100% {
+        transform: translate(400px, 500px);
+    }
+}
+
+@keyframes draw_star {
+    0%{
+        transform: translate(600px, 100px);
+    }
+    16%{
+        transform: translate(300px, 400px);
+
+    }
+    32%{
+        transform: translate(900px, 400px);
+
+    }
+    48%{
+        transform: translate(120px, 100px);
+
+    }
+    64%{
+        transform: translate(470px, 700px);
+
+    }
+    80%{
+        transform: translate(600px, 100px);
+
+    }
+    96%{
+        transform: translate(600px, 100px);
+
+    }
+    100%{
+        transform: translate(600px, 100px);
+
+    }
+}
+@keyframes draw_rect_counterclockwise {
+    0%{        transform: translate(600px, 100px);
+    }
+    25%{        transform: translate(200px, 100px);
+    }
+    50%{        transform: translate(200px, 500px);
+    }
+    75%{        transform: translate(600px, 500px);
+    }
+    100%{        transform: translate(600px, 100px);
+    }
+}
+
+@keyframes draw_rect_clockwise {
+    0%{        transform: translate(600px, 100px);
+    }
+    25%{        transform: translate(600px, 500px);
+    }
+    50%{        transform: translate(200px, 500px);
+    }
+    75%{        transform: translate(200px, 100px);
+    }
+    100%{        transform: translate(600px, 100px);
+    }
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    background: #fff000;
+}
+
+.box.draw_star{
+    animation: draw_star 2s linear infinite;
+}
+
+.box.draw_rect_counterclockwise{
+    animation: draw_rect_counterclockwise 2s linear  infinite;
+}
+
+.box.draw_rect_clockwise{
+    animation: draw_rect_clockwise 2s linear  infinite;
+}
+
+.title{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container{
+    margin: 0 3em;
+}
