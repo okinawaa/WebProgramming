@@ -1,0 +1,78 @@
+.sentence {
+    text-align: center;
+}
+
+.box-container {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 3px rebeccapurple solid;
+    margin: 0 3em;
+    background: #D218DB;
+    transition: 1s;
+}
+
+.box.a:hover{
+    width: 200px;
+    background: #5C4BEB;
+    transform: scale(1.5) rotate(15deg);
+    opacity: 0.7;
+}
+
+.box.b:hover {
+    width: 50px;
+    background: #5C4BEB;
+    transform: scale(0.5) rotate(15deg);
+    opacity: 0.7;
+
+}
+
+.box.c:hover {
+    width: 200px;
+    background: #5C4BEB;
+    transform: scale(3) rotate(-15deg);
+    opacity: 0.7;
+
+}
+
+.box.d:hover {
+    width: 200px;
+    background: #5C4BEB;
+    transform: scale(2) rotate(30deg);
+}
+
+.box.e:hover {
+    width: 200px;
+    background: #5C4BEB;
+    transform: scale(2) rotate(70deg);
+    opacity: 0.7;
+
+}
+.style-container{
+    margin-top:7em;
+    font-size: 30px;
+}
+.style-paragraph{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.style-description-container{
+    display: flex;
+}
+
+#style-description-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
