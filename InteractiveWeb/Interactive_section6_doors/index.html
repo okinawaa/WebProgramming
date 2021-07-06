@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Interactive Web</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+		.stage {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100vw;
+			height: 100vh;
+			background: #333;
+		}
+		.door {
+			position: relative;
+			width: 100px;
+			height: 150px;
+		}
+		.door-back {
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: black;
+		}
+		.ilbuni {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100px;
+			height: 100px;
+			background-repeat: no-repeat;
+			background-position: 50% 100%;
+			background-size: contain;
+			transform: translate3d(100%, 0, 0);
+			transition: 0.5s 0.5s;
+		}
+		.door:nth-child(1) .ilbuni { background-image: url(images/ilbuni_0.png); }
+		.door:nth-child(2) .ilbuni { background-image: url(images/ilbuni_1.png); }
+		.door:nth-child(3) .ilbuni { background-image: url(images/ilbuni_2.png); }
+		.door-body {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			transition: 0.5s;
+			transform-origin: 0%;
+			cursor: pointer;
+		}
+		.door:nth-child(1) .door-body { background: rgba(255, 0, 0, 0.7); }
+		.door:nth-child(2) .door-body { background: rgba(0, 255, 0, 0.7); }
+		.door:nth-child(3) .door-body { background: rgba(0, 0, 255, 0.7); }
+		.door-opened .door-body {
+			transform: perspective(800px) rotateY(-110deg);
+		}
+		.door-opened .ilbuni {
+			transform: translate3d(0, 0, 0);
+		}
+	</style>
+</head>
+<body>
+	<div class="stage">
+		<div class="door">
+			<div class="door-back">
+				<div class="ilbuni"></div>
+			</div>
+			<div class="door-body"></div>
+		</div>
+		<div class="door">
+			<div class="door-back">
+				<div class="ilbuni"></div>
+			</div>
+			<div class="door-body"></div>
+		</div>
+		<div class="door">
+			<div class="door-back">
+				<div class="ilbuni"></div>
+			</div>
+			<div class="door-body"></div>
+		</div>
+	</div>
+
+	<script>
+		(function() {
+			const stageElem = document.querySelector('.stage');
+			// 현재 활성화된 아이템을 저장
+			let currentItem;
+
+			// 활성화
+			function activate(elem) {
+				elem.classList.add('door-opened');
+				currentItem = elem;
+			}
+
+			// 비활성화
+			function inactivate(elem) {
+				elem.classList.remove('door-opened');
+			}
+
+			function doorHandler(e) {
+				const targetElem = e.target;
+
+				if (currentItem) {
+					inactivate(currentItem);
+				}
+
+				if (targetElem.classList.contains('door-body')) {
+					activate(targetElem.parentNode);
+				}
+			}
+
+			stageElem.addEventListener('click', doorHandler);
+
+			activate( document.querySelector('.door:nth-child(2)') );
+		})();
+	</script>
+</body>
+</html>

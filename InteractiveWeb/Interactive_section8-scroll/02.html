@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Web</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+    img {
+        max-width: 100%;
+    }
+    .content {
+        height: 1000vh;
+        padding: 20%;
+        background: yellowgreen;
+    }
+    .output {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 200;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .ilbuni {
+        width: 100px;
+        margin: 20px auto;
+        transition: 1s;
+    }
+    .ilbuni.zoom {
+        transform: scale(2);
+    }
+    </style>
+</head>
+<body>
+    <div class="output"></div>
+    <div class="content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo culpa id ratione alias illum aliquam accusamus deleniti dolores dignissimos, temporibus iste perspiciatis voluptatem repudiandae debitis similique fugiat dolor, doloremque quos mollitia repellendus iure exercitationem molestiae ab! Veritatis harum voluptate enim ducimus amet vitae veniam dignissimos possimus facilis eaque minus similique, vel commodi sed? Sequi distinctio debitis numquam, necessitatibus officiis quam, sed rerum id culpa totam provident repellendus iste, laborum maiores, consequuntur fugiat voluptatibus? Ad, architecto. Ipsam minus quis, ea quas, ex impedit quia distinctio commodi expedita laudantium dolores cum? Quisquam, odit, laboriosam consequuntur expedita optio laudantium. Optio laboriosam, repellendus laborum.
+        </p>
+        <figure class="ilbuni">
+            <img src="images/ilbuni_0.png" alt="일분이">
+        </figure>
+    </div>
+
+    <script>
+        const outputElem = document.querySelector('.output');
+        const ilbuniElem = document.querySelector('.ilbuni');
+
+        function showValues() {
+            outputElem.innerHTML = ''
+                + '스크롤 된 양: <strong>'
+                + window.pageYOffset
+                + '</strong> / offsetTop: <strong>'
+                + ilbuniElem.offsetTop
+                + '</strong> / getBoundingClientRect(): <strong>'
+                + ilbuniElem.getBoundingClientRect().top
+                + '</strong>'
+        }
+
+        document.addEventListener('scroll', function() {
+            showValues();
+        });
+
+        showValues();
+    </script>
+</body>
+</html>
