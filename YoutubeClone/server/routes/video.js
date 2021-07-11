@@ -1,9 +1,10 @@
-const { Video } = require("../models/Video");
+const {Video} = require("../models/Video");
 
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 var ffmpeg = require('fluent-ffmpeg');
+const {Subscriber} = require("../models/Subscriber");
 
 
 var storage = multer.diskStorage({
@@ -22,15 +23,15 @@ var storage = multer.diskStorage({
     }
 })
 
-var upload = multer({ storage: storage }).single("file")
+var upload = multer({storage: storage}).single("file")
 
 router.post("/uploadfiles", (req, res) => {
 
     upload(req, res, err => {
         if (err) {
-            return res.json({ success: false, err })
+            return res.json({success: false, err})
         }
-        return res.json({ success: true, filePath: res.req.file.path, fileName: res.req.file.filename })
+        return res.json({success: true, filePath: res.req.file.path, fileName: res.req.file.filename})
     })
 
 });
@@ -55,11 +56,11 @@ router.post("/thumbnail", (req, res) => {
         })
         .on('end', function () {
             console.log('Screenshots taken');
-            return res.json({ success: true, filePath: filePath, fileDuration: fileDuration });
+            return res.json({success: true, filePath: filePath, fileDuration: fileDuration});
         })
         .on('error', function (err) {
             console.error(err);
-            return res.json({ success: false, err });
+            return res.json({success: false, err});
         })
         .screenshots({
             // Will take screenshots at 20%, 40%, 60% and 80% of the video
@@ -71,25 +72,25 @@ router.post("/thumbnail", (req, res) => {
         })
 });
 
-router.post('/uploadVideo',(req,res)=>{
-    //비디오 정보들을 저장한다.
-    const video = new Video(req.body)
-    video.save((err, doc)=> {
-        if(err) return res.json({success:false,err})
-        res.status(200).json({success:true})
-    })
+router.post('/uploadVideo', (req, res) => {
+        //비디오 정보들을 저장한다.
+        const video = new Video(req.body)
+        video.save((err, doc) => {
+            if (err) return res.json({success: false, err})
+            res.status(200).json({success: true})
+        })
     }
 )
 
-router.get('/getVideos',(req,res)=>{
+router.get('/getVideos', (req, res) => {
 
     //비디오를 DB 에서 가져와서 클라이언트에 보낸다
 
     Video.find()
         .populate('writer')
-        .exec((err,videos)=>{
-            if(err) return res.status(400).send(err);
-            res.status(200).json({success:true, videos})
+        .exec((err, videos) => {
+            if (err) return res.status(400).send(err);
+            res.status(200).json({success: true, videos})
 
         })
 })
@@ -97,12 +98,36 @@ router.get('/getVideos',(req,res)=>{
 
 router.post('/getVideoDetail', (req, res) => {
     console.log(req.body.videoId)
-    Video.findOne({"_id":req.body.videoId})
+    Video.findOne({"_id": req.body.videoId})
         .populate('writer')
-        .exec((err, videoDetail)=>{
-            if(err) return res.status(400).send(err);
-            return res.status(200).json({success:true , videoDetail})
+        .exec((err, videoDetail) => {
+            if (err) return res.status(400).send(err);
+            return res.status(200).json({success: true, videoDetail})
         })
+})
+router.post('/getSubscriptionVideos',(req,res)=>{
+
+    // 자신의 아이디를 가지고 구독하는 사람들을 찾는다
+    Subscriber.find({userFrom:req.body.userFrom})
+        .exec((err,subscriberInfo)=>{
+            if(err) return res.status(400).send(err);
+
+            let subscribedUser = [];
+
+            subscriberInfo.map((subscribed,index)=>{
+                subscribedUser.push(subscribed.userTo);
+            })
+
+            Video.find({writer : { $in:subscribedUser}})
+                .populate('writer')
+                .exec((err,videos)=>{
+                    if(err) return res.status(400).send(err);
+                    res.status(200).json({success:true,videos});
+                })
+        })
+
+    // 찾은 사람들의 비디오를 가지고 온다.
+
 })
 
 
