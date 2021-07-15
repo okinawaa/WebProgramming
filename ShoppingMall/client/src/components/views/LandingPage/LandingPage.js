@@ -1,9 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import {FaCode} from "react-icons/fa";
 import Axios from "axios";
-import {Card, Checkbox, Col, Icon, Row} from "antd";
+import {Card, Col, Icon, Row} from "antd";
 import ImageSlider from "../../utils/ImageSlider";
 import CheckBox from "./Sections/CheckBox";
+import RadioBox from "./Sections/RadioBox";
+import {continents, price} from "./Sections/Datas";
+import SearchFeature from "./Sections/SearchFeature";
 
 const {Meta} = Card;
 
@@ -13,6 +16,7 @@ function LandingPage() {
     const [Skip, setSkip] = useState(0);
     const [Limit, setLimit] = useState(8);
     const [PostSize, setPostSize] = useState(0);
+    const [SearchTerms, setSearchTerms] = useState("");
     const [Filters, setFilters] = useState({
         continent: [],
         price: []
@@ -32,7 +36,7 @@ function LandingPage() {
 
     const renderCards = Products.map((product, index) => {
 
-        return <Col lg={6} md={8} xs={24}>
+        return <Col key={index} lg={6} md={8} xs={24}>
             <Card
                 hoverable={true}
                 cover={<ImageSlider images={product.images}/>}
@@ -41,10 +45,7 @@ function LandingPage() {
                     title={product.title}
                     description={`$${product.price}`}
                 />
-
             </Card>
-
-
         </Col>
     })
 
@@ -54,7 +55,7 @@ function LandingPage() {
                 if (response.data.success) {
                     if (variables.loadMore) {
                         setProducts([...Products, ...response.data.products]);
-                    }else{
+                    } else {
                         setProducts(response.data.products)
                     }
                     setPostSize(response.data.postSize);
@@ -72,6 +73,8 @@ function LandingPage() {
             skip: skip,
             limit: Limit,
             loadMore: true,
+            filters: Filters,
+            searchTerm: SearchTerms
         }
 
         getProducts(variables)
@@ -89,6 +92,20 @@ function LandingPage() {
         setSkip(0)
     }
 
+    const handlePrice = (value) => {
+        const data = price;
+        let array = [];
+
+        for (let key in data) {
+
+            if (data[key]._id === parseInt(value, 10)) {
+                array = data[key].array;
+            }
+        }
+        return array;
+
+
+    }
 
     const handleFilters = (filters, category) => {
         const newFilters = {...Filters}
@@ -96,26 +113,55 @@ function LandingPage() {
         // newFilters[continents] = [7,4,5,2,1]
         newFilters[category] = filters
         if (category === "price") {
-
+            let priceValues = handlePrice(filters);
+            newFilters[category] = priceValues
         }
+
         showFilteredResults(newFilters)
         setFilters(newFilters)
     }
 
+    const updateSearchTerms = (newSearchTerm) => {
+        const variables = {
+            skip: 0,
+            limit: Limit,
+            filters: Filters,
+            searchTerm: newSearchTerm
+        }
+
+        setSkip(0);
+        setSearchTerms(newSearchTerm);
+        getProducts(variables);
+    }
+
     return (
-        <div style={{width: '75%', margin: '3rem auto'}}>
+        <div style={{display: 'flex', flexDirection: 'column', width: '75%', margin: '3rem auto'}}>
             <div style={{textAlign: 'center'}}>
                 <h2> Let's Travel Anywhere <Icon type="rocket"/></h2>
             </div>
 
-            <CheckBox
-                handleFilters={filters => handleFilters(filters, 'continents')}
-            />
-
-
+            <Row gutter={[16, 16]}>
+                <Col lg={12} xs={24}>
+                    <CheckBox
+                        list={continents}
+                        handleFilters={filters => handleFilters(filters, "continents")}
+                    />
+                </Col>
+                <Col lg={12} xs={24}>
+                    <RadioBox
+                        list={price}
+                        handleFilters={filters => handleFilters(filters, "price")}
+                    />
+                </Col>
+            </Row>
+            <div style={{display: 'flex', justifyContent: 'flex-end', margin: '1rem 0'}}>
+                <SearchFeature
+                    refreshFunction={updateSearchTerms}
+                />
+            </div>
             {Products.length === 0 ?
                 <div style={{display: 'flex', height: '300px', justifyContent: 'center', alignItems: 'center'}}>
-                    <h2>No post yet...</h2>
+                    <h2>No post yet.. .</h2>
                 </div> :
                 <div>
                     <Row gutter={[16, 16]}>
