@@ -13,7 +13,7 @@ function DetailProductPage(props) {
     const [Product, setProduct] = useState([]);
 
     useEffect(() => {
-        Axios.get(`/api/product/products_by_id?id=${productId}&type=single`)
+        Axios.get(`/api/product/products_by_id?id=${productId}`)
             .then(response =>
                 setProduct(response.data[0])
             )

@@ -13,9 +13,10 @@
     "frontend": "npm run start --prefix client",
     "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
   },
-  "author": "John ahn",
+  "author": "parkchanhyuk",
   "license": "ISC",
   "dependencies": {
+    "async": "^3.2.0",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
