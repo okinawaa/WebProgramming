@@ -105,4 +105,32 @@ router.post('/getProducts', (req, res) => {
 
 })
 
+router.get('/products_by_id',(req,res)=>{
+    let type = req.query.type;
+    let productIds = req.query.id
+
+    if(type==='array'){
+
+        // id= 1231241414,14141414134,14141441 이거를
+        // productIds = ['1231241414','14141414134','14141441']
+        // 이런식으로 바꿔주기
+
+        let ids = req.query.id.split(',');
+        productIds = [];
+        productIds = ids.map(item => {
+            return item
+        })
+    }
+
+    // we need to find the product information that belong to product Id
+    Product.find({'_id':{$in:productIds}})
+        .populate('writer')
+        .exec((err,product)=>{
+            if (err) return res.status(400).send(err,"에러입니다");
+            return res.status(200).send(product);
+        })
+
+
+})
+
 module.exports = router;
