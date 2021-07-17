@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        canvas {
+            background: #eee;
+        }
+        .color-btn {
+            width: 30px;
+            height: 30px;
+            border: 0;
+            border-radius: 50%;
+        }
+        .color-btn[data-color='black'] { background: black; }
+        .color-btn[data-color='red'] { background: red; }
+        .color-btn[data-color='green'] { background: green; }
+        .color-btn[data-color='blue'] { background: blue; }
+        .image-btn {
+            width: 40px;
+            height: 40px;
+            background: url(https://www.google.com/search?q=kakao+lion&sxsrf=ALeKk02jHiZ2FNrMGm6K9uKXMdPkuVaW4w:1626552912801&tbm=isch&source=iu&ictx=1&fir=a9EdDwTthgL1MM%252C_Woz93ZIgxY6wM%252C_&vet=1&usg=AI4_-kTSJCIGLCzXwuDTBExKuWbS89pMyg&sa=X&ved=2ahUKEwjcl83k9erxAhXN6mEKHeomD4wQ9QF6BAgZEAE#imgrc=a9EdDwTthgL1MM) no-repeat 50% 50% / cover;
+        }
+        .result-image {
+
+        }
+        </style>
+    </style>
+
+
+</head>
+
+<body>
+<h1>Painter</h1>
+<canvas class="canvas" width="600" height="400"></canvas>
+
+<div class="control">
+    <button class="color-btn" data-type="color" data-color="black"></button>
+    <button class="color-btn" data-type="color" data-color="red"></button>
+    <button class="color-btn" data-type="color" data-color="green"></button>
+    <button class="color-btn" data-type="color" data-color="blue"></button>
+    <button class="image-btn" data-type="image"></button>
+
+</div>
+<button class="save-btn">save image</button>
+<div class="result-image"></div>
+<script>
+    const canvas = document.querySelector('.canvas');
+    const context = canvas.getContext('2d');
+    const control = document.querySelector('.control');
+    const saveBtn = document.querySelector('.save-btn');
+    const resultImage = document.querySelector('.result-image');
+
+    let drawingMode;
+    let brush = 'color';
+    let colorVal = 'black';
+
+    const imgElem = new Image();
+    imgElem.src = 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA1MDhfMTc0%2FMDAxNTI1NzY5NjI2MTYw.RYNH20KSZSFCyv-F9QpNWtcDrU8kJUpGgar-x8hGTBQg.gJJX3vKnH2EAj2mbo9veKOFpyjZG_4wrR6oyE65xZoog.JPEG.gimmi1201%2F%25B6%25F3%25C0%25CC%25BE%25F0%25C1%25C2.jpg&type=sc960_832'
+
+    function downHandler() {
+        drawingMode = true;
+    }
+
+    function upHandler() {
+        drawingMode = false;
+    }
+
+    function moveHandler(event) {
+        if (!drawingMode) return;
+        console.log(colorVal,brush)
+        switch (brush) {
+            case "color":
+                console.log('색그리는중')
+                context.beginPath();
+                context.arc(event.offsetX, event.offsetY, 10, 0, Math.PI * 2, false);
+                context.fill();
+                break;
+            case 'image':
+                context.drawImage(imgElem, event.offsetX,event.offsetY,50,50);
+                break;
+        }
+    }
+
+
+    function setColor(event){
+        brush = event.target.getAttribute('data-type');
+        colorVal = event.target.getAttribute('data-color');
+       context.fillStyle = colorVal;
+    }
+
+
+    function createImage(){
+        const url = canvas.toDataURL('image/png');
+        console.log(url)
+        const imgElem = new Image();
+        imgElem.src = url;
+        resultImage.appendChild(imgElem);
+    }
+    canvas.addEventListener('mousedown', downHandler);
+    canvas.addEventListener('mousemove', moveHandler);
+    canvas.addEventListener('mouseup', upHandler);
+    control.addEventListener('click', setColor);
+    saveBtn.addEventListener('click', createImage);
+</script>
+
+
+</body>
+</html>
