@@ -1,0 +1,39 @@
+#centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+}
+
+#container {
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+    cursor: grab;
+    transition-timing-function: ease-out;
+    transition: transform 0s;
+    -webkit-transition-timing-function: ease-out;
+    /* Safari */
+    -webkit-transition: transform 0s;
+    /* Safari */
+}
+
+#volumeText {
+    width: 110px;
+}
+
+#container.resetting {
+    transition: transform .2s;
+    -webkit-transition: transform .2s;
+    /* Safari */
+}
+
+#body {
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+canvas {
+
+z-index: 1;
+}
+
+html, body {
+    margin: 0;
+}
+
+
+#green-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}

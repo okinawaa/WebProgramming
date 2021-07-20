@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+<div id="mycanvas"></div>
+<button id="green-btn">그린으로가는버튼입니다</button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+<!--<script src="main.js"></script>-->
+<script>
+  const head = document.getElementsByTagName('head')[0];
+  const js = document.createElement("script");
+
+  js.type = "text/javascript";
+
+  let goGreen  = false
+  let green_btn = document.querySelector('#green-btn');
+  green_btn.addEventListener('click', ()=>{
+    js.src = "../MajesticMountains_green/main.js";
+    head.appendChild(js);
+    console.log("로드")
+  })
+  // console.log(goGreen)
+  // if (!goGreen)
+  // {
+  //   js.src = "main.js";
+  // }
+  // else
+  // {
+  //   console.log("sdsad")
+  //   js.src = "../MajesticMountains_green/main.js";
+  //   console.log(js.src)
+  // }
+  js.src = 'main.js';
+  head.appendChild(js);
+
+
+</script>
+</html>
