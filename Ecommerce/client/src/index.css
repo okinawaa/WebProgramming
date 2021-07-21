@@ -1,0 +1,69 @@
+* {
+  padding:0;
+box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  max-width:1230px;
+  min-height:100vh;
+  margin:0 auto;
+  padding: 0 20px;
+  box-shadow: 0 0 35px #eee
+}
+
+a{
+  text-decoration: none;
+}
+ul li{
+  list-style: none;
+}
+
+button{
+  border:none;
+  outline:none;
+  background: transparent;
+  cursor:pointer;
+}
+
+/*Header-------------*/
+
+@import url('./components/headers/header.css');
+
+/*Products-----------*/
+
+@import url('./components/mainpages/products/products.css');
+
+
+/*----------------------Detail Product*/
+
+@import url('./components/mainpages/detailProduct/detailProduct.css');
+
+/*-----------------------login/register*--------/ */
+
+@import url("./components/mainpages/auth/login.css");
+
+/*---------------------------Cart*/
+
+@import url('./components/mainpages/cart/cart.css');
+
+
+
+/*---------------------------history*/
+
+@import url('./components/mainpages/history/history.css');
+
+
+/*---------------------------categories*/
+
+@import url('./components/mainpages/categories/categories.css');
