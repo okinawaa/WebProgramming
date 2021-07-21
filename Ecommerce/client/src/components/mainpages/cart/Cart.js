@@ -10,7 +10,6 @@ function Cart(props) {
     const [cart, setCart] = state.userAPI.cart
     const [total, setTotal] = useState(0);
     const [token] = state.token
-    const [callback,setCallback] = state.userAPI.callback
 
     useEffect(() => {
         const getTotal = () => {
@@ -79,7 +78,6 @@ function Cart(props) {
         setCart([]);
         addToCart([])
         alert('You have successfully placed an order.')
-        setCallback(!callback)
     }
 
     return (

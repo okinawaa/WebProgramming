@@ -1,57 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/GlobalState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/api/CategoriesAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/api/ProductsAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/api/UserAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/headers/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/headers/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/headers/icon/cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/headers/icon/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/headers/icon/menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/Pages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/auth/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/auth/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/auth/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/cart/Cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/cart/PaypalButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/cart/cart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/categories/Categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/categories/categories.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/detailProduct/DetailProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/detailProduct/detailProduct.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/history/OrderDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/history/OrderHistory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/history/history.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/products/Products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/products/products.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/utils/loading/Loading.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/utils/loading/loading.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/utils/not_found/NotFound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/utils/productItem/BtnRender.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/utils/productItem/ProductItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/utils/productItem/productItem.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/categoryCtrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/paymentCtrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/productCtrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/userCtrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/authAdmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/categoryModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/paymentModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/productModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/userModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/categoryRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/paymentRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/productRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/userRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShoppingMall/uploads/1626345303054_다운로드 (32).jpg" beforeDir="false" />
-    </list>
+    <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,13 +10,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -108,7 +58,9 @@
       <option name="presentableId" value="Default" />
       <updated>1626772371772</updated>
       <workItem from="1626772373057" duration="35957000" />
-      <workItem from="1626851872556" duration="15481000" />
+      <workItem from="1626851872556" duration="16078000" />
+      <workItem from="1626879342161" duration="14873000" />
+      <workItem from="1626894577475" duration="634000" />
     </task>
     <servers />
   </component>
