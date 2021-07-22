@@ -8,8 +8,8 @@ const initialState = {
     product_id: '',
     title: '',
     price: 0,
-    description: 'descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc',
-    content: 'Content',
+    description: '',
+    color: '',
     category: '',
     _id: ''
 }
@@ -160,15 +160,15 @@ function CreateProduct(props) {
                 </div>
 
                 <div className="row">
+                    <label htmlFor="color">Color</label>
+                    <input type="text" name="color" id="color" required value={product.color} rows="7"
+                              onChange={handleChangeInput}/>
+                </div>
+                <div className="row">
                     <label htmlFor="description">Description</label>
                     <textarea type="text" name="description" id="description" required value={product.description}
                               onChange={handleChangeInput}
                               rows="5"/>
-                </div>
-                <div className="row">
-                    <label htmlFor="content">Content</label>
-                    <textarea type="text" name="content" id="content" required value={product.content} rows="7"
-                              onChange={handleChangeInput}/>
                 </div>
 
 

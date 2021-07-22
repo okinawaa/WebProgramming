@@ -51,9 +51,10 @@ function Products() {
     }
 
     const deleteAll = () =>{
-        products.forEach(product =>{
-            if(product.checked) deleteProduct()
-        })
+        // products.forEach(product =>{
+        //     if(product.checked) deleteProduct()
+        // })
+        alert('모두삭제하면안됩니다')
     }
 
     if(loading) return <div><Loading /></div>

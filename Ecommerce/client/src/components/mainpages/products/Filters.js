@@ -19,9 +19,8 @@ function Filters(props) {
     return (
         <div className="filter_menu">
             <div className="row">
-                <span>Filters : </span>
                 <select name="category" value={category} onChange={handleCategory}>
-                    <option value=''> All Products</option>
+                    <option value=''> Category</option>
                     {
                         categories.map(category=>(
                             <option value={"category=" + category._id} key={category._id}>
@@ -31,12 +30,11 @@ function Filters(props) {
                     }
                 </select>
             </div>
-            <input type="text" value={search} placeholder="Enter your search!" onChange={e => setSearch(e.target.value.toLocaleLowerCase())}/>
+            <input type="text" value={search} placeholder="Search" onChange={e => setSearch(e.target.value.toLocaleLowerCase())}/>
 
             <div className="row sort">
-                <span>Sort By : </span>
                 <select  value={sort} onChange={e => setSort(e.target.value)}>
-                    <option value=''> All Products</option>
+                    <option value=''> Sort</option>
                     <option value="">Newest</option>
                     <option value="sort=oldest">Oldest</option>
                     <option value="sort=-sold">Best sales</option>

@@ -1,6 +1,8 @@
-header{
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+
+header {
     min-height: 70px;
-    width:100%;
+    width: 100%;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -9,43 +11,58 @@ header{
     border-bottom: 1px solid #ddd;
 }
 
-header .logo{
-    flex:1;
+header .logo {
+    flex: 1;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+header .logo h1 a {
+    font-size: 9vw;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+
 }
 
 header a {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+    font-family: 'Qahiri';
     text-transform: uppercase;
-    color: #555;
+    font-size: 3.5vw;
+    color: rgb(243, 162, 147);
 }
-header ul li{
+
+header ul li {
     display: inline-block;
     opacity: 0.7;
-    padding:0 20px;
+    padding: 0 20px;
 
 }
 
-header ul li:hover{
+header ul li:hover {
     opacity: 1;
 }
 
-.menu{
+.menu {
     display: none;
 }
 
-.cart-icon{
-    position:relative;
+.cart-icon {
+    position: relative;
+    margin-top: 20px;
+    margin-left: -20px;
     margin-right: 20px;
 }
 
-.cart-icon span{
-    background: crimson;
+.cart-icon span {
+    background: rgb(243, 162, 147);
     border-radius: 20px;
-    color:white;
-    position:absolute;
-    top:-10px;
-    right:-10px;
-    padding:5px 7px;
-    font-size:10px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    padding: 5px 7px;
+    font-size: 10px;
 
 
 }

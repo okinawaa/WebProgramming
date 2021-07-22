@@ -62,7 +62,7 @@ const productCtrl = {
     },
     createProduct: async (req, res) => {
         try {
-            const {product_id, title, price, description, content, images, category} = req.body;
+            const {product_id, title, price, description, color, images, category} = req.body;
             if (!images) return res.status(400).json({msg: "No Image upload"})
 
             const product = await Product.findOne({product_id})
@@ -71,7 +71,7 @@ const productCtrl = {
             }
 
             const newProduct = new Product({
-                product_id, title: title.toLowerCase(), price, description, content, images, category
+                product_id, title: title.toLowerCase(), price, description, color, images, category
             })
 
             await newProduct.save()
@@ -92,14 +92,14 @@ const productCtrl = {
     },
     updateProduct: async (req, res) => {
         try {
-            const {product_id, title, price, description, content, images, category} = req.body;
+            const {product_id, title, price, description, color, images, category} = req.body;
             if (!images) return res.status(400).json({msg: "No Images"})
 
             await Product.findOneAndUpdate({_id:req.params.id},{
                 title:title.toLowerCase(),
                 price,
                 description,
-                content,
+                color,
                 images,
                 category
             })

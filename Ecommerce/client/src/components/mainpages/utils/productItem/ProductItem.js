@@ -1,4 +1,3 @@
-
 import React from 'react'
 import BtnRender from './BtnRender'
 
@@ -11,18 +10,20 @@ function ProductItem(props) {
         <div className="product_card">
             {
                 isAdmin && <input type="checkbox" checked={product.checked}
-                                  onChange={() => handleCheck(product._id)} />
+                                  onChange={() => handleCheck(product._id)}/>
             }
-            <img src={product.images.url} alt="" />
+            <img src={product.images.url} alt=""/>
 
             <div className="product_box">
                 <h2 title={product.title}>{product.title}</h2>
-                <span>${product.price}</span>
-                <p>{product.description}</p>
+                <div className="product_price">
+                    <span>${product.price}</span>
+                </div>
+                {/*<p>{product.description}</p>*/}
             </div>
 
 
-            <BtnRender product={product} deleteProduct={deleteProduct} />
+            <BtnRender product={product} deleteProduct={deleteProduct}/>
         </div>
     )
 }

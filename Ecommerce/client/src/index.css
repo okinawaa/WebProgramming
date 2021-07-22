@@ -4,7 +4,7 @@ box-sizing: border-box;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif,'Qahiri';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -15,6 +15,7 @@ code {
 }
 
 .App{
+  background: rgb(237,217,199);
   max-width:1230px;
   min-height:100vh;
   margin:0 auto;
@@ -76,6 +77,12 @@ button{
 
 /*responsive for mobile*/
 
+@media (max-width: 1130px){
+  header .logo h1 a {
+    font-size: 7vw;
+  }
+}
+
 @media (max-width: 820px){
   header .logo{
     min-width:115px;
@@ -129,6 +136,7 @@ button{
 
 
 
+
 @media (max-width: 500px){
   .App{
     padding: 0 10px;
@@ -150,6 +158,8 @@ button{
     margin:5px 0 ;
 
   }
+
+
   .login-page{
     padding:30px 15px;
   }

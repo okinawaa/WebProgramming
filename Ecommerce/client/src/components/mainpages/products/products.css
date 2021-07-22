@@ -56,10 +56,18 @@
     outline: none;
     height: 40px;
     padding: 0 5px;
+    background: rgb(243, 162, 147);
+    font-weight: bold;
+    font-family: Arial;
 }
 .filter_menu input{
     flex: 1;
     margin: 0 10px;
+}
+
+input::placeholder{
+    color:black;
+    text-align: center;
 }
 
 /* -------------------- Load More --------------- */

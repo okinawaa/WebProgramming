@@ -51,7 +51,7 @@ function Header(props) {
 
             <div className="logo">
                 <h1>
-                    <Link to="/">{isAdmin ? 'Admin' : 'COS Online Shop'}</Link>
+                    <Link to="/">{isAdmin ? 'Admin' : 'PIPShop'}</Link>
                 </h1>
             </div>
             <ul style={styleMenu}>
