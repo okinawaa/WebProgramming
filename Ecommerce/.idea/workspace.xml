@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="" />
+    <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/auth/kakao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mainpages/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mainpages/auth/Login.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../threejscourse" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -61,7 +70,11 @@
       <workItem from="1626851872556" duration="16078000" />
       <workItem from="1626879342161" duration="14873000" />
       <workItem from="1626894577475" duration="3531000" />
-      <workItem from="1626977673246" duration="9901000" />
+      <workItem from="1626977673246" duration="10274000" />
+      <workItem from="1627026470475" duration="6816000" />
+      <workItem from="1627044515611" duration="1013000" />
+      <workItem from="1627045597994" duration="2227000" />
+      <workItem from="1627199518390" duration="659000" />
     </task>
     <servers />
   </component>

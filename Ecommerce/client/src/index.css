@@ -1,3 +1,5 @@
+
+
 * {
   padding:0;
 box-sizing: border-box;
@@ -132,6 +134,15 @@ button{
   .filter_menu .row span{
     display: none;
   }
+  header a {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+    text-transform: uppercase;
+    font-size: 14vw;
+    color: rgb(243, 162, 147);
+  }
+
+
 }
 
 
@@ -170,5 +181,15 @@ button{
 
   .create_product .upload{
     margin:20px 0;
+  }
+}
+
+@media (min-width: 2300px){
+  header .logo h1 a {
+    font-size: 6vw;
+  }
+
+  header a {
+    font-size: 2vw;
   }
 }

@@ -24,8 +24,8 @@ function Header(props) {
     const adminRouter = () => {
         return (
             <>
-                <li><Link to='/create_product'>Create Products</Link></li>
-                <li><Link to='/category'>Categories</Link></li>
+                <li><Link to='/create_product' onClick={displayNoneHandler}>Create Products </Link></li>
+                <li><Link to='/category' onClick={displayNoneHandler}>Categories </Link></li>
             </>
         )
     }
@@ -33,7 +33,7 @@ function Header(props) {
     const loggedRouter = () => {
         return (
             <>
-                <li><Link to='/history'>History</Link></li>
+                <li><Link to='/history' onClick={displayNoneHandler}>History</Link></li>
                 <li><Link to='/' onClick={logoutUser}>Logout</Link></li>
             </>
         )
@@ -41,6 +41,11 @@ function Header(props) {
     const toggleMenu = () => setMenu(!menu)
     const styleMenu ={
         left:menu ? 0 : "-100%"
+    }
+
+    const displayNoneHandler = () =>{
+        const whitebackground = document.querySelector('header ul');
+        whitebackground.style.left = `-100%`
     }
 
     return (
@@ -55,10 +60,10 @@ function Header(props) {
                 </h1>
             </div>
             <ul style={styleMenu}>
-                <li><Link to="/">{isAdmin ? 'Products' : 'Shop'}</Link></li>
+                <li><Link to="/" onClick={displayNoneHandler}>{isAdmin ? 'Products' : 'Shop'}</Link></li>
                 {isAdmin && adminRouter()}
                 {
-                    isLogged ? loggedRouter() : <li><Link to="/login">Login ✥ Register</Link></li>
+                    isLogged ? loggedRouter() : <li><Link to="/login" onClick={displayNoneHandler}>Login ✥ Register</Link></li>
                 }
 
 

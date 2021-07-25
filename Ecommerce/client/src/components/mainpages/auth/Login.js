@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import axios from "axios";
+import Kakao from "./kakao";
 
 function Login(props) {
     const [user, setUser] = useState({
@@ -37,7 +38,7 @@ function Login(props) {
                        placeholder="Password" value={user.password}
                        onChange={onChangeInput}
                 />
-
+                <Kakao/>
                 <div className="row">
                     <button type="submit">
                         Login

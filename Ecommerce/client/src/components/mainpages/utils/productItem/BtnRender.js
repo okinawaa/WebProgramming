@@ -25,7 +25,7 @@ function BtnRender(props) {
                     </>
                     : <>
                         <Link id="btn_buy" to="#!" onClick={() => addCart(product)}>
-                            Buy
+                            CART
                         </Link>
                         <Link id="btn_view" to={`/detail/${product._id}`}>
                             View

@@ -32,8 +32,9 @@
 .box-detail h2{
     text-transform: uppercase;
     color:darkblue;
+
     letter-spacing: 2px;
-    font-weight: 2rem;
+    margin-bottom: 1rem;
 }
 
 .box-detail p{
@@ -42,9 +43,13 @@
     opacity: 0.8;
 }
 
+.box-detail span{
+    font-weight: bold;
+}
+
 .box-detail .cart{
     background: #333;
-    color:white;
+    color:#F3A293;
     display: inline-block;
     padding:10px 25px;
     margin-top:10px;

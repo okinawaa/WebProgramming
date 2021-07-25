@@ -3,6 +3,9 @@ import {GlobalState} from "../../../GlobalState";
 import {Link} from "react-router-dom";
 import axios from "axios";
 import PaypalButton from './PaypalButton'
+import {Button, Empty} from "antd";
+import {findAllByDisplayValue} from "@testing-library/react";
+
 
 function Cart(props) {
 
@@ -10,6 +13,7 @@ function Cart(props) {
     const [cart, setCart] = state.userAPI.cart
     const [total, setTotal] = useState(0);
     const [token] = state.token
+    const [showSuccess, setShowSuccess] = useState(false);
 
     useEffect(() => {
         const getTotal = () => {
@@ -21,11 +25,11 @@ function Cart(props) {
         }
 
         getTotal()
-    }, [cart])
+    }, [cart,showSuccess])
 
-    const addToCart = async (cart) =>{
-        await axios.patch('/user/addcart',{cart},{
-            headers:{Authorization:token}
+    const addToCart = async (cart) => {
+        await axios.patch('/user/addcart', {cart}, {
+            headers: {Authorization: token}
         })
     }
 
@@ -63,22 +67,28 @@ function Cart(props) {
         }
     }
 
-    if (cart.length === 0) {
-        return <h2 style={{textAlign: 'center', fontSize: '5rem'}}>Cart Empty</h2>
 
-    }
 
-    const tranSuccess = async (payment)=>{
-        const {paymentID,address} = payment;
+    const tranSuccess = async (payment) => {
+        const {paymentID, address} = payment;
 
-        await axios.post('/api/payment',{cart,paymentID,address},{
-            headers:{Authorization:token}
+        await axios.post('/api/payment', {cart, paymentID, address}, {
+            headers: {Authorization: token}
         })
 
         setCart([]);
+        setShowSuccess(true)
         addToCart([])
         alert('You have successfully placed an order.')
     }
+    if (cart.length === 0) {
+        return <>
+            <div className="empty-box" >
+                <Empty description={false}/>
+            </div>
+        </>
+    }
+
 
     return (
         <div>
@@ -109,6 +119,7 @@ function Cart(props) {
 
                 ))
             }
+
 
             <div className="total">
                 <h3>Total: $ {total}</h3>
