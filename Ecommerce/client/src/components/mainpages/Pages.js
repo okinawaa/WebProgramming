@@ -11,6 +11,7 @@ import OrderHistory from "./history/OrderHistory";
 import OrderDetails from "./history/OrderDetails";
 import Categories from "./categories/Categories";
 import CreateProduct from "./createProduct/CreateProduct";
+import TestPage from "./TestPage";
 
 
 
@@ -22,7 +23,10 @@ function Pages(props) {
     return (
 
         <Switch>
+
             <Route path="/" exact component={Products}/>
+            <Route path="/testpage" exact component={TestPage}/>
+
             <Route path="/detail/:id" exact component={DetailProduct}/>
 
             <Route path="/login" exact component={isLogged ? NotFound : Login}/>
