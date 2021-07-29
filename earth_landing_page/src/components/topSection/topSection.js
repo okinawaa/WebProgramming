@@ -60,7 +60,7 @@ const DonateButton = styled.button`
 `
 
 
-export function TopSection() {
+function TopSection() {
     return (
         <TopSectionContainer>
             <Logo>Global Warming</Logo>
@@ -75,3 +75,5 @@ export function TopSection() {
         </TopSectionContainer>
     );
 }
+
+export default TopSection;

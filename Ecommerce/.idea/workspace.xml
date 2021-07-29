@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/TestPage.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/auth/kakao.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mainpages/Pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mainpages/Pages.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/mainpages/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mainpages/auth/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +78,8 @@
       <workItem from="1627044515611" duration="1013000" />
       <workItem from="1627045597994" duration="2227000" />
       <workItem from="1627199518390" duration="659000" />
+      <workItem from="1627243796526" duration="1317000" />
+      <workItem from="1627290386571" duration="264000" />
     </task>
     <servers />
   </component>

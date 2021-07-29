@@ -17,7 +17,7 @@ code {
 }
 
 .App{
-  background: rgb(237,217,199);
+  /*background: rgb(237,217,199);*/
   max-width:1230px;
   min-height:100vh;
   margin:0 auto;

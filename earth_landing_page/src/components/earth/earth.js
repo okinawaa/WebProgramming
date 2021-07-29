@@ -7,9 +7,7 @@ import EarthCloudsMap from '../../assets/textures/8k_earth_clouds.jpg'
 import {useRef} from "react";
 import {Stars} from "@react-three/drei";
 import * as THREE from 'three';
-
-
-export function Earth(props) {
+function Earth(props) {
     const [colorMap, normalMap, specularMap, cloudsMap] = useLoader(
         TextureLoader,
         [EarthDayMap, EarthNormalMap, EarthSpecularMap, EarthCloudsMap]
@@ -49,12 +47,13 @@ export function Earth(props) {
             </mesh>
             <mesh ref={earthRef} position={[0, 0, 3]}>
                 <sphereGeometry args={[1, 32, 32]}/>
-                <meshPhongMaterial specularMap={specularMap}/>
+                <meshPhongMaterial
+                    specularMap={specularMap}/>
                 <meshStandardMaterial
                     map={colorMap}
                     normalMap={normalMap}
                     metalness={0.4}
-                    roughness={0.7}
+                    roughness={0.2}
                 />
             </mesh>
         </>
@@ -62,3 +61,5 @@ export function Earth(props) {
 
     )
 }
+
+export default Earth;
