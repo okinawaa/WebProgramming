@@ -1,0 +1,59 @@
+.container{
+    overflow-x: hidden;
+}
+
+.global-nav{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 44px;
+    padding:0 1rem;
+}
+
+.local-nav{
+    position: absolute;
+    top:45px;
+    left:0;
+    z-index: 11;
+    width: 100%;
+    height: 52px;
+
+}
+
+.local-nav-sticky .local-nav {
+    position: fixed;
+    top:0;
+    /* for iPhone */
+    -webkit-backdrop-filter: saturate(180%) blur(15px);
+    -moz-backdrop-filter: saturate(180%) blur(15px);
+    -o-backdrop-filter: saturate(180%) blur(15px);
+    backdrop-filter: saturate(180%) blur(15px);
+}
+
+.global-nav-links,
+.local-nav-links{
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.global-nav-links{
+    justify-content: space-between;
+}
+
+.local-nav-links .product-name{
+    margin-right: auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.local-nav-links a {
+    font-size : 0.8rem;
+}
+.local-nav-links a:not(.product-name){
+    margin-left: 2rem;
+}
