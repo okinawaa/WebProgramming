@@ -7,7 +7,7 @@ function ImageSection(props) {
     return (
         <ImageSectionStyled>
             <div className="left-content">
-                <img src={resume} alt="resume-image"/>
+                <img src={resume} alt=""/>
             </div>
             <div className="right-content">
                 <h4>I am Chanhyuk <span>Park</span></h4>

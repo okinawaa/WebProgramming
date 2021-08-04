@@ -4,12 +4,18 @@ import {NavLink} from "react-router-dom";
 import avatar from '../img/avatar.jpg'
 
 function Navigation(props) {
+    const [navToggle,setNavToggle] = props.navToggle;
+
+    const navChange = () =>{
+        setNavToggle(!navToggle);
+    }
+
     return (
         <NavigationStyled>
             <div className="avatar">
                 <img src={avatar} alt=""/>
             </div>
-            <ul className="nav-items">
+            <ul className="nav-items" onClick={navChange}>
                 <li className="nav-item">
                     <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
                 </li>
@@ -81,6 +87,7 @@ const NavigationStyled = styled.nav`
         letter-spacing: 1px;
         &:hover {
           cursor: pointer;
+          color: var(--white-color);
         }
 
         &::before {
@@ -93,6 +100,7 @@ const NavigationStyled = styled.nav`
           background-color: var(--primary-color);
           transition: all 0.4s cubic-bezier(1, -0.2, .25, .95);
           opacity: 0.21;
+          z-index: -1;
         }
       }
 
