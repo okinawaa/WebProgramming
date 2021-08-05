@@ -1,10 +1,20 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components';
 import {InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
 import ReviewItem from '../Components/ReviewItem';
+import {gsap} from "gsap";
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+
+import {upDownStaggerElement} from "./Animation";
+gsap.registerPlugin(ScrollTrigger);
 
 function ReviewsSetion() {
+
+    useEffect(() => {
+        upDownStaggerElement(-50,document.querySelector('.reviews').childNodes,document.querySelector('.reviews'))
+    }, [])
+
     return (
         <ReviewsStyled>
             <Title title={'Reviews'} span={'Reviews'} />

@@ -7,12 +7,74 @@
     <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/TestPage.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/src/components/mainpages/auth/kakao.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/mainpages/Pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mainpages/Pages.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/mainpages/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mainpages/auth/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../earth_landing_page/src/assets/textures/8k_earth_clouds.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../earth_landing_page/src/assets/textures/8k_earth_daymap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../earth_landing_page/src/assets/textures/8k_earth_nightmap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../earth_landing_page/src/assets/textures/8k_earth_normal_map.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../earth_landing_page/src/assets/textures/8k_earth_specular_map.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/Button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/ContactItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/ImageSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/Menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/Navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/Particles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/PrimaryButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/ProgressBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/Resume.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/ResumeItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/ReviewItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/ReviewsSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/ServiceCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/ServicesSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/Sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/Skills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/SmallTitle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Components/Title.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Pages/AboutPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Pages/BlogsPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Pages/ContactPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Pages/HomePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Pages/PortfoliosPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/Pages/ResumePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/data/blogs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/data/portfolios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/blogs/blog1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/blogs/blog2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/blogs/blog3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/blogs/blog4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/blogs/blog5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/design.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/game-dev.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/intelligence.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/portImages/cv_css.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/portImages/maya-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/portImages/maya-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/portImages/maya-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/portImages/ms.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/portImages/react_styled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/img/resume.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/styles/GlobalStyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/styles/Layouts.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +111,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../threejscourse" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -80,6 +142,7 @@
       <workItem from="1627199518390" duration="659000" />
       <workItem from="1627243796526" duration="1317000" />
       <workItem from="1627290386571" duration="264000" />
+      <workItem from="1628133377856" duration="680000" />
     </task>
     <servers />
   </component>

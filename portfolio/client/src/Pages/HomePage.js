@@ -4,27 +4,41 @@ import Particle from "../Components/Particles";
 import FacebookIcon from '@material-ui/icons/Facebook'
 import GithubIcon from '@material-ui/icons/GitHub'
 import InstagramIcon from '@material-ui/icons/Instagram'
+import {Suspense} from "react";
+import Earth from '../Components/earth/earth'
+import TopSection from "../Components/topSection/topSection";
+import {Canvas} from '@react-three/fiber'
 
 function HomePage(props) {
     return (
         <HomePageStyled>
-            <div className="p-particles-js">
-                <Particle/>
-            </div>
+
+            <CanvasContainer>
+                <Canvas>
+                    <Suspense fallback={null}>
+                        <Earth theme={props.theme}/>
+                    </Suspense>
+                </Canvas>
+            </CanvasContainer>
             <div className="typography">
                 <h1>Hi I'm <span>Chanhyuk Park</span></h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda dolore earum eius eos libero
-                    magnam porro, quia sit suscipit?
+                    I am a poor stack developer based in republic of korea.
+                    <br/>
+                    Thank you so much for coming all this way to interact with me.
+                    <br/>
+                    Please wait a moment for our earth.
                 </p>
                 <div className="icons">
                     <a href='/' className="icon i-facebook">
                         <FacebookIcon/>
                     </a>
-                    <a href='https://github.com/ChanhyukPark-Tech' className="icon i-github">
+                    <a onClick={() => window.open('https://github.com/ChanhyukPark-Tech', '_blank')}
+                       className="icon i-github">
                         <GithubIcon/>
                     </a>
-                    <a href='https://www.instagram.com/yokattadesune/' className="icon i-instagram">
+                    <a onClick={() => window.open('https://www.instagram.com/yokattadesune/', '_blank')}
+                       className="icon i-instagram">
                         <InstagramIcon/>
                     </a>
                 </div>
@@ -33,18 +47,15 @@ function HomePage(props) {
     );
 }
 
+const CanvasContainer = styled.div`
+  width: 100%;
+  height: 100%;
+`
 
 const HomePageStyled = styled.header`
   width: 100%;
   height: 100vh;
   position: relative;
-
-  .p-particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-  }
 
   .typography {
     position: absolute;
@@ -53,6 +64,13 @@ const HomePageStyled = styled.header`
     transform: translate3d(-50%, -50%, 0);
     text-align: center;
     width: 80%;
+
+    p {
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: var(--greet-paragraph-white-color);
+    }
 
     .icons {
       display: flex;
@@ -95,6 +113,7 @@ const HomePageStyled = styled.header`
           color: #6cc644;
         }
       }
+
       .i-instagram {
         &:hover {
           border: 2px solid #C13584;

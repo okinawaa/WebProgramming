@@ -1,12 +1,19 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import styled from 'styled-components'
+import {fadeInUp} from "./Animation";
 
 function Title(props) {
+    const mainTitle = useRef()
+    useEffect(()=>{
+        fadeInUp(mainTitle.current)
+    },[])
+
+
     const title = props.title
     const span = props.span
     return (
         <TitleStyled>
-            <h2>{title} <span>{span}</span></h2>
+            <h2 className="global-title" ref={mainTitle}>{title} <span>{span}</span></h2>
         </TitleStyled>
     );
 }

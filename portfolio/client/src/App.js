@@ -1,6 +1,5 @@
-
-import { useState } from "react";
-import { useEffect } from "react";
+import {useState} from "react";
+import {useEffect} from "react";
 import Sidebar from "./Components/Sidebar";
 import styled from 'styled-components';
 import HomePage from "./Pages/HomePage";
@@ -11,9 +10,9 @@ import BlogsPage from './Pages/BlogsPage';
 import ContactPage from './Pages/ContactPage';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Route, Switch as Switching } from "react-router";
+import {Route, Switch as Switching} from "react-router";
 import Switch from '@material-ui/core/Switch'
-import { IconButton } from "@material-ui/core";
+import {IconButton} from "@material-ui/core";
 
 
 function App() {
@@ -21,15 +20,15 @@ function App() {
     const [checked, setChecked] = useState(false);
     const [navToggle, setNavToggle] = useState(false);
 
-    useEffect(()=>{
+    useEffect(() => {
         document.documentElement.className = theme;
-    }, [theme,navToggle]);
+    }, [theme, navToggle]);
 
-    const themeToggler = () =>{
-        if(theme === 'light-theme'){
+    const themeToggler = () => {
+        if (theme === 'light-theme') {
             setTheme('dark-theme');
             setChecked(false)
-        }else{
+        } else {
             setTheme('light-theme');
             setChecked(true)
         }
@@ -37,21 +36,20 @@ function App() {
 
     return (
         <div className="App">
-            <Sidebar navToggle={[navToggle,setNavToggle]} />
+            <Sidebar navToggle={[navToggle, setNavToggle]}/>
 
             <div className="theme">
                 <div className="light-dark-mode">
                     <div className="left-content">
-                        <Brightness4Icon />
+                        <Brightness4Icon/>
                     </div>
                     <div className="right-content">
                         <Switch
                             value=""
                             checked={checked}
-                            inputProps={{ 'aria-label': '' }}
+                            inputProps={{'aria-label': ''}}
                             size="medium"
                             onClick={themeToggler}
-
                         />
                     </div>
                 </div>
@@ -59,7 +57,7 @@ function App() {
 
             <div className="ham-burger-menu">
                 <IconButton onClick={() => setNavToggle(!navToggle)}>
-                    <MenuIcon />
+                    <MenuIcon/>
                 </IconButton>
             </div>
 
@@ -70,25 +68,24 @@ function App() {
                     <div className="line-3"></div>
                     <div className="line-4"></div>
                 </div>
-
                 <Switching>
                     <Route path="/" exact>
-                        <HomePage />
+                        <HomePage theme={theme}/>
                     </Route>
                     <Route path="/about" exact>
-                        <AboutPage />
+                        <AboutPage/>
                     </Route>
                     <Route path="/resume" exact>
-                        <ResumePage />
+                        <ResumePage/>
                     </Route>
                     <Route path="/portfolios" exact>
-                        <PortfoliosPage />
+                        <PortfoliosPage/>
                     </Route>
                     <Route path="/blogs" exact>
-                        <BlogsPage />
+                        <BlogsPage/>
                     </Route>
                     <Route path="/contact" exact>
-                        <ContactPage />
+                        <ContactPage/>
                     </Route>
                 </Switching>
 
@@ -101,10 +98,11 @@ const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
   min-height: 100vh;
-  @media screen and (max-width:1200px){
+  @media screen and (max-width: 1200px) {
     margin-left: 0;
   }
-  .lines{
+
+  .lines {
     position: absolute;
     min-height: 100%;
     width: 100%;
@@ -112,7 +110,8 @@ const MainContentStyled = styled.main`
     justify-content: space-evenly;
     opacity: 0.4;
     z-index: -1;
-    .line-1, .line-2, .line-3, .line-4{
+
+    .line-1, .line-2, .line-3, .line-4 {
       width: 1px;
       min-height: 100vh;
       background-color: var(--border-color);
