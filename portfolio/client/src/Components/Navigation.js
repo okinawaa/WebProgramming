@@ -29,8 +29,8 @@ function Navigation(props) {
                     <NavLink to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/blogs" activeClassName="active-class" exact>Blogs</NavLink>
-                </li>
+                    {/*<NavLink to="/blogs" activeClassName="active-class" exact>Blogs</NavLink>*/}
+                    <a href="https://chanhyukpark-tech.github.io/" target="_blank">Blogs</a>                </li>
                 <li className="nav-item">
                     <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
                 </li>

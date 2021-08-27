@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Canvas, extend, useThree, useFrame } from "react-three-fiber";
+import { Canvas, extend, useThree, useFrame } from "@react-three/fiber";
 import {
     CubeTextureLoader,
     CubeCamera,
@@ -7,8 +7,9 @@ import {
     RGBFormat,
     LinearMipmapLinearFilter
 } from "three";
-import {OrbitControls} from "@react-three/drei";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
+extend({ OrbitControls });
 
 const CameraControls = () => {
     // Get a reference to the Three.js Camera, and the canvas html element.
@@ -33,18 +34,19 @@ const CameraControls = () => {
     );
 };
 
+
 // Loads the skybox texture and applies it to the scene.
 function SkyBox() {
     const { scene } = useThree();
     const loader = new CubeTextureLoader();
     // The CubeTextureLoader load method takes an array of urls representing all 6 sides of the cube.
     const texture = loader.load([
-        "/1.jpg",
-        "/2.jpg",
-        "/3.jpg",
-        "/4.jpg",
-        "/5.jpg",
-        "/6.jpg"
+        "./1.jpg",
+        "./2.jpg",
+        "./3.jpg",
+        "./4.jpg",
+        "./5.jpg",
+        "./6.jpg"
     ]);
 
     // Set the scene background property to the resulting texture.
@@ -85,7 +87,7 @@ function Sphere() {
 }
 
 // Lights
-function Background() {
+function BackgroundTest() {
     return (
         <Canvas className="canvas">
             <CameraControls />
@@ -95,4 +97,4 @@ function Background() {
     );
 }
 
-export default Background;
+export default BackgroundTest;
