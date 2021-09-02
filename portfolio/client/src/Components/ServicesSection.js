@@ -21,21 +21,23 @@ function ServicesSection(props) {
     return (
         <InnerLayout>
             <ServicesSectionStyled>
-                <Title title={'Services'} span={'services'}/>
+                <Title title={'preference'} span={'preference'}/>
                 <div ref={serviceRef} className="services">
                     <div className='service-card'>
                         <ServiceCard
                             image={design}
-                            title={'Web Design'}
-                            paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
+                            title={'Front End'}
+                            paragraph={`React 를 이용한 SPA 개발  Restful API를 통한 Backend 와의 통신 및 HTML, CSS , Vanila JS  
+                              웹 기반의 다양한 툴이나 프로덕트를 개발하고 UI/UX를 개선해요
+                            `}
                         />
                     </div>
                     <div className='service-card'>
                         <div className="mid-card">
                             <ServiceCard
                                 image={intelligence}
-                                title={'Artificial Intelligence'}
-                                paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
+                                title={'BackEnd'}
+                                paragraph={`Java 기반의 객체지향 설계 및 개발을 선호하며 RDBMS 인 MySQL 도 좋아하고, mongoDB도 즐겨사용해요`}
                             />
                         </div>
                     </div>
@@ -43,8 +45,8 @@ function ServicesSection(props) {
 
                         <ServiceCard
                             image={gamedev}
-                            title={'Game Development'}
-                            paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
+                            title={'Collaboration'}
+                            paragraph={`주변 사람들과 소통하며 작업하는 것을 좋아하며, 서로 생각을 공유하면서 성장해가는것을 좋아합니다`}
                         />
                     </div>
 
@@ -54,7 +56,7 @@ function ServicesSection(props) {
     );
 }
 
-const ServicesSectionStyled = styled.section`
+export const ServicesSectionStyled = styled.section`
   .services {
     margin-top: 5rem;
     display: grid;

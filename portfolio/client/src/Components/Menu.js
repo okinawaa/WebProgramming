@@ -19,11 +19,6 @@ function Menu(props) {
                                             <GitHub />
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href={item.link2}>
-                                            <Pinterest />
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                             <h6>{item.title}</h6>
@@ -133,7 +128,7 @@ const MenuItemStyled = styled.div`
                     height: calc(100% - 32%) ;
                     width: calc(100% - 4%);
                     background-color: white;
-                    opacity: 0.9;
+                    opacity: 0.3;
                     transform-origin: left;
                     
                     transition: all .4s ease-in-out;

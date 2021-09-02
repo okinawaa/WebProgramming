@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
-import Particle from "../Components/Particles";
-import FacebookIcon from '@material-ui/icons/Facebook'
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GithubIcon from '@material-ui/icons/GitHub'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import {Suspense} from "react";
 import Earth from '../Components/earth/earth'
-import TopSection from "../Components/topSection/topSection";
 import {Canvas} from '@react-three/fiber'
 
 function HomePage(props) {
@@ -30,8 +28,8 @@ function HomePage(props) {
                     Please wait a moment for our earth.
                 </p>
                 <div className="icons">
-                    <a href='/' className="icon i-facebook">
-                        <FacebookIcon/>
+                    <a onClick={() => window.open('https://www.linkedin.com/in/%EC%B0%AC%ED%98%81-%EB%B0%95-43095721b/', '_blank')} className="icon i-linkedin">
+                        <LinkedInIcon/>
                     </a>
                     <a onClick={() => window.open('https://github.com/ChanhyukPark-Tech', '_blank')}
                        className="icon i-github">

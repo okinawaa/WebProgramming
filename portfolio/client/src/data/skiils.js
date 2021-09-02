@@ -22,15 +22,14 @@ const skills = [
     },
     {
         id: 3,
-        category: 'FrontEnd',
-        subCategory:'Programming Language',
+        category: 'Programming Language',
         title: 'JavaScript',
-        width: '70%',
-        text: '70%'
+        width: '80%',
+        text: '80%'
     },
     {
         id: 4,
-        category: 'FrontEnd',
+        category: 'Programming Language',
         title: 'TypeScript',
         width: '40%',
         text: '40%'
@@ -39,8 +38,8 @@ const skills = [
         id: 5,
         category: 'FrontEnd',
         title: 'Three.js',
-        width: '50%',
-        text: '50%'
+        width: '70%',
+        text: '70%'
     },
     {
         id: 6,
@@ -89,7 +88,13 @@ const skills = [
         width: '75%',
         text: '75%'
     },
-
+    {
+        id: 4,
+        category: 'Programming Language',
+        title: 'Python',
+        width: '75%',
+        text: '75%'
+    },
 ]
 
 export default skills;

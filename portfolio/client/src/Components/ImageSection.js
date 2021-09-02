@@ -61,19 +61,22 @@ const ImageSectionStyled = styled.div`
       margin-bottom: 2rem;
     }
   }
-
+  
   .left-content {
     width: 100%;
 
     img {
       width: 95%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
   .right-content {
     width: 100%;
-
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     h4 {
       font-size: 2rem;
       color: var(--white-color);
@@ -92,6 +95,8 @@ const ImageSectionStyled = styled.div`
       display: flex;
       padding-bottom: 1.4rem;
 
+      text-align: center;
+      justify-content: center;
       .info-title {
         padding-right: 3rem;
 

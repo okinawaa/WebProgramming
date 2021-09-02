@@ -13,7 +13,7 @@ function ServiceCard({image, title, paragraph}) {
     )
 }
 
-const ServiceCardStyled = styled.div`
+export const ServiceCardStyled = styled.div`
     background-color: var(--background-dark-grey);
     border-left: 1px solid var(--border-color);
     border-top: 8px solid var(--border-color);
@@ -45,6 +45,9 @@ const ServiceCardStyled = styled.div`
         p{
             padding: .8rem 0;
         }
+    }
+    li{
+      margin: 0.5rem 0.2rem;
     }
 `;
 
