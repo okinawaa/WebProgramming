@@ -10,7 +10,7 @@ const allButtons = ['All', ...new Set(skills.map(item => item.category))]
 
 function Skills() {
     const [skillMenuItem, setSkillMenuItems] = useState(skills);
-    const [skillButton, setSkillButton] = useState(allButtons);
+    const [skillButton] = useState(allButtons);
 
     const filter = (button) => {
         if (button === 'All') {

@@ -76,7 +76,7 @@ function ContactPage() {
                 <InnerLayout className={'contact-section'}>
                     <div className="left-content">
                         <div className="contact-title">
-                            <h4>Shout for us</h4>
+                            <h4>Shout to at</h4>
                         </div>
                         <form className="form" onSubmit={formSubmit}>
                             <div className="form-field">
@@ -94,9 +94,9 @@ function ContactPage() {
                             </div>
                             <div className="form-field">
                                 <label htmlFor="text-area">Enter your Message*</label>
-                                <textarea name="textarea" name="message" id="textarea" value={message}
+                                <textarea name="message" id="textarea" value={message}
                                           onChange={handleChangeInput}
-                                          cols="30" rows="10"></textarea>
+                                          cols="30" rows="10"/>
                             </div>
                             {
                                 sent ?
@@ -106,7 +106,7 @@ function ContactPage() {
                                     :
 
                                     <div className="form-field f-button" onClick={formSubmit}>
-                                        <PrimaryButton title={'Send Email'}/>
+                                        <PrimaryButton title={'Not usable now'}/>
                                     </div>
 
                             }

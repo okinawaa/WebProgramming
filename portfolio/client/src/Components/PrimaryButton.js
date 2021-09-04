@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styled from 'styled-components'
+import {MouseContext} from "../context/mouse-context";
 
 function PrimaryButton(props) {
     const title = props.title
+    const { cursorChangeHandler } = useContext(MouseContext);
 
     return (
-        <PrimaryButtonStyled>
+        <PrimaryButtonStyled onMouseEnter={() => cursorChangeHandler("hovered")}
+                             onMouseLeave={() => cursorChangeHandler("")}>
             {title}
         </PrimaryButtonStyled>
 

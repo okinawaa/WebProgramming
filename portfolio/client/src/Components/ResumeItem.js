@@ -33,7 +33,7 @@ const ResumeItemStyled = styled.div`
   }
 
   .left-content {
-    width: 30%;
+    min-width: 30%;
     padding-left: 20px;
     position: relative;
 

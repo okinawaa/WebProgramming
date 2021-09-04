@@ -4,7 +4,7 @@ import EarthDayMap from '../../img/earthTextures/8k_earth_daymap.jpg'
 import EarthNormalMap from '../../img/earthTextures/8k_earth_normal_map.jpg'
 import EarthSpecularMap from '../../img/earthTextures/8k_earth_specular_map.jpg'
 import EarthCloudsMap from '../../img/earthTextures/8k_earth_clouds.jpg'
-import {useEffect, useRef} from "react";
+import { useRef} from "react";
 import {Stars} from "@react-three/drei";
 import * as THREE from 'three';
 
@@ -16,13 +16,10 @@ function Earth(props) {
 
     const earthRef = useRef();
     const cloudsRef = useRef();
-    let adaptiveRadius;
     useFrame(({clock}) => {
         const elapseTime = clock.getElapsedTime();
         earthRef.current.rotation.y = elapseTime / 6;
         cloudsRef.current.rotation.y = elapseTime / 6;
-        // earthRef.current.rotation.x = elapseTime / 20;
-        // cloudsRef.current.rotation.x = elapseTime / 20;
     });
 
 

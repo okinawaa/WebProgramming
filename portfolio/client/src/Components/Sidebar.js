@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Navigation from './Navigation';
 
 function Sidebar(props) {
-    const [navToggle,setNavToggle] = props.navToggle;
+    const [navToggle] = props.navToggle;
     return (
         <SidebarStyled className={`${navToggle ? 'nav-toggle' : ''}`}>
             <Navigation navToggle={props.navToggle}/>

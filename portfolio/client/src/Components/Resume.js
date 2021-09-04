@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import {InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
@@ -7,16 +7,27 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import SchoolIcon from '@material-ui/icons/School';
 import ResumeItem from '../Components/ResumeItem';
 import CardMembershipIcon from '@material-ui/icons/CardMembership';
-import {ServiceCardStyled} from "./ServiceCard";
 import {ServicesSectionStyled} from "./ServicesSection";
-import global from '../img/global.png'
-import computer from '../img/computer.png'
-import gpa from '../img/gpa.png'
+
+import workingExperiences from "../data/workingExperience";
+import qualifications from "../data/qualifications";
+import certifications from "../data/certifications";
+import CertificationCard from "./CertificationCard";
+import {upDownStaggerElement} from "./Animation";
 
 function Resume() {
     const briefcase = <BusinessCenterIcon/>
     const school = <SchoolIcon/>
     const certification = <CardMembershipIcon/>
+    const workingExperienceRef = useRef();
+    const qualificationRef = useRef();
+    const certificationRef = useRef();
+    useEffect(() => {
+        upDownStaggerElement(-50, document.querySelectorAll('.resume-content')[0].childNodes, workingExperienceRef.current, 0.3, 0.2)
+        upDownStaggerElement(-50, document.querySelectorAll('.resume-content')[1].childNodes, qualificationRef.current, 0.3, 0.2)
+        upDownStaggerElement(-50, document.querySelector('.services').childNodes, certificationRef.current, 0.3)
+    }, [])
+
     return (
         <ResumeStyled>
             <Title title={'Resume'} span={'resume'}/>
@@ -24,76 +35,56 @@ function Resume() {
                 <div className="small-title">
                     <SmallTitle icon={briefcase} title={'Working Experience'}/>
                 </div>
-                <div className="resume-content">
-                    <ResumeItem
-                        year={'2019.5 - 2019.12'}
-                        title={'Hotel Front Service'}
-                        subTitle={'Osaka Japan FP HOTELS'}
-                        text={'일본 비즈니스 호텔의 프론트 업무를 담당하므로써 엑셀을 이용한 예약관리 및 손님들의 편의성을 증진시키기위한 기획 & 마케팅 '}
-                    />
-
+                <div className="resume-content" ref={workingExperienceRef}>
+                    {
+                        workingExperiences.map((workingExperience) => (
+                            <ResumeItem
+                                key={workingExperience.id}
+                                year={workingExperience.year}
+                                title={workingExperience.title}
+                                subTitle={workingExperience.subTitle}
+                                text={workingExperience.text}
+                            />
+                        ))
+                    }
                 </div>
                 <div className="small-title u-small-title-margin">
                     <SmallTitle icon={school} title={'Qualifications'}/>
                 </div>
-                <div className="resume-content ">
-                    <ResumeItem
-                        year={'2016 - 2021'}
-                        title={'Hanyang University ERICA Campus'}
-                        subTitle={'Dual Degree [ Software Engineering , Mechanical Engineering]'}
-                        text={' '}
-                    />
-                    <ResumeItem
-                        year={'2019.1 - 2020.1'}
-                        title={'Working Holiday in Japan'}
-                        subTitle={'Osaka'}
-                        text={'국가의 장벽을 넘어 사람들과 소통하는것을 즐겨하는 성격을 활용해 일본에서 1년동안 다양한 일을 통해 다양한 커뮤니케이션 능력향상과 서비스능력 향상'}
-                    />
+                <div className="resume-content" ref={qualificationRef}>
+                    {
+                        qualifications.map((qualifications) => (
+                            <ResumeItem
+                                key={qualifications.id}
+                                year={qualifications.year}
+                                title={qualifications.title}
+                                subTitle={qualifications.subTitle}
+                                text={qualifications.text}
+                            />
+                        ))
+                    }
+
 
                 </div>
-                <div className="small-title u-small-title-margin">
+                <div className="small-title u-small-title-margin" ref={certificationRef}>
                     <SmallTitle icon={certification} title={'Certification'}/>
                 </div>
                 <ServicesSectionStyled>
                     <div className="services">
-                        <CertificationCard
-                            image={global}
-                            title={'Language'}
-                            List={[`TOEIC : 885`, `JLTP : N2`, `OPIC Japan : Advanced Level(AL)`]}
-                        />
-                        <CertificationCard
-                            image={computer}
-                            title={'Computer'}
-                            List={[`컴퓨터활용능력 1급`, `2020 아두이노 기초 및 심화 (IoT Smart Home 및 자율주행) 45시간 이수`, `기업에서 사용하는 실전 빅데이터 기술 기초 이수`]}
-
-                        />
-                        <CertificationCard
-                            image={gpa}
-                            title={'GPA'}
-                            List={[`Total GPA : 4.3`, `Major GPA : 4.43`]}
-                        />
+                        {
+                            certifications.map((certification) => (
+                                <CertificationCard
+                                    key={certification.id}
+                                    image={certification.image}
+                                    title={certification.title}
+                                    List={certification.List}
+                                />
+                            ))
+                        }
                     </div>
                 </ServicesSectionStyled>
             </InnerLayout>
         </ResumeStyled>
-    )
-}
-
-function CertificationCard({image, title, List}) {
-    return (
-        <ServiceCardStyled>
-            <div className="container">
-                <img src={image} alt=""/>
-                <h4>{title}</h4>
-                <ul>
-                    {
-                        List.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))
-                    }
-                </ul>
-            </div>
-        </ServiceCardStyled>
     )
 }
 

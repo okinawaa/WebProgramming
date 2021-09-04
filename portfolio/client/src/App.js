@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
 import {useEffect} from "react";
 import Sidebar from "./Components/Sidebar";
 import styled from 'styled-components';
@@ -13,13 +13,15 @@ import MenuIcon from '@material-ui/icons/Menu';
 import {Route, Switch as Switching} from "react-router";
 import Switch from '@material-ui/core/Switch'
 import {IconButton} from "@material-ui/core";
+import PortDetailPage from "./Pages/PortDetailPage";
+import DotRing from "./Components/dotRing/DotRing";
+import ScrollToTop from "./Components/ScrollToTop";
 
 
 function App() {
     const [theme, setTheme] = useState('dark-theme');
     const [checked, setChecked] = useState(false);
     const [navToggle, setNavToggle] = useState(false);
-
     useEffect(() => {
         document.documentElement.className = theme;
     }, [theme, navToggle]);
@@ -36,6 +38,7 @@ function App() {
 
     return (
         <div className="App">
+            <DotRing/>
             <Sidebar navToggle={[navToggle, setNavToggle]}/>
 
             <div className="theme">
@@ -68,6 +71,7 @@ function App() {
                     <div className="line-3"></div>
                     <div className="line-4"></div>
                 </div>
+                <ScrollToTop/>
                 <Switching>
                     <Route path="/" exact>
                         <HomePage theme={theme}/>
@@ -81,6 +85,7 @@ function App() {
                     <Route path="/portfolios" exact>
                         <PortfoliosPage/>
                     </Route>
+                    <Route path="/portfolios/:id" exact component={PortDetailPage}/>
                     <Route path="/blogs" exact>
                         <BlogsPage/>
                     </Route>
@@ -88,7 +93,6 @@ function App() {
                         <ContactPage/>
                     </Route>
                 </Switching>
-
             </MainContentStyled>
         </div>
     );

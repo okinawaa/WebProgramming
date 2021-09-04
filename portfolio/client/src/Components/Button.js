@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styled from 'styled-components';
+import {MouseContext} from "../context/mouse-context";
 
 function Button(props) {
     const filter = props.filter;
     const button = props.button;
+    const { cursorChangeHandler } = useContext(MouseContext);
+
     return (
-        <ButtonsStyled>
+        <ButtonsStyled onMouseEnter={() => cursorChangeHandler("hovered")}
+                       onMouseLeave={() => cursorChangeHandler("")}>
             {
                 button.map((btn, index) =>{
                     return <ButtonStyled key={index} onClick={() => filter(btn)}>

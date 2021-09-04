@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Skills from '../Components/Skills';
 import { MainLayout} from '../styles/Layouts';
 import Resume from '../Components/Resume';
-import skills from "../data/portfolios";
 
 
 

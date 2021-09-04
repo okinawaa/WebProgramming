@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
 import avatar from '../img/avatar.jpg'
+import {MouseContext} from "../context/mouse-context";
 
 function Navigation(props) {
     const [navToggle,setNavToggle] = props.navToggle;
-
+    const { cursorChangeHandler } = useContext(MouseContext);
     const navChange = () =>{
         setNavToggle(!navToggle);
     }
@@ -15,7 +16,8 @@ function Navigation(props) {
             <div className="avatar">
                 <img src={avatar} alt=""/>
             </div>
-            <ul className="nav-items" onClick={navChange}>
+            <ul className="nav-items" onClick={navChange} onMouseEnter={() => cursorChangeHandler("hovered")}
+                onMouseLeave={() => cursorChangeHandler("")}>
                 <li className="nav-item">
                     <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
                 </li>
