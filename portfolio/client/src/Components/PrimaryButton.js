@@ -2,8 +2,7 @@ import React, {useContext} from 'react';
 import styled from 'styled-components'
 import {MouseContext} from "../context/mouse-context";
 
-function PrimaryButton(props) {
-    const title = props.title
+function PrimaryButton({title}) {
     const { cursorChangeHandler } = useContext(MouseContext);
 
     return (
@@ -17,7 +16,8 @@ function PrimaryButton(props) {
 }
 
 
-const PrimaryButtonStyled = styled.a`
+const PrimaryButtonStyled = styled.div`
+  z-index: 500;
   background-color: var(--primary-color);
   padding: 0.8rem 2.5rem;
   color: white;

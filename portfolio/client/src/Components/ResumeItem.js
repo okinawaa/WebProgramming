@@ -1,18 +1,21 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import styled from 'styled-components';
+import {Link} from "react-router-dom";
+import {MouseContext} from "../context/mouse-context";
 
-function ResumeItem(props) {
-    const year = props.year;
-    const title = props.title;
-    const subTitle = props.subTitle;
-    const text = props.text
+function ResumeItem({id, year, title, subTitle, text}) {
+    const {cursorChangeHandler} = useContext(MouseContext);
+
     return (
         <ResumeItemStyled>
             <div className="left-content">
                 <p>{year}</p>
             </div>
             <div className="right-content">
-                <h5>{title}</h5>
+                <Link to={`/resume/${id}`} onMouseEnter={() => cursorChangeHandler("hovered")}
+                      onMouseLeave={() => cursorChangeHandler("")}>
+                    <h5>{title}</h5>
+                </Link>
                 <h6>{subTitle}</h6>
                 <p>{text}</p>
             </div>

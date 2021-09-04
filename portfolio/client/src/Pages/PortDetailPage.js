@@ -3,7 +3,6 @@ import portfolios from '../data/portfolios';
 import styled from "styled-components";
 import {AnimatePresence, motion} from "framer-motion";
 import ImageSlider from "../Components/ImageSlider";
-import {sliderData2} from "../data/sliderData";
 
 function PortDetailPage(props) {
     const [portfolioItem, setPortfolioItem] = useState(null);
@@ -19,7 +18,6 @@ function PortDetailPage(props) {
             })
         }
     }, [params.id])
-    console.log(window.innerHeight)
     return (
         <AnimatePresence>
             {
@@ -60,10 +58,10 @@ function PortDetailPage(props) {
                                         <PortParagraph>
                                             {detailContent.Content}
                                         </PortParagraph>
+
                                     </PortParagraphContainer>
                                 ))
                             }
-
                         </MotionPortParagraphContent>
                     </PortContent>
                 </StyledPortDetailContainer>

@@ -16,6 +16,7 @@ import {IconButton} from "@material-ui/core";
 import PortDetailPage from "./Pages/PortDetailPage";
 import DotRing from "./Components/dotRing/DotRing";
 import ScrollToTop from "./Components/ScrollToTop";
+import ResumeDetailPage from "./Pages/ResumeDetailPage";
 
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
                     <Route path="/resume" exact>
                         <ResumePage/>
                     </Route>
+                    <Route path="/resume/:id" exact component={ResumeDetailPage}/>
                     <Route path="/portfolios" exact>
                         <PortfoliosPage/>
                     </Route>

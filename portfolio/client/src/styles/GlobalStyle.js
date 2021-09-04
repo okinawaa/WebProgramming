@@ -71,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     font-family: 'Nunito','Gowun Batang', 'Klee One', sans-serif;
     font-size: 1.1rem;
-    cursor: none;
+    //cursor: none;
   }
 
   body {
