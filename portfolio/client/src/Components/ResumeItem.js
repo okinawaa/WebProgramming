@@ -1,19 +1,26 @@
-import React, {useContext} from 'react'
-import styled from 'styled-components';
+import React, {useContext, useState} from 'react'
+import styled, {css} from 'styled-components';
 import {Link} from "react-router-dom";
 import {MouseContext} from "../context/mouse-context";
 
 function ResumeItem({id, year, title, subTitle, text}) {
     const {cursorChangeHandler} = useContext(MouseContext);
+    const [hoverd, setHoverd] = useState(false);
 
     return (
-        <ResumeItemStyled>
+        <ResumeItemStyled hoverd={hoverd}>
             <div className="left-content">
                 <p>{year}</p>
             </div>
             <div className="right-content">
-                <Link to={`/resume/${id}`} onMouseEnter={() => cursorChangeHandler("hovered")}
-                      onMouseLeave={() => cursorChangeHandler("")}>
+                <Link to={`/resume/${id}`} onMouseEnter={() => {
+                    cursorChangeHandler("hovered");
+                    setHoverd(true);
+                }}
+                      onMouseLeave={() => {
+                          cursorChangeHandler("")
+                          setHoverd(false);
+                      }}>
                     <h5>{title}</h5>
                 </Link>
                 <h6>{subTitle}</h6>
@@ -76,6 +83,9 @@ const ResumeItemStyled = styled.div`
       color: var(--primary-color);
       font-size: 2rem;
       padding-bottom: .4rem;
+      ${props => props.hoverd && css`
+        color: var(--primary-color-lightest);
+      `}
     }
 
     h6 {

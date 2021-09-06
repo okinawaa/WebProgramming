@@ -44,6 +44,7 @@ const GlobalStyle = createGlobalStyle`
   .dark-theme {
     --primary-color: #007bff;
     --primary-color-light: #057FFF;
+    --primary-color-lightest: #5377a1;
     --secondary-color: #6c757d;
     --background-dark-color: #10121A;
     --background-dark-grey: #191D2B;
@@ -69,9 +70,9 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Nunito','Gowun Batang', 'Klee One', sans-serif;
+    font-family: 'Gowun Batang', 'Nunito', 'Klee One', sans-serif;
     font-size: 1.1rem;
-    //cursor: none;
+    cursor: none;
   }
 
   body {
