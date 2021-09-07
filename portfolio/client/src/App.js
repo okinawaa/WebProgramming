@@ -17,9 +17,16 @@ import PortDetailPage from "./Pages/PortDetailPage";
 import DotRing from "./Components/dotRing/DotRing";
 import ScrollToTop from "./Components/ScrollToTop";
 import ResumeDetailPage from "./Pages/ResumeDetailPage";
-
+import ReactGa from 'react-ga'
 
 function App() {
+
+    useEffect(()=>{
+        ReactGa.initialize('UA-206045003-1');
+
+        ReactGa.pageview(window.location.pathname + window.location.search);
+    },[])
+
     const [theme, setTheme] = useState('dark-theme');
     const [checked, setChecked] = useState(false);
     const [navToggle, setNavToggle] = useState(false);
