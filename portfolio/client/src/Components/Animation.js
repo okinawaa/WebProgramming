@@ -13,14 +13,16 @@ export const fadeInUp = node => {
 
 export const upDownStaggerElement = (startY,node,trigger,stagger=0.3,delay=0) =>{
     gsap.from(node, {
+
         y: startY,
         duration: 0.5,
         opacity: 0,
         delay:delay,
         scrollTrigger: {
             trigger: trigger,
-            start: 'top 70%',
-            // scrub:true,
+            start: 'top 85%',
+            indicator:true,
+            // scrub:1,
             toggleActions: 'restart'
         },
         stagger: {

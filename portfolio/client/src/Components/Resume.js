@@ -26,16 +26,16 @@ function Resume() {
         upDownStaggerElement(-50, document.querySelectorAll('.resume-content')[0].childNodes, workingExperienceRef.current, 0.3, 0.2)
         upDownStaggerElement(-50, document.querySelectorAll('.resume-content')[1].childNodes, educationExperienceRef.current, 0.3, 0.2)
         upDownStaggerElement(-50, document.querySelector('.services').childNodes, certificationRef.current, 0.3)
-    }, [])
+    }, [workingExperienceRef,workingExperienceRef.current,educationExperienceRef,educationExperienceRef.current,certificationRef,certificationRef.current])
 
     return (
         <ResumeStyled>
             <Title title={'Resume'} span={'resume'}/>
             <InnerLayout>
-                <div className="small-title">
+                <div className="small-title" ref={workingExperienceRef}>
                     <SmallTitle icon={briefcase} title={'Working Experience'}/>
                 </div>
-                <div className="resume-content" ref={workingExperienceRef}>
+                <div className="resume-content" >
                     {
                         workingExperiences.map((workingExperience) => (
                             <ResumeItem

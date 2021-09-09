@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
   .dark-theme {
     --primary-color: #007bff;
     --primary-color-light: #057FFF;
-    --primary-color-lightest: #5377a1;
+    --primary-color-lightest: #7f4ecc;
     --secondary-color: #6c757d;
     --background-dark-color: #10121A;
     --background-dark-grey: #191D2B;

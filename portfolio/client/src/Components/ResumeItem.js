@@ -83,6 +83,7 @@ const ResumeItemStyled = styled.div`
       color: var(--primary-color);
       font-size: 2rem;
       padding-bottom: .4rem;
+      transition: color 500ms ease-in-out;
       ${props => props.hoverd && css`
         color: var(--primary-color-lightest);
       `}
