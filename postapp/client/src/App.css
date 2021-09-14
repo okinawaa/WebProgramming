@@ -279,3 +279,7 @@ button {
 .loginContainer input {
   border: 2px solid dodgerblue;
 }
+
+.notfound a {
+  color: darkred;
+}

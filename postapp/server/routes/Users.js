@@ -31,10 +31,21 @@ router.post("/login", async (req, res) => {
             { username: user.username, id: user.id },
             "importantsecret"
         );
-        res.json(accessToken);
+        res.json({token: accessToken,username,id:user.id});
     });
 });
 router.get("/auth", validateToken, (req, res) => {
     res.json(req.user);
 });
+
+router.get("/basicinfo/:id", async (req, res) => {
+    const id = req.params.id;
+
+    const basicInfo = await Users.findByPk(id, {
+        attributes: { exclude: ["password"] },
+    });
+
+    res.json(basicInfo);
+});
+
 module.exports = router;
