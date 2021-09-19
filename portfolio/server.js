@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const mongoose = require('mongoose')
+const fs = require('fs');
 const cors = require('cors');
 const path = require('path')
 const bodyParser = require('body-parser');
@@ -12,64 +12,35 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json())
 app.use(cors())
 
-// Routes
 
-// // connect to mongoDb
-// const URI = process.env.MONGODB_URL;
-// mongoose.connect(URI,{
-//     useCreateIndex:true,
-//     useFindAndModify:false,
-//     useNewUrlParser:true,
-//     useUnifiedTopology:true
-// },err=>{
-//     if(err) throw err;
-//     console.log('Connected to MongoDB')
-// })
-//
-//
-app.get('/', (req,res) => {
-    res.send('welcome to my form')
+const data = fs.readFileSync('./database.json');
+const conf = JSON.parse(data);
+const mysql = require('mysql');
+
+const connection = mysql.createConnection({
+    host:conf.host,
+    user:conf.user,
+    password:conf.password,
+    port:conf.port,
+    database:conf.database
 })
+connection.connect(err => {
+    if(err){
+        console.log("데이터베이스 에러발생")
+        return;
+    }
+    console.log("Connected Mysql")
+});
 
 
-app.post('/api/form',  (req, res) => {
-    let data = req.body;
-    let smtpTransport = nodemailer.createTransport({
-        service: 'Gmail',
-        port: 465,
-        auth: {
-            user: process.env.MY_EMAIL,
-            pass: process.env.MY_PASSWORD
-        }
-    })
+testQuery = "SELECT * FROM SKILLS";
 
-    let mailOptions = {
-        from: data.email,
-        to: process.env.MY_EMAIL,
-        subject: `Message from ${data.name}`,
-        html: `
-            <h3>Informations</h3>
-            <ul>    
-            <li>Name: ${data.name}</li>
-            <li>Subject: ${data.subject}</li>
-            <li>Email: ${data.email}</li>
-            </ul>
-            
-            <h3>Message</h3>
-            <p>${data.message}</p>
-        `
-    };
-    smtpTransport.sendMail(mailOptions, (err, response) => {
-        if (err) {
-            res.send(err)
-        } else {
-            res.send('Success')
-            console.log("성공")
-        }
-    })
-
-    smtpTransport.close();
-})
+connection.query(testQuery, function (err, results, fields) { // testQuery 실행
+    if (err) {
+        console.log(err);
+    }
+    console.log(results);
+});
 
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'))
