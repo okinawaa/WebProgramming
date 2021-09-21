@@ -8,5 +8,5 @@ threejscourse
 !/portfolio/.idea/
 !/portfolio/database.json
 !/portfolio/mailConfig.json
-!/portfolio/build/
+!/portfolio/client/build/
 
