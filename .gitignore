@@ -1,5 +1,5 @@
 node_modules
-
+build
 dev.js
 /p5.js/Amplitude/assets/
 
@@ -10,3 +10,4 @@ threejscourse
 !/portfolio/mailConfig.json
 !/portfolio/client/build/
 
+portfolio/mailConfig.json
