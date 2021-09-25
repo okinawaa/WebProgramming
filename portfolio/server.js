@@ -13,34 +13,8 @@ app.use(express.json())
 app.use(cors())
 
 
-const data = fs.readFileSync('./database.json');
-const conf = JSON.parse(data);
-const mysql = require('mysql');
+app.use('/api/resume',require('./routes/resumeRouter'));
 
-const connection = mysql.createConnection({
-    host:conf.host,
-    user:conf.user,
-    password:conf.password,
-    port:conf.port,
-    database:conf.database
-})
-connection.connect(err => {
-    if(err){
-        console.log("데이터베이스 에러발생")
-        return;
-    }
-    console.log("Connected Mysql")
-});
-
-
-testQuery = "SELECT * FROM SKILLS";
-
-connection.query(testQuery, function (err, results, fields) { // testQuery 실행
-    if (err) {
-        console.log(err);
-    }
-    console.log(results);
-});
 
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'))
@@ -48,6 +22,50 @@ if(process.env.NODE_ENV === 'production'){
         res.sendFile(path.join(__dirname,'client','build','index.html'))
     })
 }
+
+
+const data = fs.readFileSync('./mailConfig.json');
+const conf = JSON.parse(data);
+
+app.post('/api/form',  (req, res) => {
+    let data = req.body;
+    let smtpTransport = nodemailer.createTransport({
+        service: 'Gmail',
+        port: 465,
+        auth: {
+            user: conf.email,
+            pass: conf.password
+        }
+    })
+
+    let mailOptions = {
+        from: data.email,
+        to: conf.email,
+        subject: data.subject,
+        html: `
+            <h3>Informations</h3>
+            <ul>    
+            <li>Name: ${data.name}</li>
+            <li>email: ${data.email}</li>
+            </ul>
+            
+            <h3>Message</h3>
+            <p>${data.message}</p>
+        `
+    };
+    smtpTransport.sendMail(mailOptions, (err, response) => {
+        if (err) {
+            res.send(err)
+            console.log("실패")
+        } else {
+            res.send('Success')
+            console.log("성공")
+        }
+    })
+
+    smtpTransport.close();
+})
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT,()=>{
