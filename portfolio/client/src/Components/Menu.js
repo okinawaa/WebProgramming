@@ -5,34 +5,33 @@ import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import {Link} from "react-router-dom";
 import {MouseContext} from "../context/mouse-context";
 
-function Menu(props) {
+function Menu({portfolios}) {
     const { cursorChangeHandler } = useContext(MouseContext);
 
-    const menuItem = props.menuItem;
     return (
         <MenuItemStyled>
             {
-                menuItem.map((item) => {
-                    return <div className="grid-item" key={item.id}>
+                portfolios.map((item) => {
+                    return <div className="grid-item" key={item.title}>
                         <div className="portfolio-content">
                             <div className="portfolio-image" onMouseEnter={() => cursorChangeHandler("hovered")}
                                  onMouseLeave={() => cursorChangeHandler("")}>
-                                <img src={item.image[0].image} alt="" />
+                                <img src={item.images.split(",")[0]} alt="" />
                                 <ul>
                                     <li>
-                                        <a href={item.link1}>
+                                        <a href={item.link}>
                                             <GitHub/>
                                         </a>
                                     </li>
                                     <li>
-                                        <Link to={`/portfolios/${item.id}`} >
+                                        <Link to={`/portfolios/${item.title}`} >
                                             <LibraryBooksIcon/>
                                         </Link>
                                     </li>
                                 </ul>
                             </div>
                             <h6>{item.title}</h6>
-                            <p>{item.text}</p>
+                            <p>{item.mainText}</p>
                         </div>
                     </div>
                 })

@@ -4,7 +4,126 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="" />
+    <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../portfolio/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/sitemap.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/css/main.bdfc11ee.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/css/main.bdfc11ee.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/2.a57f9e24.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/2.a57f9e24.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/2.a57f9e24.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/main.71320af6.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/main.71320af6.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/runtime-main.5ebc510a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/runtime-main.5ebc510a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/8k_earth_clouds.e4d9eb39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/8k_earth_daymap.694073b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/8k_earth_normal_map.b78b5524.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/8k_earth_specular_map.998d3642.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/avatar.cb53032a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/blog1.aa2f074c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/blog2.df7996bd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/blog3.969725e8.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/blog4.60aa6cec.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/cnubot.01f90d52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/cnubot2.f43baebe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/cnubot3.68ef88bc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/cnubot4.ca924e71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/cnubot5.c219d09f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/cnubot6.ef34c7ba.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/design.b0dea6a3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/game-dev.7e1a6c88.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/hotel.08153163.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/hotel2.6bcb3311.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/hotel3.c67e70f5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/hotel4.bc3174b3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/hotel5.48aec339.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/intelligence.191362ff.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/myImage001.601ba346.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/myImage002.afa78c3d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/myImage003.1a79851c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/police.2efe184e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/police2.11cf3c59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/police3.1ab0e2d3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/police4.00387ce8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/police5.719a417d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/police6.9f779242.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/police7.6d1c3464.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/police8.545dfea0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/port.c2b87793.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/port2.723ae39d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/port3.af86cb34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/port4.9593d3ac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/port5.28ba1334.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/supporters.62270ec5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/supporters2.3b8b2046.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/supporters3.f26eaba1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/supporters4.e9cf2423.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/supporters5.bb9bd751.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/supporters6.7ac6603e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/supporters7.636b7c96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/supporters8.e3e94940.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/supporters9.4394e773.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university.d85ea4dc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university10.02d803b0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university11.cff62493.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university12.01a90fcc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university13.d9ff61cb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university14.624df99a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university15.53e07e65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university16.4fdb3711.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university2.308207cc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university3.c9a10c40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university4.4a49f586.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university5.f9e3d29b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university6.719fce31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university7.d234bb82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university8.9b8ac1a1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/university9.ab844359.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday.d9b0586f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday10.3f971460.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday11.09ef9590.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday12.e944378f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday13.e3bd3472.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday14.7253f0a5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday15.1e5e1c54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday16.6324a236.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday17.309c223d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday18.2cb6d8eb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday19.b8fd6807.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday2.f0eafc26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday20.d1bc4599.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday21.1aebdf61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday3.0a81a099.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday4.3862a622.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday5.84561bf3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday6.8d3bf866.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday7.4802b69b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday8.540f6686.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/media/workingHoliday9.7477faa4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Components/Animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Components/Animation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Components/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Components/Resume.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Components/ResumeItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Components/ResumeItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Components/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Components/Skills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Pages/BlogsPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Pages/ContactPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Pages/ContactPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Pages/ResumeDetailPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Pages/ResumeDetailPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Pages/ResumePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Pages/ResumePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/data/blogs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/data/certifications.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/data/educationExperiences.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/data/skiils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/data/workingExperiences.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/setupProxy.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +159,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YoutubeClone" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -79,6 +198,9 @@
       <workItem from="1628259049024" duration="1051000" />
       <workItem from="1628392026147" duration="3000" />
       <workItem from="1630596222845" duration="2489000" />
+      <workItem from="1632211895436" duration="4248000" />
+      <workItem from="1632239429142" duration="120000" />
+      <workItem from="1632824962391" duration="1294000" />
     </task>
     <servers />
   </component>

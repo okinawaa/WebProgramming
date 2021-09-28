@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f6fb1f2c-b25c-491a-b0ea-41494bb6b231" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Ecommerce/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ecommerce/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/2.a57f9e24.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/2.a57f9e24.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/2.a57f9e24.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/main.71320af6.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/build/static/js/main.71320af6.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Components/Animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Components/Animation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Components/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Components/Resume.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Components/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Components/Skills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Pages/ContactPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Pages/ContactPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/Pages/ResumePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/src/Pages/ResumePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/data/skiils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/src/setupProxy.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1yS1ooTBgFdPDh5N8Z5XVzU64vm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6fb1f2c-b25c-491a-b0ea-41494bb6b231" name="Changes" comment="" />
+      <created>1632230352718</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632230352718</updated>
+      <workItem from="1632230353878" duration="55000" />
+      <workItem from="1632818166785" duration="639000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

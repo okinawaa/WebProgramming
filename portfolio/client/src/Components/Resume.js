@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import styled from 'styled-components';
 import {InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
@@ -8,25 +8,56 @@ import SchoolIcon from '@material-ui/icons/School';
 import ResumeItem from '../Components/ResumeItem';
 import CardMembershipIcon from '@material-ui/icons/CardMembership';
 import {ServicesSectionStyled} from "./ServicesSection";
-
-import workingExperiences from "../data/workingExperiences";
-import educationExperiences from "../data/educationExperiences";
-import certifications from "../data/certifications";
 import CertificationCard from "./CertificationCard";
+import CheckIcon from '@material-ui/icons/Check';
 import {upDownStaggerElement} from "./Animation";
+import axios from "axios";
+import SmallestTitle from "./SmallestTitle";
 
-function Resume() {
+function Resume({buttonClicked}) {
     const briefcase = <BusinessCenterIcon/>
     const school = <SchoolIcon/>
     const certification = <CardMembershipIcon/>
+    const check = <CheckIcon/>
     const workingExperienceRef = useRef();
     const educationExperienceRef = useRef();
     const certificationRef = useRef();
+    const [certifications, setCertifications] = useState([]);
+    const [workingExperiences, setWorkingExperiences] = useState([]);
+    const [educationExperiences, setEducationExperiences] = useState([]);
+
     useEffect(() => {
-        upDownStaggerElement(-50, document.querySelectorAll('.resume-content')[0].childNodes, workingExperienceRef.current, 0.3, 0.2)
-        upDownStaggerElement(-50, document.querySelectorAll('.resume-content')[1].childNodes, educationExperienceRef.current, 0.3, 0.2)
-        upDownStaggerElement(-50, document.querySelector('.services').childNodes, certificationRef.current, 0.3)
-    }, [workingExperienceRef,workingExperienceRef.current,educationExperienceRef,educationExperienceRef.current,certificationRef,certificationRef.current])
+        if (workingExperienceRef.current && educationExperienceRef.current && certificationRef.current && (certifications.length !== 0) && (workingExperiences.length !== 0) && (educationExperiences.length !== 0) ) {
+            upDownStaggerElement(-50, document.querySelectorAll('.resume-content')[0].childNodes, workingExperienceRef.current, 0.3, 0.2)
+            upDownStaggerElement(-50, document.querySelectorAll('.resume-content')[1].childNodes, educationExperienceRef.current, 0.3, 0.2)
+            upDownStaggerElement(-50, document.querySelector('.services').childNodes, certificationRef.current, 0.3)
+        }
+    }, [workingExperienceRef,educationExperienceRef, certificationRef,certifications,workingExperiences,educationExperiences,buttonClicked])
+
+    useEffect(() => {
+        const getCertifications = async () => {
+            const dbCertifications = await axios.get('/api/resume/certifications')
+            setCertifications(dbCertifications.data)
+        }
+        getCertifications();
+    }, [])
+
+    useEffect(() => {
+        const getWorkingExperiences = async () => {
+            const dbWorkingExperiences = await axios.get('/api/resume/workingExperiences')
+            setWorkingExperiences(dbWorkingExperiences.data)
+        }
+        getWorkingExperiences();
+    }, [])
+
+    useEffect(() => {
+        const getEducationExperiences = async () => {
+            const dbEducationExperiences = await axios.get('/api/resume/educationExperiences')
+            setEducationExperiences(dbEducationExperiences.data)
+        }
+        getEducationExperiences();
+    }, [])
+
 
     return (
         <ResumeStyled>
@@ -34,13 +65,13 @@ function Resume() {
             <InnerLayout>
                 <div className="small-title" ref={workingExperienceRef}>
                     <SmallTitle icon={briefcase} title={'Working Experience'}/>
+                    <SmallestTitle icon={check} title={'파란색 글자를 클릭하면 앨범으로 이동합니다'}/>
                 </div>
-                <div className="resume-content" >
+                <div className="resume-content">
                     {
                         workingExperiences.map((workingExperience) => (
                             <ResumeItem
-                                key={workingExperience.id}
-                                id={workingExperience.id}
+                                key={workingExperience.title}
                                 year={workingExperience.year}
                                 title={workingExperience.title}
                                 subTitle={workingExperience.subTitle}
@@ -51,13 +82,14 @@ function Resume() {
                 </div>
                 <div className="small-title u-small-title-margin" ref={educationExperienceRef}>
                     <SmallTitle icon={school} title={'Education Experience'}/>
+                    <SmallestTitle icon={check} title={'파란색 글자를 클릭하면 앨범으로 이동합니다'}/>
+
                 </div>
-                <div className="resume-content" >
+                <div className="resume-content">
                     {
                         educationExperiences.map((educationExperience) => (
                             <ResumeItem
-                                key={educationExperience.id}
-                                id={educationExperience.id}
+                                key={educationExperience.title}
                                 year={educationExperience.year}
                                 title={educationExperience.title}
                                 subTitle={educationExperience.subTitle}
@@ -79,7 +111,7 @@ function Resume() {
                                     key={certification.id}
                                     image={certification.image}
                                     title={certification.title}
-                                    List={certification.List}
+                                    List={certification.contents.split(",")}
                                 />
                             ))
                         }
@@ -93,7 +125,12 @@ function Resume() {
 
 const ResumeStyled = styled.section`
   .small-title {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 3rem;
+    @media screen and (max-width:700px){
+      flex-direction: column;
+    }
   }
 
   .u-small-title-margin {

@@ -22,14 +22,16 @@ export const upDownStaggerElement = (startY,node,trigger,stagger=0.3,delay=0) =>
             trigger: trigger,
             start: 'top 85%',
             indicator:true,
-            // scrub:1,
-            toggleActions: 'restart'
+            scrub:1,
         },
         stagger: {
             amount: stagger
         }
     })
 }
+
+
+
 
 export const upDownElement = (startY,node,trigger,delay=0) =>{
     gsap.from(node, {

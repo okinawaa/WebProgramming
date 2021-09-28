@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Skills from '../Components/Skills';
 import { MainLayout} from '../styles/Layouts';
 import Resume from '../Components/Resume';
@@ -6,10 +6,11 @@ import Resume from '../Components/Resume';
 
 
 function ResumePage() {
+    const [buttonClicked,setButtonClicked] = useState(false);
     return (
         <MainLayout>
-            <Skills />
-            <Resume />
+            <Skills buttonClicked={buttonClicked} setButtonClicked={setButtonClicked}/>
+            <Resume buttonClicked={buttonClicked} />
         </MainLayout>
     )
 }

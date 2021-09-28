@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import styled from "styled-components";
 import GithubIcon from '@material-ui/icons/GitHub'
 import InstagramIcon from '@material-ui/icons/Instagram'
+import ChromeReaderModeIcon from '@material-ui/icons/ChromeReaderMode';
 import {Suspense} from "react";
 import Earth from '../Components/earth/earth'
 import {Canvas} from '@react-three/fiber'
@@ -41,6 +42,10 @@ function HomePage(props) {
                     <a onClick={() => window.open('https://github.com/ChanhyukPark-Tech', '_blank')}
                        className="icon i-github">
                         <GithubIcon/>
+                    </a>
+                    <a onClick={() => window.open('https://chanhyukpark-tech.github.io/', '_blank')}
+                       className="icon i-chromeReaderModeIcon">
+                        <ChromeReaderModeIcon/>
                     </a>
                     <a onClick={() => window.open('https://www.instagram.com/yokattadesune/', '_blank')}
                        className="icon i-instagram">

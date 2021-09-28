@@ -13,7 +13,9 @@ app.use(express.json())
 app.use(cors())
 
 
+app.use('/api/portfolio',require('./routes/portRouter'));
 app.use('/api/resume',require('./routes/resumeRouter'));
+
 
 
 if(process.env.NODE_ENV === 'production'){
@@ -40,7 +42,7 @@ app.post('/api/form',  (req, res) => {
 
     let mailOptions = {
         from: data.email,
-        to: conf.email,
+        to: 'pgg6713@gmail.com',
         subject: data.subject,
         html: `
             <h3>Informations</h3>

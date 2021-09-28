@@ -1,31 +1,27 @@
 import React, {useEffect, useRef, useState} from 'react';
-import workingExperiences from "../data/workingExperiences";
-import educationExperiences from "../data/educationExperiences";
-
 
 import useWindowSize from "../hooks/useWindowSize";
 import styled from "styled-components";
 import PrimaryButton from "../Components/PrimaryButton";
 import {Link} from "react-router-dom";
+import axios from "axios";
 
 function ResumeDetailPage(props) {
-    const [theme, setTheme] = useState(null);
     const params = props.match.params // can use also useParams()
-    useEffect(() => {
-        if (params.id) {
-            workingExperiences.forEach(item => {
-                if (item.id === params.id * 1) {
-                    setTheme(item)
-                }
-            })
-            educationExperiences.forEach(item => {
-                if (item.id === params.id * 1) {
-                    setTheme(item)
-                }
-            })
-        }
+    const [images,setImages] = useState([])
 
-    }, [params.id])
+
+    useEffect(()=>{
+        const getWorkingExperienceImages = async () => {
+            const dbWEImages = await axios.post('/api/resume/workingExperienceImages',{title : params.title})
+            setImages(dbWEImages.data);
+            if(dbWEImages.data.length === 0){
+                const dbEEImages = await axios.post('/api/resume/educationExperienceImages',{title : params.title})
+                setImages(dbEEImages.data);
+            }
+        }
+        getWorkingExperienceImages();
+    },[])
 //Hook to grab window size
     const size = useWindowSize();
 
@@ -53,7 +49,7 @@ function ResumeDetailPage(props) {
         return ()=>{
             document.body.style.height = `${size.height}px`
         }
-    }, [size.height, scrollContainer, scrollContainer.current]);
+    }, [size.height, scrollContainer, scrollContainer.current,images]);
 
     //Set the height of the body to the height of the scrolling div
     const setBodyHeight = () => {
@@ -90,9 +86,9 @@ function ResumeDetailPage(props) {
     return (
         <ImageGalleryContainer ref={imageGalleryContainerRef}>
             <div ref={scrollContainer} className="scroll">
-                {theme && theme.images.map((image, index) => (
+                {images && images.map((image, index) => (
                     <div className="img-container" key={index}>
-                        <img src={image} alt=""
+                        <img src={image.images} alt=""
                              style={{transform: index % 2 !== 0 ? 'translate3D(45%,0,0)' : 'translate3D(0,0,0)'}}/>
                     </div>
                 ))}

@@ -1,4 +1,4 @@
-import {useContext, useState} from "react";
+import { useState} from "react";
 import {useEffect} from "react";
 import Sidebar from "./Components/Sidebar";
 import styled from 'styled-components';
@@ -6,7 +6,6 @@ import HomePage from "./Pages/HomePage";
 import AboutPage from './Pages/AboutPage';
 import ResumePage from './Pages/ResumePage';
 import PortfoliosPage from './Pages/PortfoliosPage';
-import BlogsPage from './Pages/BlogsPage';
 import ContactPage from './Pages/ContactPage';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -90,14 +89,11 @@ function App() {
                     <Route path="/resume" exact>
                         <ResumePage/>
                     </Route>
-                    <Route path="/resume/:id" exact component={ResumeDetailPage}/>
+                    <Route path="/resume/:title" exact component={ResumeDetailPage}/>
                     <Route path="/portfolios" exact>
                         <PortfoliosPage/>
                     </Route>
-                    <Route path="/portfolios/:id" exact component={PortDetailPage}/>
-                    <Route path="/blogs" exact>
-                        <BlogsPage/>
-                    </Route>
+                    <Route path="/portfolios/:title" exact component={PortDetailPage}/>
                     <Route path="/contact" exact>
                         <ContactPage/>
                     </Route>

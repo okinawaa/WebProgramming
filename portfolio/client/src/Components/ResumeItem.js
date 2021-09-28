@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components';
 import {Link} from "react-router-dom";
 import {MouseContext} from "../context/mouse-context";
 
-function ResumeItem({id, year, title, subTitle, text}) {
+function ResumeItem({ year, title, subTitle, text}) {
     const {cursorChangeHandler} = useContext(MouseContext);
     const [hoverd, setHoverd] = useState(false);
 
@@ -13,7 +13,7 @@ function ResumeItem({id, year, title, subTitle, text}) {
                 <p>{year}</p>
             </div>
             <div className="right-content">
-                <Link to={`/resume/${id}`} onMouseEnter={() => {
+                <Link to={`/resume/${title}`} onMouseEnter={() => {
                     cursorChangeHandler("hovered");
                     setHoverd(true);
                 }}

@@ -76,7 +76,7 @@ function ContactPage() {
                 <InnerLayout className={'contact-section'}>
                     <div className="left-content">
                         <div className="contact-title">
-                            <h4>Shout to at</h4>
+                            <h4>Shout at me</h4>
                         </div>
                         <form className="form" onSubmit={formSubmit}>
                             <div className="form-field">
@@ -106,7 +106,7 @@ function ContactPage() {
                                     :
 
                                     <div className="form-field f-button" onClick={formSubmit}>
-                                        <PrimaryButton title={'Not usable now'}/>
+                                        <PrimaryButton title={'PUSH Anytime'}/>
                                     </div>
 
                             }

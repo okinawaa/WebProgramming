@@ -1,39 +1,42 @@
 import React, {useEffect, useState} from 'react';
-import portfolios from '../data/portfolios';
 import styled from "styled-components";
 import {AnimatePresence, motion} from "framer-motion";
 import ImageSlider from "../Components/ImageSlider";
+import axios from "axios";
 
 function PortDetailPage(props) {
     const [portfolioItem, setPortfolioItem] = useState(null);
+    const [portfolioItemImages, setPortfolioItemImages] = useState([])
     const params = props.match.params // can use also useParams()
     const transition = {duration: 0.9, ease: [0.43, 0.13, 0.23, 0.96]}
 
     useEffect(() => {
-        if (params.id) {
-            portfolios.forEach(item => {
-                if (item.id === params.id * 1) {
-                    setPortfolioItem(item)
-                }
-            })
+        if (params.title) {
+            const getPortfolio = async () => {
+                const dbPortfolioContents = await axios.post('/api/portfolio/contents', {title: params.title})
+                const dbPortfolioImages = await axios.post('/api/portfolio/images',{title:params.title});
+                setPortfolioItem(dbPortfolioContents.data)
+                setPortfolioItemImages(dbPortfolioImages.data)
+            }
+            getPortfolio();
         }
-    }, [params.id])
+    }, [params.title])
     return (
         <AnimatePresence>
             {
-                portfolioItem &&
+                portfolioItem && portfolioItemImages &&
 
                 <StyledPortDetailContainer>
                     <PortContent>
                         <PortTitle>
-                            {portfolioItem.title}
-                            <ImageSliderContainer initial={{y: ((window.innerHeight * 1) / 4) ,opacity:0.4}}
-                                        animate={{
-                                            y: 0,
-                                            opacity:1,
-                                            transition: {delay: 0.5, ...transition}
-                                        }}>
-                                <ImageSlider slides={portfolioItem.image}/>
+                            {portfolioItem[0].portTitle}
+                            <ImageSliderContainer initial={{y: ((window.innerHeight * 1) / 4), opacity: 0.4}}
+                                                  animate={{
+                                                      y: 0,
+                                                      opacity: 1,
+                                                      transition: {delay: 0.5, ...transition}
+                                                  }}>
+                                <ImageSlider slides={portfolioItemImages}/>
 
                             </ImageSliderContainer>
 
@@ -47,16 +50,17 @@ function PortDetailPage(props) {
                                                         transition: {delay: 1.5, ...transition}
                                                     }}>
                             <PortTeam>
-                                {portfolioItem.team}
+                                {portfolioItem[0].team}
                             </PortTeam>
                             {
-                                portfolioItem.detailContents.map((detailContent) => (
+                                portfolioItem.map((detailContent) => (
+
                                     <PortParagraphContainer key={detailContent.id}>
                                         <PortParagraphTitle>
-                                            {detailContent.Title}
+                                            {detailContent.subject}
                                         </PortParagraphTitle>
                                         <PortParagraph>
-                                            {detailContent.Content}
+                                            {detailContent.content}
                                         </PortParagraph>
 
                                     </PortParagraphContainer>
@@ -83,8 +87,8 @@ const PortTeam = styled.h2`
 const ImageSliderContainer = styled(motion.div)`
   margin-top: 2rem;
 
-  img{
-    border: 5px solid  var(--border-color);
+  img {
+    border: 5px solid var(--border-color);
     border-radius: 4%;
     width: 30vw;
     height: 30vh;
@@ -94,7 +98,7 @@ const ImageSliderContainer = styled(motion.div)`
       width: 100%;
       height: 100%;
       object-fit: contain;
-      overflow-x:hidden;
+      overflow-x: hidden;
 
     }
   }
@@ -111,7 +115,7 @@ const PortTitle = styled.h1`
   display: flex;
   flex-direction: column;
   text-align: center;
-  
+
   @media screen and (max-width: 960px) {
     font-size: 2rem;
   }
