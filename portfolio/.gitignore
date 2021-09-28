@@ -1,4 +1,6 @@
 node_modules
 .env
 database.json
+mailConfig.json
+client/build
 !/client/build/
