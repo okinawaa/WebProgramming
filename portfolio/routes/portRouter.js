@@ -8,3 +8,5 @@ router.route('/contents')
 router.route('/images')
     .post(portCtrl.getPortfolioImages)
 module.exports = router;
+
+// node
