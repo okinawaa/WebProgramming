@@ -43,7 +43,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -84,6 +84,8 @@
       <workItem from="1632824962391" duration="1294000" />
       <workItem from="1632981942536" duration="962000" />
       <workItem from="1632983510717" duration="7000" />
+      <workItem from="1633584494542" duration="172000" />
+      <workItem from="1633591608202" duration="25000" />
     </task>
     <servers />
   </component>
