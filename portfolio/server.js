@@ -41,6 +41,7 @@ app.post('/api/form',  (req, res) => {
     })
 
     let mailOptions = {
+        // nodemailer
         from: data.email,
         to: 'pgg6713@gmail.com',
         subject: data.subject,
