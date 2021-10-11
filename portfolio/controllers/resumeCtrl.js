@@ -40,6 +40,7 @@ group by certifications.id`, (error, rows) => {
             })
 
     },
+
     getEducationExperienceImages: async (req, res) => {
         const {title} = req.body;
         const sql = `SELECT images FROM educationExperienceImages WHERE titleId = '${title}' `;
