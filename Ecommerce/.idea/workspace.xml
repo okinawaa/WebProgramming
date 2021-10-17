@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="" />
+    <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../reactfileupload/src/upload/FileHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reactfileupload/src/upload/MultipleFileUploadField.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reactfileupload/src/upload/SingleFileUploadWithProgress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reactfileupload/src/upload/UploadError.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +91,7 @@
       <workItem from="1632983510717" duration="7000" />
       <workItem from="1633584494542" duration="172000" />
       <workItem from="1633591608202" duration="25000" />
+      <workItem from="1634307151031" duration="87000" />
     </task>
     <servers />
   </component>
