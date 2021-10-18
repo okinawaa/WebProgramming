@@ -28,8 +28,8 @@ export function SingleFileUploadWithProgress({
 }
 
 function uploadFile(file, onProgress) {
-    const url = 'https://api.cloudinary.com/v1_1/demo/image/upload';
-    const key = 'docs_upload_example_us_preset';
+    const url = yourURL;
+    const key = yourKey;
 
     return new Promise  ((res, rej) => {
         const xhr = new XMLHttpRequest();

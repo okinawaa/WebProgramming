@@ -59,7 +59,7 @@ export function MultipleFileUploadField({ name }) {
 
     const { getRootProps, getInputProps } = useDropzone({
         onDrop,
-        accept: ['image/*', 'video/*', '.pdf' , '.doc','.docx'],
+        accept: ['image/*', 'video/*', '.pdf' , '.doc','.docx' , 'xlsx'],
         maxSize: 30000 * 1024, // 3000KB
     });
 
