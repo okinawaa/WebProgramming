@@ -29,7 +29,7 @@ export function SingleFileUploadWithProgress({
 
 function uploadFile(file, onProgress) {
     const url = yourURL;
-    const key = yourKey;
+    const key = yourKey;   // from .env
 
     return new Promise  ((res, rej) => {
         const xhr = new XMLHttpRequest();
