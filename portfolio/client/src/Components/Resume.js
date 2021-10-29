@@ -10,11 +10,10 @@ import CardMembershipIcon from '@material-ui/icons/CardMembership';
 import {ServicesSectionStyled} from "./ServicesSection";
 import CertificationCard from "./CertificationCard";
 import CheckIcon from '@material-ui/icons/Check';
-import {upDownStaggerElement} from "./Animation";
 import axios from "axios";
 import SmallestTitle from "./SmallestTitle";
 
-function Resume({buttonClicked}) {
+function Resume() {
     const briefcase = <BusinessCenterIcon/>
     const school = <SchoolIcon/>
     const certification = <CardMembershipIcon/>
@@ -26,13 +25,7 @@ function Resume({buttonClicked}) {
     const [workingExperiences, setWorkingExperiences] = useState([]);
     const [educationExperiences, setEducationExperiences] = useState([]);
 
-    useEffect(() => {
-        if (workingExperienceRef.current && educationExperienceRef.current && certificationRef.current && (certifications.length !== 0) && (workingExperiences.length !== 0) && (educationExperiences.length !== 0) ) {
-            upDownStaggerElement(-50, document.querySelectorAll('.resume-content')[0].childNodes, workingExperienceRef.current, 0.3, 0.2)
-            upDownStaggerElement(-50, document.querySelectorAll('.resume-content')[1].childNodes, educationExperienceRef.current, 0.3, 0.2)
-            upDownStaggerElement(-50, document.querySelector('.services').childNodes, certificationRef.current, 0.3)
-        }
-    }, [workingExperienceRef,educationExperienceRef, certificationRef,certifications,workingExperiences,educationExperiences,buttonClicked])
+
 
     useEffect(() => {
         const getCertifications = async () => {

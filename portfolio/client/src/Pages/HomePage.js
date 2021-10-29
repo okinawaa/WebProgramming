@@ -47,10 +47,10 @@ function HomePage(props) {
                        className="icon i-chromeReaderModeIcon">
                         <ChromeReaderModeIcon/>
                     </a>
-                    <a onClick={() => window.open('https://www.instagram.com/yokattadesune/', '_blank')}
-                       className="icon i-instagram">
-                        <InstagramIcon/>
-                    </a>
+                    {/*<a onClick={() => window.open('https://www.instagram.com/yokattadesune/', '_blank')}*/}
+                    {/*   className="icon i-instagram">*/}
+                    {/*    <InstagramIcon/>*/}
+                    {/*</a>*/}
                 </div>
             </div>
         </HomePageStyled>

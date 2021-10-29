@@ -65,6 +65,8 @@ const MenuItemStyled = styled.div`
         width: 100%;
         height: 30vh;
         object-fit: cover;
+        border-radius: 4px;
+        border: solid 2px white;
       }
 
       ul {

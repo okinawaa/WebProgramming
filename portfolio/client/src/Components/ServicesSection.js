@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 function ServicesSection(props) {
     const serviceRef = useRef();
     useEffect(() => {
-        upDownStaggerElement(-50,document.querySelector('.services').childNodes,serviceRef.current)
+        upDownStaggerElement(0,document.querySelector('.services').childNodes,serviceRef.current)
     }, [])
 
     return (
@@ -45,11 +45,19 @@ function ServicesSection(props) {
 
                         <ServiceCard
                             image={gamedev}
-                            title={'Collaboration'}
-                            paragraph={`주변 사람들과 소통하며 작업하는 것을 좋아하며, 서로 생각을 공유하면서 성장해가는것을 좋아합니다. `}
+                            title={'Artificial intelligence'}
+                            paragraph={`지금도 우리 가까이에있고, 가까이 접근하는 인기척도 못느낄정도로 빠르게 접근한 AI 가 미래에는 삶의 더욱큰 일부분을 차지할 것이라고 생각합니다. 다양한 AI 플랫폼에 관심이 많습니다.`}
                         />
                     </div>
 
+                    <div className='service-card'>
+
+                        <ServiceCard
+                            image={gamedev}
+                            title={'Collaboration'}
+                            paragraph={`주변 사람들과 소통하며 작업하는 것을 좋아하며, 서로 생각을 공유하면서 성장해가는것을 좋아합니다. 다른 사람들과 다양한 사고와 경험을 공유하기는 것을 즐겨합니다.`}
+                        />
+                    </div>
                 </div>
             </ServicesSectionStyled>
         </InnerLayout>
