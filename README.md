@@ -18,5 +18,10 @@
 
 ### ECOMMERCE (MERN) 
 
+
+--- 
+
 ### TypeScript Todo LIST (2021-12-24)
 `나무소리` 님의 유튜브 강의를 참고하였습니다.
+
+---
