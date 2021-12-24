@@ -69,3 +69,8 @@ MongoDB , Express , React , Node js 를 사용하여 여행 쇼핑몰 구축
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/ts-todo-proj)
 
 ---
+
+### firebase-react just CRUD (2021-12-25)
+
+`PedroTech` 님의 유튜브 강의를 참고하였습니다.
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/firebase-react-crud-main)
