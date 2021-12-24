@@ -17,7 +17,5 @@ apple 사는 주로 스크롤의 값에 따라서 사진을 변경시켜서 부�
 <img src="https://cdn.inflearn.com/public/files/courses/325248/a6131d8c-c816-4977-8dcb-6f16c522d3e5/001.GIF"/>
 <img src="https://cdn.inflearn.com/public/files/courses/325248/696d0131-bde1-402a-b8b9-732c00aeb3c6/002.GIF"/>
 
-<img src="https://cdn.inflearn.com/public/files/courses/325248/c02e87e5-492b-4d62-a303-71209abfe627/003.GIF"/>
-
-<img src="https://cdn.inflearn.com/public/files/courses/325248/ec571520-b988-4fcb-b52c-f82c5b4fe59e/004.GIF"/>
-
+![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/69495129/147362018-fed1d1be-1f9c-4891-af1a-aff94d51d389.gif)
+![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/69495129/147362051-2a3517de-b4a2-4073-9436-49be776dc2c3.gif)
