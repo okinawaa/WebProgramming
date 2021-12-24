@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="" />
+    <list default="true" id="825f931e-7e7a-4e8b-9219-d703d59669f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../bullien" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/client/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +92,11 @@
       <workItem from="1634307151031" duration="87000" />
       <workItem from="1634577850518" duration="70000" />
       <workItem from="1635434589387" duration="49000" />
+      <workItem from="1637473155285" duration="555000" />
+      <workItem from="1637855011851" duration="746000" />
+      <workItem from="1637922247180" duration="575000" />
+      <workItem from="1638114419814" duration="243000" />
+      <workItem from="1638115111570" duration="54000" />
     </task>
     <servers />
   </component>

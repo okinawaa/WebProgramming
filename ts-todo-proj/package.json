@@ -1,0 +1,21 @@
+{
+  "name": "ts-todo-proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/inquirer": "^8.1.3",
+    "concurrently": "^6.5.1",
+    "inquirer": "^8.2.0",
+    "nodemon": "^2.0.15"
+  }
+}
