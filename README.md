@@ -1,17 +1,33 @@
-# WebProgramming
+## 웹 개발에 대한 공부한것을 기록합니다.
 
-## 웹 어플리케이션 공부한것을 기록합니다.
+한번 이상 배워본 기술 
+
+👨‍💻 FE
+
+<code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"></code>
+<code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-official.svg"></code>
+<code><img width="30" height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<code><img width="30" height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
+<code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/147361422-c4b8b140-b756-4ab4-bd36-4ccd7aacfe19.png"></code>
+<code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
+<code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/147361610-b777433d-dd59-4618-a9a1-28555f50a46e.png"></code>
 
 
-### REACT
+🧑‍💻 BE
 
-### P5.js
+<code><img width="30" height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>
 
-### THREE.JS
 
-#### REACT-THREE-FIBER
+🧑‍💻 DB
 
-### VANILA JS
+<code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"></code>
+<code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg"></code>
+
+
+
+
+
+
 
 --- 
 
