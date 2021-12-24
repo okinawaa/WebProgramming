@@ -19,7 +19,7 @@
 ### MOVIE APP (MERN) (2021-07-10 ~ 2021-07-11)
 MongoDB , Express , React , Node js 를 사용하여 간단한 영화 목록 페이지 구축
 Youtube John Ahn 님의 강의를 참고하였습니다.
-[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/MovieApp)
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/MovieApp/boilerplate-mern-stack-master)
 
 
 
