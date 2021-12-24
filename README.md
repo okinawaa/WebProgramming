@@ -10,7 +10,7 @@
 <code><img width="30" height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
 <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/147361422-c4b8b140-b756-4ab4-bd36-4ccd7aacfe19.png"></code>
 <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
-<code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/147361610-b777433d-dd59-4618-a9a1-28555f50a46e.png"></code>
+<code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/147361638-e254dde7-0dab-490c-945f-c04076ba51bc.png"></code>
 
 
 🧑‍💻 BE
