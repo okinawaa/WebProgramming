@@ -14,4 +14,4 @@
 - 실제 쇼핑몰에서의 정렬방법
 - 관리자 권한 처리하는 방법
 
-![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/69495129/147360263-9da39ca3-40bd-47df-84c6-44379150d723.gif)
+![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/69495129/147360353-25c6697b-6a5e-4fa2-9853-97108f0b8f45.gif)
