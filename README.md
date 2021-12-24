@@ -15,13 +15,19 @@
 
 ### MOVIE APP (MERN)
 
+---
 
-### ECOMMERCE (MERN) 
+
+### ECOMMERCE clone coding (2021-07-20 ~ 2021-07-23)
+MongoDB , Express , React , Node js 를 사용하여 쇼핑몰 구축
+Youtube의 Dev A.T 님의 강의를 참고하였습니다.
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/Ecommerce)
+
 
 --- 
 
 ### MERN Shopping mall (2021-07-15 ~ 2021-07-26)
-MongoDB , Express , React , Node js 를 사용하여 쇼핑몰 구축
+MongoDB , Express , React , Node js 를 사용하여 여행 쇼핑몰 구축
 인프런의 John Ahn 님의 강의를 참고하였습니다.
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/ShoppingMall)
 
