@@ -17,6 +17,14 @@ react 보다는 firebase 사용에 익숙해지는데 초점을 둔 공부였습
 - firebase 의 collection 밑의 subcollection 사용방법
 - `PrivateRoute` 사용법
 - `vercel` 을 통한 웹 deploy
+- `date` 를 컨트롤하는데 항상 어려움을 겪었는데 moment 를 사용법
+- firebase 의 fullPath 와 실제 cloud URL 의 차이점
+- 채팅에서 메세지를 어떻게 데이터베이스에 저장하는가 
+- 대화의 from 과 to 를 이용해서 classname 을 지정하는방법
+- `multer` 나 `cloudinary` 를 이용하지 않고 pure input tag 로 file 을 받는방법
+- svg 를 그대로 사용하는것이아닌, .js file 안에 svg를 집어넣어서 Component로 사용하는방법
+
+
 
 
 
