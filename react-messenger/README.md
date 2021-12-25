@@ -17,3 +17,7 @@ react 보다는 firebase 사용에 익숙해지는데 초점을 둔 공부였습
 - firebase 의 collection 밑의 subcollection 사용방법
 - `PrivateRoute` 사용법
 - `vercel` 을 통한 웹 deploy
+
+
+
+![ezgif com-gif-maker (9)](https://user-images.githubusercontent.com/69495129/147390240-883fc77b-32cc-4c2b-ac5a-7d1ef888f8c7.gif)
