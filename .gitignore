@@ -9,5 +9,6 @@ threejscourse
 !/portfolio/database.json
 !/portfolio/mailConfig.json
 !/portfolio/client/build/
-
+**/.env
 portfolio/mailConfig.json
+!/react-messenger/.env
