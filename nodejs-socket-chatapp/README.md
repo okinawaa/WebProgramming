@@ -20,3 +20,6 @@
 이벤트 핸들러 안에 socket.on method 를 넣어둬서 이벤트가 발생하면 계속 소켓통신이 발생하는 현상이 발생했다.
 예를들어 click event 안에 socket.on 을 넣어둬서 한번 클릭에도 몇번의 채팅이 보내지는 현상이 발생했다.
 핸들러 밖으로 socket.on method 를 분리함으로써 해결하였다.
+
+### 데모영상
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/69495129/148879481-1e71139e-4194-4f81-bea3-6db955fc1a15.gif)
