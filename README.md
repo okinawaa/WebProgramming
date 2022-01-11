@@ -95,3 +95,10 @@ Build and Deploy Private Chat App with React Firebase version 9
 
 `code Scalper` 님의 유튜브 강의를 참고하였습니다.
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/nodejs-socket-chatapp)
+
+---
+
+### 💬 React JS & node JS WebSocket 통신 (2022-01-11 ~  )
+리액트와 노드 및 소켓을 이용한 실시간 채팅어플
+
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-websocket-chat-app)
