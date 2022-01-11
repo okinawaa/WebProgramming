@@ -11,12 +11,15 @@
 <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/147361422-c4b8b140-b756-4ab4-bd36-4ccd7aacfe19.png"></code>
 <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/147361638-e254dde7-0dab-490c-945f-c04076ba51bc.png"></code>
+<code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reducer/reducer-official.svg"></code>
 
 
 🧑‍💻 BE
 
 <code><img width="30" height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>
 <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"></code>
+<code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/socketio/socketio-icon.svg"></code>
+<code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-icon.svg"></code>
 
 
 🧑‍💻 DB
@@ -87,7 +90,7 @@ Build and Deploy Private Chat App with React Firebase version 9
 
 ---
 
-### 💬 vanila JS & node JS & socket io !! (2022-01-11 ~ )
+### 💬 vanila JS & node JS & socket io !! (2022-01-11 ~ 2022-01-11 )
 바닐라 자바스크립트와 노드 및 소켓을 이용한 실시간 채팅어플
 
 `code Scalper` 님의 유튜브 강의를 참고하였습니다.
