@@ -108,4 +108,4 @@ Build and Deploy Private Chat App with React Firebase version 9
 ### React Redux Folder Structure (2022-01-10 ~  )
 리액트에서 리덕스 툴킷을 이용한 폴더구조 잡기
 
-[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-websocket-chat-app)
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-redux-toolkit-structure)
