@@ -218,7 +218,11 @@ const SignIn = () => {
 예를 들면 일반적으로 boolean 값을 변화시켜서 모달을 보여주고 모달을 숨기고 하는걸 `redux` 에서 처리한다고 하겠다.
 
 ![image](https://user-images.githubusercontent.com/69495129/149431361-a79a0bea-ed48-4593-9177-b6e9e5ba8d30.png)
+
 위 사진은 보는것과 같이 reducers 안에 선언되어있다.
+위 두 actions 를 export 시켜주고, 사용할 컴포넌트에서 dispatch(액션이름) 을 수행시켜주면 상태관리가 잘된다! 
+넘겨줄 파라미터는 action.payload 로 넘어가서 reducers 내부에서 사용할 수 있다.
+
 
 ### 참조자료
 - [김민수님의 디스코드 강의](https://github.com/orgs/Instagram-Clone-Coding/people/minsoo-web)
