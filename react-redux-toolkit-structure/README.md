@@ -214,7 +214,7 @@ const SignIn = () => {
 ### Trouble shotting 
 
 위 예제처럼 createAsyncThunk 를 통해서 순수 상태만 변경시켜주려는 경우 응답하지 않는 문제가 발생했다.
-자문을 구한결과 `extrareducer` 는 비동기 함수만 처리하고 기본 순수함수/동기함수 같은 경우는 일반적으로 reducer 에서 처리하면 된다고 한다.
+자문을 구한결과 `extrareducer` 는 비동기 함수만 처리하고 기본 순수함수/동기함수 같은 경우는 일반적으로 reducers 에서 처리하면 된다고 한다.
 예를 들면 일반적으로 boolean 값을 변화시켜서 모달을 보여주고 모달을 숨기고 하는걸 `redux` 에서 처리한다고 하겠다.
 
 ![image](https://user-images.githubusercontent.com/69495129/149431361-a79a0bea-ed48-4593-9177-b6e9e5ba8d30.png)
