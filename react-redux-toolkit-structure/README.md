@@ -223,6 +223,14 @@ const SignIn = () => {
 위 두 actions 를 export 시켜주고, 사용할 컴포넌트에서 dispatch(액션이름) 을 수행시켜주면 상태관리가 잘된다! 
 넘겨줄 파라미터는 action.payload 로 넘어가서 reducers 내부에서 사용할 수 있다.
 
+#### reducers vs extrareducers
+- original redux 의 reducer 는 순수함수 / 동기적 함수라서 비동기 작업을 수행불가
+- 비동기 작업을 처리하기 위해서 createAsyncThunk 사용
+- 일반적으로 useState 를 사용해서 했던 순수상태변화함수라면 reducers 에서 처리가능
+- dispatch 호출시 인자는 action.payload 로 넘겨주고, reducer 가 payload 를 받아서 state 를 원하는 상태로 변경
+- redux toolkit 에서의 slice 는 actions 와 reducer 프로퍼티를 다 가지고 있다.
+- 비동기 함수를 createAsyncThunk 를 통해서 편하게 3가지 상태를 다룰 수 있다.
+
 
 ### 참조자료
 - [김민수님의 디스코드 강의](https://github.com/orgs/Instagram-Clone-Coding/people/minsoo-web)
