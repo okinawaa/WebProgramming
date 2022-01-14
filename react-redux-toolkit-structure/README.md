@@ -211,6 +211,6 @@ const SignIn = () => {
 ```
 
 ### 참조자료
-- 김민수님의 디스코드 강의
+- [김민수님의 디스코드 강의](https://github.com/orgs/Instagram-Clone-Coding/people/minsoo-web)
 - [김민수님 폴더구조](https://minsooweb.notion.site/Redux-Toolkit-with-Typescript-51341c42ab164f44ac02509dd65b2b2c#10d2a216dc8d4aba9dadcc2748230edc)
-- [김영인님의 리듀서와 엑스트라리듀서 차이 설명]
+- [김영인님의 리듀서와 엑스트라리듀서 차이 설명](https://github.com/orgs/Instagram-Clone-Coding/people/kimyoungyin)
