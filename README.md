@@ -95,3 +95,28 @@ Build and Deploy Private Chat App with React Firebase version 9
 
 `code Scalper` 님의 유튜브 강의를 참고하였습니다.
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/nodejs-socket-chatapp)
+
+---
+
+### 💬 React JS & node JS WebSocket 통신 (2022-01-11 ~  )
+리액트와 노드 및 소켓을 이용한 실시간 채팅어플
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-websocket-chat-app)
+
+---
+
+###  React Redux Folder Structure (2022-01-10 ~ 2022-01-14 ) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reducer/reducer-official.svg"></code>
+
+리액트에서 리덕스 툴킷을 이용한 폴더구조 잡기
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-redux-toolkit-structure)
+
+---
+
+### TDD Flow in REACT.JS (2022-01-14 ~ 2022-01-19)
+
+리액트에서 TDD 를 어떻게 진행하는가?
+리액트에서 Test Code 를 어떻게 작성하는가?
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-tdd-tutorial)
+
+Inflearn `John Ahn` 님의 강의를 참고하였습니다.
+
+
