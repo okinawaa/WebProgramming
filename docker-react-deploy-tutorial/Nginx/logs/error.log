@@ -1624,3 +1624,6 @@
 2022/01/20 01:43:52 [emerg] 1#1: host not found in upstream "react-front:3000" in /etc/nginx/conf.d/default.conf:2
 2022/01/20 01:44:04 [emerg] 1#1: host not found in upstream "react-front:3000" in /etc/nginx/conf.d/default.conf:2
 2022/01/20 01:44:15 [emerg] 1#1: host not found in upstream "react-front:3000" in /etc/nginx/conf.d/default.conf:2
+2022/01/20 01:44:27 [emerg] 1#1: host not found in upstream "react-front:3000" in /etc/nginx/conf.d/default.conf:2
+2022/01/20 01:44:38 [emerg] 1#1: host not found in upstream "react-front:3000" in /etc/nginx/conf.d/default.conf:2
+2022/01/20 01:44:50 [emerg] 1#1: host not found in upstream "react-front:3000" in /etc/nginx/conf.d/default.conf:2
