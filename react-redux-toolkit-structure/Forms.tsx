@@ -9,15 +9,15 @@ import { useAppDispatch } from "app/hooks";
 import { setUserInfo } from "features/Auth/authSlice";
 
 const callSignInAPI = (
-    e: MouseEvent<HTMLButtonElement>,
-    dispatch: Function,
-    history: any,
+  e: MouseEvent<HTMLButtonElement>,
+  dispatch: Function,
+  history: any,
 ) => {
     e.preventDefault();
     dispatch(
-        setUserInfo({
-            name: "minsoo",
-        }),
+      setUserInfo({
+          name: "minsoo",
+      }),
     );
     history.replace("/");
 };
@@ -27,33 +27,33 @@ export function Forms() {
     const history = useHistory();
 
     return (
-        <FormContainer>
-            <ImgSprite
-                width={test.width}
-                height={test.height}
-                position={test.position}
-                className="logo"
-            />
-            <InputContainer>
-                <InputForm>
-                    <Div>
-                        {/** id, password, btn, line, facebook */}
-                        <Input innerText={placeholder.id} />
-                        <Input innerText={placeholder.password} />
-                        <LoginButton
-                            onClick={(e) => callSignInAPI(e, dispatch, history)}
-                        >
-                            로그인
-                        </LoginButton>
-                        <Line />
-                        <Facebook />
-                    </Div>
-                </InputForm>
-                <Link to="/accounts/password/reset/">
-                    비밀번호를 잊으셨나요?
-                </Link>
-            </InputContainer>
-        </FormContainer>
+      <FormContainer>
+          <ImgSprite
+            width={test.width}
+            height={test.height}
+            position={test.position}
+            className="logo"
+          />
+          <InputContainer>
+              <InputForm>
+                  <Div>
+                      {/** id, password, btn, line, facebook */}
+                      <Input innerText={placeholder.id} />
+                      <Input innerText={placeholder.password} />
+                      <LoginButton
+                        onClick={(e) => callSignInAPI(e, dispatch, history)}
+                      >
+                          로그인
+                      </LoginButton>
+                      <Line />
+                      <Facebook />
+                  </Div>
+              </InputForm>
+              <Link to="/accounts/password/reset/">
+                  비밀번호를 잊으셨나요?
+              </Link>
+          </InputContainer>
+      </FormContainer>
     );
 }
 
@@ -101,44 +101,44 @@ function Input({ innerText }: textProps) {
     };
 
     return (
-        <Wrapper>
-            <InputContent>
-                <Label>
-                    <Span ref={TextRef}>{innerText}</Span>
-                    <WritingForm
-                        onChange={handleText}
-                        type={textType}
-                        ref={InputRef}
-                    />
-                </Label>
-                <State></State>
-            </InputContent>
-        </Wrapper>
+      <Wrapper>
+          <InputContent>
+              <Label>
+                  <Span ref={TextRef}>{innerText}</Span>
+                  <WritingForm
+                    onChange={handleText}
+                    type={textType}
+                    ref={InputRef}
+                  />
+              </Label>
+              <State></State>
+          </InputContent>
+      </Wrapper>
     );
 }
 
 function Line() {
     return (
-        <LineStyle>
-            <div />
-            <span>또는</span>
-            <div />
-        </LineStyle>
+      <LineStyle>
+          <div />
+          <span>또는</span>
+          <div />
+      </LineStyle>
     );
 }
 
 function Facebook() {
     return (
-        <FacebookStyle>
-            <button>
-                <ImgSprite
-                    width={facebook.width}
-                    height={facebook.height}
-                    position={facebook.position}
-                />
-                <span>Facebook으로 로그인</span>
-            </button>
-        </FacebookStyle>
+      <FacebookStyle>
+          <button>
+              <ImgSprite
+                width={facebook.width}
+                height={facebook.height}
+                position={facebook.position}
+              />
+              <span>Facebook으로 로그인</span>
+          </button>
+      </FacebookStyle>
     );
 }
 
@@ -163,7 +163,6 @@ const InputContainer = styled.div`
     margin-bottom: 10px;
     max-width: 350px;
     width: 100%;
-
     a {
         margin-top: 12px;
         font-size: 12px;
@@ -204,7 +203,6 @@ const Label = styled.label`
     min-width: 0;
     position: relative;
     cursor: text;
-
     // input에 값이 쓰이면 이벤트
     .small {
         transform: scale(0.83333) translateY(-10px);
@@ -252,7 +250,6 @@ const LineStyle = styled.div`
     margin: 10px 40px 18px;
     display: flex;
     align-items: center;
-
     & > span {
         color: #8e8e8e;
         font-size: 13px;
@@ -260,7 +257,6 @@ const LineStyle = styled.div`
         margin: 0 18px;
         line-height: 15px;
     }
-
     & > div {
         background-color: ${(props) => props.theme.color.bd_gray};
         height: 1px;
@@ -272,15 +268,12 @@ const LineStyle = styled.div`
 
 const FacebookStyle = styled.div`
     margin: 8px 40px;
-
     & > button {
         width: 100%;
-
         & > div {
             display: inline-block;
             margin-right: 8px;
         }
-
         & > span {
             color: #385185;
         }

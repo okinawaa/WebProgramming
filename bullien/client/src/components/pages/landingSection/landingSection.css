@@ -1,0 +1,27 @@
+.skeleton {
+    background-color: rgba(240, 240, 240, 1);
+    background-image: linear-gradient(
+            90deg,
+            rgba(240, 240, 240, 1),
+            rgba(240, 240, 240, 1),
+            rgba(255, 255, 255, 1),
+            rgba(240, 240, 240, 1),
+            rgba(240, 240, 240, 1)
+    );
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    display: inline-block;
+    line-height: 1;
+    width: 100%;
+    animation: skeleton 500ms ease-in-out infinite;
+}
+@keyframes skeleton {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: calc(200px + 100%) 0;
+    }
+}
+
