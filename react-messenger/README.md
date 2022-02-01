@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+## React-firebase messenger 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[실제사이트바로가기](https://web-programming-sigma.vercel.app/)
 
-## Available Scripts
+Build and Deploy Private Chat App with React Firebase version 9
 
-In the project directory, you can run:
+react 보다는 firebase 사용에 익숙해지는데 초점을 둔 공부였습니다.
+실제 실시간으로 어떻게 채팅을 주고받는지, 그리고 채팅 데이터를 어떤식으로 저장하는지 궁금했는데 새로운 것들을 많이 알게 되었습니다.
+생각보다 디테일한 부분까지 구현한 프로젝트였습니다.
+상대가 채팅을 읽었는지 체크하는 부분도 인상깊었습니다. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 배운점
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- firebase onSnapshot 을 통한 실시간 정보 업데이트
+- firebase storage 를 이용하여 image를 upload 하는 방법
+- firebase 의 collection 밑의 subcollection 사용방법
+- `PrivateRoute` 사용법
+- `vercel` 을 통한 웹 deploy
+- `date` 를 컨트롤하는데 항상 어려움을 겪었는데 moment 를 사용법
+- firebase 의 fullPath 와 실제 cloud URL 의 차이점
+- 채팅에서 메세지를 어떻게 데이터베이스에 저장하는가 
+- 대화의 from 과 to 를 이용해서 classname 을 지정하는방법
+- `multer` 나 `cloudinary` 를 이용하지 않고 pure input tag 로 file 을 받는방법
+- svg 를 그대로 사용하는것이아닌, .js file 안에 svg를 집어넣어서 Component로 사용하는방법
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![ezgif com-gif-maker (9)](https://user-images.githubusercontent.com/69495129/147390240-883fc77b-32cc-4c2b-ac5a-7d1ef888f8c7.gif)

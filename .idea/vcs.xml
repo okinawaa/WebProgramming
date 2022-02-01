@@ -4,6 +4,8 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Ecommerce" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Ecommerce/pipshop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react-websocket-chat-app-version2/websocket-direct-chat-client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react-websocket-chat-app-version2/websocket-direct-chat-server" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/threejscourse/rotateCamera" vcs="Git" />
   </component>
 </project>
