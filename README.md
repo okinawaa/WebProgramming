@@ -12,7 +12,8 @@
 <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/147361638-e254dde7-0dab-490c-945f-c04076ba51bc.png"></code>
 <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reducer/reducer-official.svg"></code>
-<code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/152636849-150a3b7c-436a-449f-9db0-7169a8628388.png"></code>
+<code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/152636881-d4cb2d5b-e18c-4363-801c-b2661c5fa031.png"></code>
+<code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-ar21.svg"></code>
 
 
 🧑‍💻 BE
@@ -43,7 +44,7 @@ vanila js, html, css 를 이용해서 apple company 에서 주로 사용하는 �
 
 ---
 
-### MOVIE APP (MERN) (2021-07-10 ~ 2021-07-11)
+### MOVIE APP (MERN) (2021-07-10 ~ 2021-07-11) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 MongoDB , Express , React , Node js 를 사용하여 간단한 영화 목록 페이지 구축
 Youtube John Ahn 님의 강의를 참고하였습니다.
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/MovieApp/boilerplate-mern-stack-master)
@@ -53,7 +54,7 @@ Youtube John Ahn 님의 강의를 참고하였습니다.
 ---
 
 
-### ECOMMERCE clone coding (2021-07-20 ~ 2021-07-23)
+### ECOMMERCE clone coding (2021-07-20 ~ 2021-07-23) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 MongoDB , Express , React , Node js 를 사용하여 쇼핑몰 구축
 Youtube의 Dev A.T 님의 강의를 참고하였습니다.
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/Ecommerce)
@@ -61,7 +62,7 @@ Youtube의 Dev A.T 님의 강의를 참고하였습니다.
 
 --- 
 
-### MERN Shopping mall (2021-07-15 ~ 2021-07-26)
+### MERN Shopping mall (2021-07-15 ~ 2021-07-26) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 MongoDB , Express , React , Node js 를 사용하여 여행 쇼핑몰 구축
 인프런의 John Ahn 님의 강의를 참고하였습니다.
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/ShoppingMall)
@@ -75,14 +76,14 @@ MongoDB , Express , React , Node js 를 사용하여 여행 쇼핑몰 구축
 
 ---
 
-###  firebase-react just CRUD (2021-12-25)
+###  firebase-react just CRUD (2021-12-25) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 
 `PedroTech` 님의 유튜브 강의를 참고하였습니다.
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/firebase-react-crud-main)
 
 ---
 
-### 💬 React-firebase chatApp !! (2021-12-25 ~ 2021-12-26)
+### 💬 React-firebase chatApp !! (2021-12-25 ~ 2021-12-26) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 Build and Deploy Private Chat App with React Firebase version 9
 
 `Farhan Farooq` 님의 유튜브 강의를 참고하였습니다.
@@ -99,20 +100,21 @@ Build and Deploy Private Chat App with React Firebase version 9
 
 ---
 
-### 💬 React JS & node JS WebSocket 통신 (2022-01-11 ~  )
+### 💬 React JS & node JS WebSocket 통신 (2022-01-11 ~  ) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 리액트와 노드 및 소켓을 이용한 실시간 채팅어플
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-websocket-chat-app)
 
 ---
 
-###  React Redux Folder Structure (2022-01-10 ~ 2022-01-14 ) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reducer/reducer-official.svg"></code>
+###  React Redux Folder Structure (2022-01-10 ~ 2022-01-14 ) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reducer/reducer-official.svg"></code><code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 
 리액트에서 리덕스 툴킷을 이용한 폴더구조 잡기
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-redux-toolkit-structure)
 
 ---
 
-### TDD Flow in REACT.JS (2022-01-14 ~ 2022-01-19)
+### TDD Flow in REACT.JS (2022-01-14 ~ 2022-01-19) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code><code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-ar21.svg"></code>
+
 
 리액트에서 TDD 를 어떻게 진행하는가?
 리액트에서 Test Code 를 어떻게 작성하는가?
@@ -123,9 +125,7 @@ Inflearn `John Ahn` 님의 강의와 FE CONF2020 `최수형` 님의 강연을 �
 
 ---
 
-### Next.js Basic Introduction (2022-02-01 ~ 2022-02-02) <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/152636849-150a3b7c-436a-449f-9db0-7169a8628388.png"></code>
-
-
+### Next.js Basic Introduction (2022-02-01 ~ 2022-02-02) <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/152636881-d4cb2d5b-e18c-4363-801c-b2661c5fa031.png"></code>
 
 Why we have to use SSR than CSR 
 SSR 맛보기 개념익히기
