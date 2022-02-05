@@ -140,6 +140,6 @@ SSR 맛보기 개념익히기
 
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-rendering-optimization-practice)
 
-cocoder16님의 `https://cocoder16.tistory.com/36` 글을 참고하였습니다.
+[cocoder16](https://cocoder16.tistory.com/36)님의 `리액트 렌더링 최적화하는 8가지 방법` 글을 참고하였습니다.
 
 
