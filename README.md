@@ -120,4 +120,16 @@ Build and Deploy Private Chat App with React Firebase version 9
 Inflearn `John Ahn` 님의 강의와 FE CONF2020 `최수형` 님의 강연을 참고하였습니다.
 
 
+---
+
+### Next.js Basic Introduction (2022-02-01 ~ 2022-02-02)
+
+Why we have to use SSR than CSR 
+SSR 맛보기 개념익히기
+
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/nextjs-intro-basic)
+
+노마드 코더님의 `NextJS 시작하기` 강의를 참고하였습니다.
+
+
 
