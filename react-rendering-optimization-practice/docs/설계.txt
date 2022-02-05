@@ -1,0 +1,76 @@
+라우팅 없이 튜토리얼처럼
+페이지 좌우에 이전 버튼과 다음 버튼을 놓고 예시를 이동
+
+1. state 선언 위치
+
+A - B - C
+  ㄴ D
+
+B, C에서 사용하는 state를 B에 선언한 경우와 A에 선언한 경우로 나뉘어서 state 변경시 몇 개의 컴포넌트들이 리렌더링 되는지
+
+2. state가 객체인 경우 쪼개기
+
+index - UserList - UserItem mapping
+      ㄴ Group
+
+(X)
+state = {
+  group: {
+    name,
+    description,
+    users: [{
+      name,
+      age,
+    }]
+  }
+}
+
+(O)
+state = {
+  group: {
+    name,
+    description,
+  },
+  users: [{
+    name,
+    age,
+  }]
+}
+
+막쪼개는게 아니라 컴포넌트별로 사용하는 데이터를 기준으로 쪼개보면 이 state들을 필요 이상으로 상위컴포넌트에 선언했다는 것을 발견할 수가 있다.
+
+-- state와 컴포넌트를 잘 설계하는 것이 우선이지만 복잡한 어플리케이션의 경우 이상적인 형태로만 개발하는 것은 힘들다.
+
+4. React.memo
+
+UserItem에 적용
+
+7. 매핑시 key값으로 index 넣는 것 피하기
+
+UserList - UserItem
+
+state = {
+  users: [{
+    name, age, score
+  }]
+}
+
+5. useMemo, useCallback,
+
+state = {
+  users: [{
+    name, age, score
+  }]
+}
+
+위 예제에서 average를 useMemo값을 사용하는 것
+getAverage를 useCallback으로 사용하는 것
+
+6. props에서 매번 객체 생성 주의
+
+1) 위 예제에서 UserItem props에 grade 추가 getGrade()호출해서 grade 구하는것 => useMemo의 필요성
+2) getGrade() 대신 getResult() 에서 { grade, comment }를 구하는 것 
+이러면 UserList가 리렌더 될 때마다 모든 UserItem이 새로운 객체를 props로 받아 리렌더 됨.
+=>  대안: 객체 생성을 하지말고 state를 이용
+
+score 변경하면 grade, comment를 그에 맞게 setState 시켜줌.
