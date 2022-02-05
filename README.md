@@ -12,6 +12,7 @@
 <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/147361638-e254dde7-0dab-490c-945f-c04076ba51bc.png"></code>
 <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reducer/reducer-official.svg"></code>
+<code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/152636849-150a3b7c-436a-449f-9db0-7169a8628388.png"></code>
 
 
 🧑‍💻 BE
@@ -122,7 +123,9 @@ Inflearn `John Ahn` 님의 강의와 FE CONF2020 `최수형` 님의 강연을 �
 
 ---
 
-### Next.js Basic Introduction (2022-02-01 ~ 2022-02-02)
+### Next.js Basic Introduction (2022-02-01 ~ 2022-02-02) <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/152636849-150a3b7c-436a-449f-9db0-7169a8628388.png"></code>
+
+
 
 Why we have to use SSR than CSR 
 SSR 맛보기 개념익히기
@@ -134,7 +137,8 @@ SSR 맛보기 개념익히기
 
 ---
 
-### React rendering optimization deep dive..💫 (2022-02-02 ~ 2022-02-05)
+###  React rendering optimization deep dive..💫 (2022-02-02 ~ 2022-02-05) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
+
 
 드디어 리액트 렌더링 최적화
 
