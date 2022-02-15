@@ -147,3 +147,10 @@ SSR 맛보기 개념익히기
 [cocoder16](https://cocoder16.tistory.com/36)님의 `리액트 렌더링 최적화하는 8가지 방법` 글을 참고하였습니다.
 
 
+---
+
+###  도커와 CI환경💦 (2022-02-12 ~ 진행중) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"></code>
+
+
+도커이론, 이미지, 컨테이너, CI 구축
+
