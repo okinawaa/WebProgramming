@@ -7,7 +7,7 @@
   - `Docker Image` `Docker Container` `Docker Volume` `Docker Compose` `Docker Hub`
 - AWS
   -  `IAM` `EC2` `ElasticBeanstalk` `VPC` `Security Group` `S3` `Dockerrunaws` `Task Definition`
-- Trevis CI
+- Travis CI
   -  `Travis Flow` `Travis.yml File` `Testing System` `Deployment System` `Enviroment Variables`
 - etc
   -  `Node.js` `React.js` `Mysql` `Redis`
