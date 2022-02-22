@@ -70,3 +70,9 @@ Docker 를 이용한 Workflow
 #### 복잡한 어플을 실제로 배포해보기(개발 환경 부분)
 
 #### [복잡한 어플을 실제로 배포해보기(테스트 & 배포 부분)](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/docker-atoz/docker-full-stack-app-master)
+
+## Conclusion
+
+- 내가 Docker 를 사용하지 않고 작업했던 프로젝트들을 Docker 를 도입해서 더욱 유연하게 바꿀 계획이다.
+- 2022.02 이내로 `츠누봇` Docker 도입계획 (Django, Nginx)
+- 2022.02 이내로 `Nanoscientific Symposium` Docker 도입계획 (React,Node,Mysql,Nginx)
