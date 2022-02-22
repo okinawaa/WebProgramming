@@ -149,7 +149,7 @@ SSR 맛보기 개념익히기
 
 ---
 
-###  도커와 CI환경💦 (2022-02-12 ~ 진행중) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"></code>
+###  도커와 CI환경💦 (2022-02-12 ~ 2022-02-22) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"></code>
 
 
 도커이론, 이미지, 컨테이너, CI 구축
