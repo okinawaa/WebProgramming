@@ -16,6 +16,8 @@
 
 ### Summary
 
+---
+
 Docker 를 이용한 Workflow
 
 #### 도커기본
@@ -37,3 +39,22 @@ Docker 를 이용한 Workflow
 
 - 이미지 내부 파일 시스템 구조 보기
   -  docker run [이미지 이름] ls
+- 컨테이너들 나열하기
+  - 현재 실행중인 컨테이너 나열 docker ps
+  - 모든 컨테이너 나열  docker ps -a
+- 도커 컨테이너의 생명주기
+  -  생성 시작 실행 중지 삭제 
+  -  create 와 start 를 합친게 run 
+-  docker stop vs docker kill
+  -  stop 이 더 graceful 하게 죽인다.
+  -  kill 은 말그대로 그냥 죽인다. (forced)
+- 도커 컨테이너 삭제하기
+  - 중지된 컨테이너를 삭제하고 싶다면? docker rm <아이디/이름>
+  - 모든 컨테이너를 삭제하고 싶다면? docker rm `docker ps -a -q`
+  - 이미지를 삭제하고 싶다면? docker rmi <이미지 id>
+  - 한번에 사용하지 않는 컨테이너, 이미지, 네트워크 모두 삭제하고 싶다면? docker system prune
+- 실행 중인 컨테이너에 명령어 전달
+  - docker exec <컨테이너 아이디>
+  - docker run 은 `새로 컨테이너`를 만들어서 실행
+  - docker exec 은 이미 `실행 중인 컨테이너`에 명령어를 전달
+
