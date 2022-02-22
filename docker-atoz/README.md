@@ -75,4 +75,4 @@ Docker 를 이용한 Workflow
 
 - 내가 Docker 를 사용하지 않고 작업했던 프로젝트들을 Docker 를 도입해서 더욱 유연하게 바꿀 계획이다.
 - 2022.02 이내로 `츠누봇` Docker 도입계획 (Django, Nginx)
-- 2022.02 이내로 `Nanoscientific Symposium` Docker 도입계획 (React,Node,Mysql,Nginx)
+- `Nanoscientific Symposium` Docker 도입계획 (React,Node,Mysql,Nginx)
