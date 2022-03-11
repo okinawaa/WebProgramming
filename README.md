@@ -157,3 +157,9 @@ SSR 맛보기 개념익히기
 Let's build Medium 2.0 with NEXT.JS! (TypeScript, Sanity CMS, React, Tailwind CSS, ISR)
 
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/nextjs-sanity-medium-clone)
+
+### Next JS Facebook Clone Coding😜 (2022-03-11 ~ )<code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/152636881-d4cb2d5b-e18c-4363-801c-b2661c5fa031.png"></code><code><img width="30" height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code><code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
+
+Let's build Facebook 2.0 with NEXT.JS! (TypeScript, React, Tailwind CSS, Image Uploading,FaceBook Login)
+
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/nextjs-facebook-clone)
