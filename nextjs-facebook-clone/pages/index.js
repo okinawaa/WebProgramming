@@ -4,28 +4,49 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar";
-export default function Home({ session }) {
+import Widgets from "../components/Widgets";
+import Feed from "../components/Feed";
+
+import { db } from "../firebase";
+
+export default function Home({ session, posts }) {
   if (!session) return <Login />;
   return (
-    <div>
-      {/* Header */}
+    <div className="h-screen bg-gray-100 overflow-hidden">
+      <Head>
+        <title>Facebook</title>
+      </Head>
+
       <Header />
+
       <main className="flex">
-        {/* Sidebar */}
         <Sidebar />
-        {/* Feed */}
-        {/* Widgets */}
+        <Feed posts={posts} />
+        <Widgets />
       </main>
     </div>
   );
 }
 
-export const getServerSideProps = async (context) => {
+export async function getServerSideProps(context) {
+  // Get User
   const session = await getSession(context);
 
+  const posts = await db
+    ?.collection("posts")
+    .orderBy("timestamp", "desc")
+    .get();
+
+  const docs = posts?.docs.map((post) => ({
+    id: post.id,
+    ...post.data(),
+    timestamp: null,
+  }));
+
+  // return {
+  //   props: { session },
+  // };
   return {
-    props: {
-      session,
-    },
+    props: { session, posts: docs },
   };
-};
+}
