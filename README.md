@@ -166,7 +166,7 @@ Let's build Facebook 2.0 with NEXT.JS! (TypeScript, React, Tailwind CSS, Image U
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/nextjs-facebook-clone)
 
 ---
-### 초보를 위한 도커 안내서🐳 (2022-04-18 ~ ing) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"></code>
+### 초보를 위한 도커 안내서🐳 (2022-04-18 ~ 2022-04-22) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"></code>
 
 빅픽처팀 스터디
 
