@@ -174,7 +174,7 @@ Let's build Facebook 2.0 with NEXT.JS! (TypeScript, React, Tailwind CSS, Image U
 
 
 ---
-### 도커 쓸 땐 필수! 도커 컴포즈 (2022-04-25 ~ ing) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"></code>
+### 도커 쓸 땐 필수! 도커 컴포즈 (2022-04-25 ~ 2022-05-13) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"></code>
 
 빅픽처팀 스터디
 
