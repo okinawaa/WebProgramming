@@ -18,9 +18,9 @@
 docker-compose.yml은 장황한 도커 실행 옵션을(일련의 실행 과정) 미리 적어둔 문서이다. 프로젝트 루트에 파일을 만들고(루트가 아니여도 경로를 설정해줄 수 있다), 실행 설정을 적어준다. 그래야 터미널에서 도커 명령어를 사용하여 컨테이너를 실행하거나 죽일 수 있다.
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa4d29a5-7dfa-4964-8b97-d7793e735432/Untitled.png)
+![image](https://user-images.githubusercontent.com/69495129/170601809-90e59735-7013-4ae4-b7e3-eabc5afdb142.png)
 
-- `version: '3'` 버전에 따라 지원하는 도커 엔진 버전도 다르다.
+- `version: '3'` 버전에 따라 지원하는 도커 엔진 버전도 다르다.
 - service: 실행할 컨테이너 정의. `docker run --name django`와 같다고 할수있다.
 
 ```
@@ -101,9 +101,7 @@ service:
 
 - docker-compose up [옵션] [서비스명]
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/187bc076-52a8-4194-b39d-8676816ce0dc/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cc0854b8-6152-4a06-9157-615bc61ae733/Untitled.png)
+![image](https://user-images.githubusercontent.com/69495129/170601829-d1ef2c49-3f9d-4fd4-8750-ca9e69d1be46.png)
 
 1. up: docker-compose.yml에 정의된 컨테이너를 실행
     - `docker-compose up`
