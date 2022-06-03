@@ -107,7 +107,7 @@ Build and Deploy Private Chat App with React Firebase version 9
 
 ---
 
-### TDD Flow in REACT.JS (2022-01-14 ~ 2022-01-19, 2022-06-03~ing) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code><code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-ar21.svg"></code>
+### TDD Flow in REACT.JS (2022-01-14 ~ 2022-01-19, 2022-06-03) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code><code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-ar21.svg"></code>
 
 리액트에서 TDD 를 어떻게 진행하는가?
 리액트에서 Test Code 를 어떻게 작성하는가?
