@@ -39,3 +39,8 @@ MSW는 Mock Service Worker로 서비스 워커를 이용하여 API를 모킹하�
 프론트엔드에서 TDD가 가능하다는 것을 보여드립니다.
 
 브라우저에서 오직 눈으로만 결과물을 확인하고 계신가요? 그것만으론 불안해서 테스트 코드를 작성해보려 했지만 어려움을 겪어 보셨다면 주목해주세요. React에서 테스트 가능한 코드 작성법을 알아보고 프론트엔드 개발에 TDD를 적용하는 방법을 소개합니다. using live coding
+
+
+### 블로그 정리
+[쿼리함수에 대하여](https://chanhyukpark-tech.github.io/reactjs/react-test-what-is-the-query-function-copy/)
+[userEvent 대신 fireEvent ! ](https://chanhyukpark-tech.github.io/reactjs/react-test-userEvent-fireEvent/)
