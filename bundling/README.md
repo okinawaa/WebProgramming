@@ -89,4 +89,5 @@ Tree-shaking 이 지원되지 않는다.
 
 
 ## ToDo
+Parcel ex
 Rollup exercise
