@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","sources":["../src/Hello.tsx"],"sourcesContent":["// src/Hello.jsx\n\nimport React from \"react\";\nimport ReactDOM from \"react-dom\";\n\nexport const Hello = () => {\n  return <div>Hello World!</div>;\n};\n"],"names":["Hello","React"],"mappings":";;AAAA;AAKaA,IAAAA,KAAK,GAAG,SAARA,KAAQ,GAAA;EACnB,oBAAOC,mBAAA,MAAA,MAAA,gBAAA,CAAP,CAAA;AACD;;;;"}
