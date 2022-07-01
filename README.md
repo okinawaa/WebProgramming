@@ -192,8 +192,9 @@ why & how
 
 ---
 
-### react-testing-library (2022-07-01) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code><code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-ar21.svg"></code>
+### react-testing-library (2022-07-01 ~ ing) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code><code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-ar21.svg"></code>
 
-테스트코드
+리액트에서 테스트코드를 언제 어떻게 작성해야하는가?
+이젠 실무에 적용할때
 
-[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-testing-library)
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-tdd-tutorial/react-testing-library)
