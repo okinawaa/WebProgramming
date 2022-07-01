@@ -151,14 +151,15 @@ SSR 맛보기 개념익히기
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/nodejs-webrtc-websocket-zoom)
 
 ---
+
 ### Next JS Medium Clone Coding😜 (2022-03-11)<code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/medium/medium-tile.svg"></code><code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/152636881-d4cb2d5b-e18c-4363-801c-b2661c5fa031.png"></code><code><img width="30" height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code><code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 
 Let's build Medium 2.0 with NEXT.JS! (TypeScript, Sanity CMS, React, Tailwind CSS, ISR)
 
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/nextjs-sanity-medium-clone)
 
-
 ---
+
 ### Next JS Facebook Clone Coding😜 (2022-03-11 ~ 2022-03-13)<code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/facebook/facebook-official.svg"></code><code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/152636881-d4cb2d5b-e18c-4363-801c-b2661c5fa031.png"></code><code><img width="30" height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code><code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
 
 Let's build Facebook 2.0 with NEXT.JS! (TypeScript, React, Tailwind CSS, Image Uploading,FaceBook Login)
@@ -166,25 +167,33 @@ Let's build Facebook 2.0 with NEXT.JS! (TypeScript, React, Tailwind CSS, Image U
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/nextjs-facebook-clone)
 
 ---
+
 ### 초보를 위한 도커 안내서🐳 (2022-04-18 ~ 2022-04-22) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"></code>
 
 빅픽처팀 스터디
 
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/docker-novice)
 
-
 ---
+
 ### 도커 쓸 땐 필수! 도커 컴포즈 (2022-04-25 ~ 2022-05-13) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"></code>
 
 빅픽처팀 스터디
 
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/docker-compose)
 
-
 ---
-### Bundling (2022-06-20 ~ 2022-06-25)  <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/js_webpack/js_webpack-icon.svg"></code>
-why & how 
+
+### Bundling (2022-06-20 ~ 2022-06-25) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/js_webpack/js_webpack-icon.svg"></code>
+
+why & how
 
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/bundling)
 
+---
 
+### react-testing-library (2022-07-01) <code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code><code><img width="30" height="30" src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-ar21.svg"></code>
+
+테스트코드
+
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-testing-library)
