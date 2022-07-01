@@ -1,0 +1,702 @@
+[
+  {
+    "id": "c8drjo",
+    "createdAt": 1562095812000,
+    "author": "ChaseMoskal",
+    "title": "Nobody talks about the real reason to use Tabs over Spaces",
+    "score": 995
+  },
+  {
+    "id": "cbizuk",
+    "createdAt": 1562776640000,
+    "author": "_-__-_-__-__-",
+    "title": "Someone posted a video showing off their pseudo desktop UI on r/webdev and I tried to make my version of it as a self challenge.",
+    "score": 962
+  },
+  {
+    "id": "bkq3he",
+    "createdAt": 1557005617000,
+    "author": "scheduled_nightmare",
+    "title": "A teacher at my school was sick of remembering all the different bell schedules, so I created an app to make things easier. The whole school loves it.",
+    "score": 850
+  },
+  {
+    "id": "br16u9",
+    "createdAt": 1558385640000,
+    "author": "magenta_placenta",
+    "title": "WebGL Fluid Simulation",
+    "score": 614
+  },
+  {
+    "id": "cxi68i",
+    "createdAt": 1567177548000,
+    "author": "Grandclosing",
+    "title": "NPM Bans Terminal Ads - a reaction to recent 'funding' experiment",
+    "score": 601
+  },
+  {
+    "id": "bh6ill",
+    "createdAt": 1556183989000,
+    "author": "vjmde",
+    "title": "JavaScript is and remains the queen of programming languages with a community of 11.7M active developers. Python has reached 8.2M active developers and has taken the number two spot, surpassing Java in terms of popularity.",
+    "score": 578
+  },
+  {
+    "id": "cvo87k",
+    "createdAt": 1566826802000,
+    "author": "magenta_placenta",
+    "title": "Popular JavaScript library starts showing ads in its terminal - Standard, a JavaScript style guide, linter, and automatic code fixer, has implemented what appears to be the first advertising system for JavaScript libraries",
+    "score": 574
+  },
+  {
+    "id": "djw0bc",
+    "createdAt": 1571442726000,
+    "author": "garboooge",
+    "title": "50+ JavaScript quiz questions with great explanations to help study up for interviews",
+    "score": 568
+  },
+  {
+    "id": "dflccb",
+    "createdAt": 1570646353000,
+    "author": "akdumbagdum",
+    "title": "Interview with a pornhub developer",
+    "score": 558
+  },
+  {
+    "id": "bjvrex",
+    "createdAt": 1556808261000,
+    "author": "afberg",
+    "title": "NPM isn't all that great",
+    "score": 526
+  },
+  {
+    "id": "brm8dg",
+    "createdAt": 1558514560000,
+    "author": "PMilos",
+    "title": "JavaScript Clean Code - Best Practices - based on Robert C. Martin's book Clean Code",
+    "score": 524
+  },
+  {
+    "id": "c0q0p5",
+    "createdAt": 1560550471000,
+    "author": "parrissays",
+    "title": "10 books that changed my career as a software engineer",
+    "score": 491
+  },
+  {
+    "id": "dbszbr",
+    "createdAt": 1569934537000,
+    "author": "FrancisStokes",
+    "title": "A Few Months Ago I Started a Youtube Channel Building Low Level Systems in JavaScript. This Is Episode 1 Of The \"16-Bit Virtual Machine\" Series",
+    "score": 468
+  },
+  {
+    "id": "bidtu1",
+    "createdAt": 1556473490000,
+    "author": "xxammuxx",
+    "title": "7 Useful JavaScript Tricks",
+    "score": 464
+  },
+  {
+    "id": "c2dxp4",
+    "createdAt": 1560928534000,
+    "author": "pmz",
+    "title": "GitHub - lydiahallie/javascript-questions: A long list of (advanced) JavaScript questions, and their explanations Updated weekly!",
+    "score": 455
+  },
+  {
+    "id": "beoyqb",
+    "createdAt": 1555612053000,
+    "author": "adriansky",
+    "title": "GitHub - dsa.js: Data Structures and Algorithms explained and implemented in JavaScript",
+    "score": 432
+  },
+  {
+    "id": "bhkx5k",
+    "createdAt": 1556275739000,
+    "author": "kevinvz",
+    "title": "Uppy 1.0: Your best friend in file uploading",
+    "score": 432
+  },
+  {
+    "id": "bk6v5q",
+    "createdAt": 1556879162000,
+    "author": "AnecD",
+    "title": "Fun project by Mathieu Anderson!",
+    "score": 431
+  },
+  {
+    "id": "bzra53",
+    "createdAt": 1560346365000,
+    "author": "Satrack",
+    "title": "Former npm CTO launches a decentralized, federated alternative to npm",
+    "score": 425
+  },
+  {
+    "id": "dbh0n2",
+    "createdAt": 1569872471000,
+    "author": "theZcuber",
+    "title": "Optional chaining has landed on TypeScript master branch",
+    "score": 424
+  },
+  {
+    "id": "bio3wk",
+    "createdAt": 1556535338000,
+    "author": "Musfiq-Fahad-Amin",
+    "title": "Google is Implanting Node.js in Its New OS Fuchsia to Bring Deep JavaScript Support!",
+    "score": 413
+  },
+  {
+    "id": "d8rbcv",
+    "createdAt": 1569350017000,
+    "author": "AhhMiPichula",
+    "title": "Exploiting Tinder to get paid features for free",
+    "score": 410
+  },
+  {
+    "id": "d5vn9f",
+    "createdAt": 1568801716000,
+    "author": "qaops",
+    "title": "Research shows that global demand for JavaScript is outpacing student expertise",
+    "score": 409
+  },
+  {
+    "id": "bxeflg",
+    "createdAt": 1559811046000,
+    "author": "vinnl",
+    "title": "Optional Chaining is now at stage 2!",
+    "score": 407
+  },
+  {
+    "id": "bum37q",
+    "createdAt": 1559173621000,
+    "author": "gketuma",
+    "title": "Google to restrict modern ad blocking Chrome extensions to enterprise users",
+    "score": 406
+  },
+  {
+    "id": "blzd1m",
+    "createdAt": 1557280065000,
+    "author": "initFabian",
+    "title": "Hands down the best presentation I've ever seen over JavaScript Bundlers/Module system",
+    "score": 402
+  },
+  {
+    "id": "bg79fo",
+    "createdAt": 1555966454000,
+    "author": "Dotnaught",
+    "title": "NPM layoffs followed attempt to unionize, according to complaints",
+    "score": 399
+  },
+  {
+    "id": "d8goc2",
+    "createdAt": 1569290646000,
+    "author": "garboooge",
+    "title": "[AskJS] Can we stop treating ES2015 features as new yet?",
+    "score": 398
+  },
+  {
+    "id": "c0alpe",
+    "createdAt": 1560456016000,
+    "author": "kefranabg",
+    "title": "Generate beautiful README files in 10 seconds",
+    "score": 396
+  },
+  {
+    "id": "cucywr",
+    "createdAt": 1566562053000,
+    "author": "blazenite3",
+    "title": "I made Mario HTML - written in TypeScript, supports mobile!",
+    "score": 394
+  },
+  {
+    "id": "bnc1xq",
+    "createdAt": 1557581270000,
+    "author": "yottanami",
+    "title": "Windows 95 in Electron. Runs on macOS, Linux, and Windows.",
+    "score": 393
+  },
+  {
+    "id": "dko0j2",
+    "createdAt": 1571597962000,
+    "author": "spitfire092",
+    "title": "TIL about the command `npm ci`. It is similar to `npm install`, except it’s meant for automated environments. It is a clean install that can be faster than normal because it skips user-oriented features.",
+    "score": 391
+  },
+  {
+    "id": "dd7em3",
+    "createdAt": 1570195890000,
+    "author": "anabominableincident",
+    "title": "Retro nostalgia &amp; why my new website looks like Window 9x",
+    "score": 391
+  },
+  {
+    "id": "c75b5v",
+    "createdAt": 1561846192000,
+    "author": "OlanValesco",
+    "title": "V8 7.6 Release: \"In V8 v7.6, we’ve overhauled our JSON parser to be much faster at scanning and parsing JSON. This results in up to 2.7× faster parsing of data served by popular web pages.\"",
+    "score": 384
+  },
+  {
+    "id": "byxkef",
+    "createdAt": 1560171650000,
+    "author": "dickadrigerPruegel",
+    "title": "Show Reddit: RxDB a realtime database for javascript applications",
+    "score": 379
+  },
+  {
+    "id": "cp5qhm",
+    "createdAt": 1565574642000,
+    "author": "JerryNotAgain",
+    "title": "[AskJS] The sad state of Axios",
+    "score": 379
+  },
+  {
+    "id": "dgpl0o",
+    "createdAt": 1570849761000,
+    "author": "pawelgrzybek",
+    "title": "TIL — The power of JSON.stringify replacer parameter",
+    "score": 376
+  },
+  {
+    "id": "bqewoa",
+    "createdAt": 1558257655000,
+    "author": "ya3ya6",
+    "title": "Did you know you can style console.log text?",
+    "score": 373
+  },
+  {
+    "id": "cywkv5",
+    "createdAt": 1567465656000,
+    "author": "impatient_bacon",
+    "title": "I made Bitmelo, a free tool that lets you build 8-bit games with Javascript",
+    "score": 370
+  },
+  {
+    "id": "d58ewc",
+    "createdAt": 1568675783000,
+    "author": "himynameisdave9",
+    "title": "Indeed donates $10,000 to ESLint",
+    "score": 360
+  },
+  {
+    "id": "blff5o",
+    "createdAt": 1557165585000,
+    "author": "Wojtek1942",
+    "title": "Microsoft launches React Native for Windows",
+    "score": 358
+  },
+  {
+    "id": "dh1hst",
+    "createdAt": 1570917124000,
+    "author": "atum47",
+    "title": "I've made a rotary dial to input numbers, because, why not?",
+    "score": 353
+  },
+  {
+    "id": "ds2739",
+    "createdAt": 1572973907000,
+    "author": "DanielRosenwasser",
+    "title": "Announcing TypeScript 3.7",
+    "score": 343
+  },
+  {
+    "id": "bmxfxn",
+    "createdAt": 1557489919000,
+    "author": "speckz",
+    "title": "Building a JavaScript guitar pedalboard",
+    "score": 341
+  },
+  {
+    "id": "dai8cu",
+    "createdAt": 1569688218000,
+    "author": "sundogbillionaire",
+    "title": "[2019 Edition] I created the exact same app in React and Vue. Here are the differences. Now with Hooks",
+    "score": 339
+  },
+  {
+    "id": "do86da",
+    "createdAt": 1572265868000,
+    "author": "yojimbo_beta",
+    "title": "Modern JavaScript features you might have missed",
+    "score": 336
+  },
+  {
+    "id": "c83ysg",
+    "createdAt": 1562036590000,
+    "author": "E06SP",
+    "title": "The Odin Project, A Free Open Source Full Stack Curriculum, Has Just Published A New NodeJS Course!",
+    "score": 335
+  },
+  {
+    "id": "bjhfbn",
+    "createdAt": 1556719408000,
+    "author": "krasimirtsonev",
+    "title": "Building the New facebook.com with React, GraphQL and Relay",
+    "score": 332
+  },
+  {
+    "id": "bmam27",
+    "createdAt": 1557348586000,
+    "author": "magenta_placenta",
+    "title": "The new evergreen Googlebot - Googlebot now runs the latest Chromium rendering engine, now supports 1000+ new features, like: ES6 and newer JavaScript features , IntersectionObserver for lazy-loading, Web Components v1 APIs",
+    "score": 332
+  },
+  {
+    "id": "d1krg5",
+    "createdAt": 1567996010000,
+    "author": "kedar5",
+    "title": "Google feedback on TypeScript 3.5",
+    "score": 328
+  },
+  {
+    "id": "c4u64t",
+    "createdAt": 1561404964000,
+    "author": "magenta_placenta",
+    "title": "Vue - \"We no longer have any plan of deprecating the Object API. It will stay for the foreseeable future. No refactoring needed. This also means we don't plan to drop it for Vue 4 too\"",
+    "score": 327
+  },
+  {
+    "id": "dmixm5",
+    "createdAt": 1571934859000,
+    "author": "dickadrigerPruegel",
+    "title": "Show Reddit: RxDB - A reactive database where you can subscribe to the result of a query",
+    "score": 326
+  },
+  {
+    "id": "btxz72",
+    "createdAt": 1559036089000,
+    "author": "Phenox22",
+    "title": "What are some JavaScript things beginners don't know?",
+    "score": 321
+  },
+  {
+    "id": "bgiky2",
+    "createdAt": 1556037669000,
+    "author": "vzhou842",
+    "title": "Introducing Node.js 12",
+    "score": 319
+  },
+  {
+    "id": "d6didn",
+    "createdAt": 1568897053000,
+    "author": "CodeTutorials",
+    "title": "Moving beyond console.log() — 8 Console Methods for Debugging",
+    "score": 318
+  },
+  {
+    "id": "cju5vi",
+    "createdAt": 1564503997000,
+    "author": "tenbits",
+    "title": "Had an idea for a simple clock to visualize the 1440 precious minutes each of us has in a day. I ❤️ JS for rapid prototyping!",
+    "score": 318
+  },
+  {
+    "id": "cwj7sw",
+    "createdAt": 1566990108000,
+    "author": "thewaywarddeveloper",
+    "title": "Optional chaining is implemented in V8",
+    "score": 314
+  },
+  {
+    "id": "ccqn96",
+    "createdAt": 1563032122000,
+    "author": "gregsometimes",
+    "title": "Tetris turns 35. To celebrate, I created my own \"Tetris in the dark\" version and wrote a tutorial explaining the source code. No libraries. No frameworks. Just vanilla JavaScript (a dying art?)",
+    "score": 311
+  },
+  {
+    "id": "cmnswg",
+    "createdAt": 1565078979000,
+    "author": "FrancisStokes",
+    "title": "I started a YouTube channel called Low Level JavaScript, where I build things like compilers and VMs from scratch and without libraries. This is the 3rd episode in a series about building a Parser Combinator library",
+    "score": 310
+  },
+  {
+    "id": "dg6s14",
+    "createdAt": 1570751755000,
+    "author": "mitousa",
+    "title": "WebGL Fluid Simulation",
+    "score": 307
+  },
+  {
+    "id": "d3qis1",
+    "createdAt": 1568386962000,
+    "author": "magenta_placenta",
+    "title": "Infinite Missiles - a Missle Defender game in 13kb of JavaScript",
+    "score": 306
+  },
+  {
+    "id": "df13zo",
+    "createdAt": 1570546659000,
+    "author": "mylesborins",
+    "title": "🚀 Top-level await makes it possible to use the `await` keyword outside of async functions in JavaScript modules!",
+    "score": 301
+  },
+  {
+    "id": "bgxd8c",
+    "createdAt": 1556126571000,
+    "author": "homoiconic",
+    "title": "JavaScript Allongé is now free",
+    "score": 296
+  },
+  {
+    "id": "bzha3a",
+    "createdAt": 1560282705000,
+    "author": "magenta_placenta",
+    "title": "Private Browsing Undetectable in Chrome 76 - Apologies to the \"detect private mode\" scripts out there",
+    "score": 295
+  },
+  {
+    "id": "cetrkq",
+    "createdAt": 1563462886000,
+    "author": "ekauroreo",
+    "title": "Private browsing still detectable in Chrome 76, bypassing the protection",
+    "score": 293
+  },
+  {
+    "id": "cgf2y1",
+    "createdAt": 1563811394000,
+    "author": "okwherearemypants",
+    "title": "Rebuilding Slack on the Desktop",
+    "score": 289
+  },
+  {
+    "id": "bvhw78",
+    "createdAt": 1559370304000,
+    "author": "5ecured",
+    "title": "In light of what Google did to Chrome...are they really superior to FF in terms of web dev?",
+    "score": 287
+  },
+  {
+    "id": "bs7dx4",
+    "createdAt": 1558640869000,
+    "author": "adriansky",
+    "title": "GitHub - dsa.js: Data Structures and Algorithms explained and implemented in JavaScript",
+    "score": 287
+  },
+  {
+    "id": "c9uj7e",
+    "createdAt": 1562425414000,
+    "author": "Labby92",
+    "title": "Free JavaScript ebook second edition (read for free on Github )",
+    "score": 286
+  },
+  {
+    "id": "c97kja",
+    "createdAt": 1562273627000,
+    "author": "lirantal",
+    "title": "Snyk research team discovers severe prototype pollution security vulnerabilities affecting all versions of lodash",
+    "score": 282
+  },
+  {
+    "id": "cf2i19",
+    "createdAt": 1563507287000,
+    "author": "gregsometimes",
+    "title": "Higher-order functions map(), filter() and reduce() explained using animation.",
+    "score": 279
+  },
+  {
+    "id": "c5pqxs",
+    "createdAt": 1561555275000,
+    "author": "cpury",
+    "title": "AI Against Humanity: How I turned a Machine Learning experiment into an AI-driven browser game based on Cards Against Humanity (Spoiler: TensorFlow.js)",
+    "score": 277
+  },
+  {
+    "id": "bpeb7s",
+    "createdAt": 1558022294000,
+    "author": "magenta_placenta",
+    "title": "Faster smarter JavaScript debugging in Firefox DevTools",
+    "score": 276
+  },
+  {
+    "id": "drl1d6",
+    "createdAt": 1572889045000,
+    "author": "chovy",
+    "title": "Upcoming new JavaScript features You should know if you use JavaScript everyday",
+    "score": 276
+  },
+  {
+    "id": "d46ow5",
+    "createdAt": 1568475241000,
+    "author": "apalshah",
+    "title": "Are you making your website vulnerable or compromising the performance by adding target=\"_blank\"?",
+    "score": 273
+  },
+  {
+    "id": "dc9pjc",
+    "createdAt": 1570020400000,
+    "author": "reinink",
+    "title": "Inertia.js - The Modern Monolith",
+    "score": 273
+  },
+  {
+    "id": "cxxm6k",
+    "createdAt": 1567270017000,
+    "author": "Im_not_depressed_AMA",
+    "title": "Firefox Nightly added support for WebSocket debugging",
+    "score": 270
+  },
+  {
+    "id": "clxvbd",
+    "createdAt": 1564934247000,
+    "author": "veggiedefender",
+    "title": "Detecting incognito mode by timing the Chrome FileSystem API",
+    "score": 269
+  },
+  {
+    "id": "c1ppzq",
+    "createdAt": 1560789307000,
+    "author": "CWagner",
+    "title": "A CSS based web framework – JS (and HTML) in CSS",
+    "score": 268
+  },
+  {
+    "id": "g107vs",
+    "createdAt": 1586844983000,
+    "author": "sebbal9",
+    "title": "Cypress now supports typescript for test files without using special preprocessors plugins",
+    "score": 268
+  },
+  {
+    "id": "deiirq",
+    "createdAt": 1570450022000,
+    "author": "dannymoerkerke",
+    "title": "Why coding your own makes you a better developer",
+    "score": 266
+  },
+  {
+    "id": "dpo9va",
+    "createdAt": 1572531932000,
+    "author": "FrancisStokes",
+    "title": "What is the Stack and why is it needed? (16-Bit VM in JavaScript 003)",
+    "score": 266
+  },
+  {
+    "id": "cjnpj9",
+    "createdAt": 1564467686000,
+    "author": "Nimelrian",
+    "title": "‘No way to prevent this’, Says Only Development Community Where This Regularly Happens",
+    "score": 265
+  },
+  {
+    "id": "ct6o5d",
+    "createdAt": 1566336870000,
+    "author": "gregsometimes",
+    "title": "Higher-order functions map(), filter() and reduce() explained using animation",
+    "score": 265
+  },
+  {
+    "id": "diqf6y",
+    "createdAt": 1571237718000,
+    "author": "pmz",
+    "title": "7 Simple but Tricky JavaScript Interview Questions",
+    "score": 263
+  },
+  {
+    "id": "d9gqkd",
+    "createdAt": 1569486251000,
+    "author": "honigbadger",
+    "title": "GPU.js: GPU Accelerated JavaScript",
+    "score": 262
+  },
+  {
+    "id": "cfz8lo",
+    "createdAt": 1563717371000,
+    "author": "gaearon",
+    "title": "Algebraic Effects for the Rest of Us",
+    "score": 261
+  },
+  {
+    "id": "c7q7oa",
+    "createdAt": 1561971225000,
+    "author": "EuphoricAgnostic",
+    "title": "This guy creates a tinder clone in 60min using react. Pretty impressive",
+    "score": 260
+  },
+  {
+    "id": "cgb634",
+    "createdAt": 1563788962000,
+    "author": "PMilos",
+    "title": "JavaScript Array Operations Cheat Sheet",
+    "score": 256
+  },
+  {
+    "id": "bxqiap",
+    "createdAt": 1559882293000,
+    "author": "ConfidentMushroom",
+    "title": "Top level await has made it to stage 3 of tc39",
+    "score": 256
+  },
+  {
+    "id": "g1qmfg",
+    "createdAt": 1586952203000,
+    "author": "tenbits",
+    "title": "Any fans of JavaScript on hardware? I wanted to share an IoT device I made that tells me when my next bus will arrive",
+    "score": 256
+  },
+  {
+    "id": "cdq838",
+    "createdAt": 1563239157000,
+    "author": "daybrush",
+    "title": "Moveable! Draggable! Resizable! Scalable! Rotatable!",
+    "score": 254
+  },
+  {
+    "id": "czjfpg",
+    "createdAt": 1567595738000,
+    "author": "etiennetalbot",
+    "title": "Simplify your JavaScript – Use .some() and .find()",
+    "score": 251
+  },
+  {
+    "id": "chphis",
+    "createdAt": 1564069758000,
+    "author": "rylandgold",
+    "title": "Practical Ways to Write Better JavaScript",
+    "score": 249
+  },
+  {
+    "id": "d1trzt",
+    "createdAt": 1568049024000,
+    "author": "catapop",
+    "title": "Caniuse and MDN compatibility data collaboration",
+    "score": 248
+  },
+  {
+    "id": "ckgpvc",
+    "createdAt": 1564618329000,
+    "author": "Magnaboy",
+    "title": "My first ever js library: \"Confusables\", it turns \"Ἢἕļľᦞ\" to \"Hello\"",
+    "score": 248
+  },
+  {
+    "id": "c46suc",
+    "createdAt": 1561305528000,
+    "author": "rbajaj1997",
+    "title": "How much Javascript is enough for webdev?",
+    "score": 247
+  },
+  {
+    "id": "clkvkr",
+    "createdAt": 1564850850000,
+    "author": "ilya_ca",
+    "title": "Here’s How Not to Suck at JavaScript",
+    "score": 246
+  },
+  {
+    "id": "cyb8sd",
+    "createdAt": 1567351398000,
+    "author": "main_aisa_kyun_hoon",
+    "title": "I took part in Google Summer of Code 2019 and for the first time developed a cross-browser extension. I was surprised to learn that it's not very complicated to develop a cross-browser extension. In the comments, I am sharing the resources that have helped me during this awesome learning experience!",
+    "score": 246
+  },
+  {
+    "id": "c023pj",
+    "createdAt": 1560405623000,
+    "author": "Pornaga",
+    "title": "30 seconds of code: Learn JavaScript in 30 seconds, one function at a time",
+    "score": 245
+  }
+]

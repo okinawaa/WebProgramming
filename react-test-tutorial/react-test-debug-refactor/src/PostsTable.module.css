@@ -1,0 +1,11 @@
+.table {
+  border-collapse: collapse;
+}
+
+.cell {
+  padding: 5px 10px;
+}
+
+.title {
+  width: 400px;
+}
