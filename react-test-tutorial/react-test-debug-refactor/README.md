@@ -1,68 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React 에서 testing library debug and refactor
 
-## Available Scripts
+## 동기
 
-In the project directory, you can run:
+회사에서 진행하는 프로젝트를 유지보수 까지 하게 되었고, 개발 완료 일정상 TDD를 진행하진 못했지만, 기능 확장성, 유지보수를 용이하게 하기 위해서 해당 웹사이트에 해당하는 테스트코드를 구현하고자 하였다. 이때 어떠한 부분을 프론트엔드에서 테스트 해야하는지 그리고 어떻게 테스트하는지를 배우기 위해서 한 튜토리얼을 진행하고자 하였다. 테스트 코드를 작성하는 법을 배우면서 디버깅과 리팩토링을 어떻게 하는지 학습함을 통해 더욱 빠른 개발 속도를 얻고자 함에 있다.
 
-### `yarn start`
+## 배운점
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 테스트 코드 내부에서 돔을 확인하는 방법(개발자 도구 필요 X)
+  - 암흑 속에서 구현하지 말자!
+- 한 요소가 사라질때까지 기다리는 방법(loading)
+- testing-library 의 within method
+  - 특별한 컨테이너 없이 사용될 수 있음.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+example
 
-### `yarn test`
+```
+import {render, within} from '@testing-library/react'
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+const {getByText} = render(<MyComponent />)
+const messages = getByText('messages')
+const helloMessage = within(messages).getByText('hello')
+```
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Inside a dev's mind - Refactoring and debugging a React test ](https://jkettmann.com/refactoring-and-debugging-a-react-test) 를 참조하여 연습 진행하였습니다.

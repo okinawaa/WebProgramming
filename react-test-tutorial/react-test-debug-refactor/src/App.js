@@ -49,7 +49,7 @@ function App() {
 
       {isLoading && <div>Loading...</div>}
 
-      {selectedWeekday && (
+      {!isLoading && selectedWeekday && (
         <PostsTable posts={postsByWeekday[selectedWeekday]} />
       )}
     </div>
