@@ -202,8 +202,12 @@ why & how
 
 ---
 
-### 따라하며 배우는 TDD 개발 (2022-07-03~ing)
+### 따라하며 배우는 TDD 개발 (2022-07-03~2022-07-12) <code><img width="30" height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>
+
 Nodejs 환경에서 테스트를 하는 기법 및 방법론 학습
+
+[바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/nodejs-express-tdd)
+
 
 ---
 ### 클라이언트 상태와 서버 상태를 명확하게 하자 react-query (2022-07-07~2022-07-12) <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/178378358-e0fd1c29-4335-47bd-b39e-799572a546d9.png"></code>
