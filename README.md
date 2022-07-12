@@ -206,7 +206,10 @@ why & how
 Nodejs 환경에서 테스트를 하는 기법 및 방법론 학습
 
 ---
-### 클라이언트 상태와 서버 상태를 명확하게 하자 react-query (2022-07-07~ing)
+### 클라이언트 상태와 서버 상태를 명확하게 하자 react-query (2022-07-07~2022-07-12)
 
+[Codevolution 님의 react-query 강의](https://www.youtube.com/c/Codevolution/playlists)
+
+[포켓몬 API 를 활용한 무한스크롤](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-query-tutorial/nextjs-react-query-infinity-scroll)
 
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-query-tutorial)
