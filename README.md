@@ -210,7 +210,7 @@ Nodejs 환경에서 테스트를 하는 기법 및 방법론 학습
 
 
 ---
-### 클라이언트 상태와 서버 상태를 명확하게 하자 react-query (2022-07-07~2022-07-12) <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/178378358-e0fd1c29-4335-47bd-b39e-799572a546d9.png"></code>
+### 클라이언트 상태와 서버 상태를 명확하게 하자 react-query (2022-07-07~2022-07-12 , 2022-07-15~) <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/178378358-e0fd1c29-4335-47bd-b39e-799572a546d9.png"></code>
 
 
 [Codevolution 님의 react-query 강의](https://www.youtube.com/c/Codevolution/playlists)
