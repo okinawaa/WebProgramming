@@ -218,3 +218,5 @@ Nodejs 환경에서 테스트를 하는 기법 및 방법론 학습
 [포켓몬 API 를 활용한 무한스크롤](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-query-tutorial/nextjs-react-query-infinity-scroll)
 
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-query-tutorial)
+
+[리액트 쿼리 요약글 컨트리뷰터](https://github.com/ssi02014/react-query-tutorial)
