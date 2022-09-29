@@ -210,7 +210,7 @@ Nodejs 환경에서 테스트를 하는 기법 및 방법론 학습
 
 
 ---
-### 클라이언트 상태와 서버 상태를 명확하게 하자 react-query (2022-07-07~2022-07-12 , 2022-07-15~) <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/178378358-e0fd1c29-4335-47bd-b39e-799572a546d9.png"></code>
+### 클라이언트 상태와 서버 상태를 명확하게 하자 react-query (2022-07-07~2022-07-12) <code><img width="30" height="30" src="https://user-images.githubusercontent.com/69495129/178378358-e0fd1c29-4335-47bd-b39e-799572a546d9.png"></code>
 
 
 [Codevolution 님의 react-query 강의](https://www.youtube.com/c/Codevolution/playlists)
@@ -220,3 +220,10 @@ Nodejs 환경에서 테스트를 하는 기법 및 방법론 학습
 [바로가기](https://github.com/ChanhyukPark-Tech/WebProgramming/tree/main/react-query-tutorial)
 
 [리액트 쿼리 요약글 컨트리뷰터](https://github.com/ssi02014/react-query-tutorial)
+
+---
+
+### 웹 성능 최적화 (2022-09-29~ ) 
+
+프론트엔드 개발자가 갖춰야할 웹 성능 기법 공부
+
