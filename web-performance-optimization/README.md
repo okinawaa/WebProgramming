@@ -150,3 +150,21 @@ font-display 는 자신이 진행하는 서비스에 맞게 적용하면 될 것
 }
 ```
 
+3. Subset 사용하기
+
+![image](https://user-images.githubusercontent.com/69495129/195551741-ddb732f7-70dd-4d9e-a95e-95e4ab115422.png)<br>
+`이미지 출처 : 인프런 웹 성능 최적화 강의`
+
+다음과 같이 폰트의 일부분 글자만 사용한다면, 모든 글자의 폰트를 가져올 필요가 없습니다. <br>
+따라서 subset이라는 말과 같이 우리가 필요한 부분만 가져와서 쓰자! 라는 의미입니다.<br>
+당연히 일부분만 사용하는만큼 폰트 전체의 용량은 작아질 것입니다.
+폰트의 subset은 [여기](transfonter.org) 에서 진행하실 수 있습니다.
+
+![image](https://user-images.githubusercontent.com/69495129/195552256-4501fe30-6838-4a81-b3b1-5f24310217d0.png)
+
+
+
+
+
+
+
