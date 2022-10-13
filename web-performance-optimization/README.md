@@ -103,3 +103,50 @@ font-display 는 자신이 진행하는 서비스에 맞게 적용하면 될 것
 
 2. 폰트 사이즈 줄이기<br>
 위에서 이미지와 동영상을 최적화 한 것처럼 용량이 큰 폰트의 줄이겠다는 것입니다.
+
+1. 웹폰트 포멧 사용
+
+- TTF/OTF
+- WOFF
+- WOFF2
+- EOT
+
+`파일 크기 EOT > TTF/OTF > WOFF > WOFF2`
+포멧의 변환은 [여기](transfonter.org)서 하실 수 있습니다.
+
+웹폰트의 사용법은 하기와 같습니다. 통상적으로 `css` file에 작성합니다.
+
+```css
+@font-face {
+  font-family: NotoSansKR;
+  src: url("./assets/fonts/NotoSansKR.woff2") format("woff2"),
+       url("./assets/fonts/NotoSansKR.woff") format("woff"),
+       url("./assets/fonts/NotoSansKR.ttf") format("truetype"),
+}
+```
+
+
+
+
+2. local 폰트 사용
+
+
+위 코드는 위에서부터 사용이 가능하다면 사용하고 사용 불가능한 브라우져라면 순차적으로 아래로 진행하면서 실행여부를 판단한 뒤 실행합니다.<br>
+하지만 사용자중에 우리가 사용하려는 폰트를 이미 로컬에 갖고 있는 사람도 있을 것이고 그런 분들이라면 따로 네트워크 통신을 굳이 할 필요가 없습니다.<br>
+이를 해결할 순 없을까요?<br>
+
+`꿀팁` : 그냥 PC에서 가져와서 바로 브라우져에 적용하면 될 것 같습니다. 그럴 경우에는 다음과 같은 문법으로 사용해주면 됩니다.
+
+
+
+```css
+@font-face {
+  font-family: NotoSansKR;
+  
+  src: local("NotoSansKR"), // 이 부분 수정
+       url("./assets/fonts/NotoSansKR.woff2") format("woff2"),
+       url("./assets/fonts/NotoSansKR.woff") format("woff"),
+       url("./assets/fonts/NotoSansKR.ttf") format("truetype"),
+}
+```
+
